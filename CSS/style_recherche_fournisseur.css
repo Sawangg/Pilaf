@@ -1,0 +1,141 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#formFournisseur{
+	width: 90%;
+	display: block;
+	margin : auto;
+	font-family: 'Jost', sans-serif;
+}
+
+#formFournisseur fieldset{
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#outilRechercheFournisseur{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#outilRechercheFournisseur div{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#boutonRechercherFournisseur{
+	border: solid gray 1px;
+	border-radius: 4px;
+	padding: 1%;
+	width: 80%;
+  margin : 1% 0 1% 1%;
+}
+
+label, fieldset{
+	margin : 1% 0 1% 0;
+	font-size: 110%;
+}
+
+#boutonRechercherFournisseur{
+	transition-duration: 250ms;
+	border: none;
+	background-color: rgba(81, 215, 59, 0.3);
+	width: auto;
+	padding: 0.75% 2% 0.75% 2%;
+	display: block;
+	margin: 2% auto auto auto;
+	font-size: 120%;
+  color
+}
+
+.fournisseur a{
+  font-weight: bold;
+  font-size: 105%;
+	background-color: rgba(223, 116, 48, 0.5);
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  width: auto;
+  text-align: center;
+  font-size: 100%;
+  padding: 2% 3% 2% 3%;
+  border-radius: 8px;
+  border: none;
+  margin: 8% 0 8% 0;
+}
+
+#result_fournisseur{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fournisseur{
+	display: flex;
+	width: 40%;
+	background-color: rgba(223, 116, 48, 0.3);
+  justify-content: space-around;
+  border-radius: 4px;
+  padding: 0.5%;
+  margin-top: 2%;
+}
+
+.fournisseur div{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.fournisseur div h3{
+  padding: 5%;
+  border: solid black 1px;
+}
+
+.fournisseur div p:not(:last-child){
+  margin: 5% 0 0 0;
+  padding-bottom: 5%;
+  border-bottom: solid black 2px;
+}
+
+.fournisseur div p:last-child{
+  margin: 5% 0 0 0;
+}
+
+.fournisseur a:hover{
+	background-color: rgba(223, 116, 48, 0.7);
+}
+
+#bouttonAfficherPlus{
+	border : none;
+	padding: 1% 2% 1% 2%;
+	transition-duration: 200ms;
+	font-size: 125%;
+	display: block;
+	margin: 3% auto 2% auto;
+	width: 92%;
+}
+
+#bouttonAfficherPlus:hover{
+	background-color: rgba(223, 116, 48, 0.4);
+}
