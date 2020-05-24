@@ -47,7 +47,7 @@ html{
 	border-radius: 4px;
 	padding: 1%;
 	width: 80%;
-  margin : 1% 0 1% 1%;
+	margin : 1% 0 1% 1%;
 }
 
 label, fieldset{
@@ -64,62 +64,62 @@ label, fieldset{
 	display: block;
 	margin: 2% auto auto auto;
 	font-size: 120%;
-  color
+	color
 }
 
 .fournisseur a{
-  font-weight: bold;
-  font-size: 105%;
+	font-weight: bold;
+	font-size: 105%;
 	background-color: rgba(223, 116, 48, 0.5);
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
-  width: auto;
-  text-align: center;
-  font-size: 100%;
-  padding: 2% 3% 2% 3%;
-  border-radius: 8px;
-  border: none;
-  margin: 8% 0 8% 0;
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
+	width: auto;
+	text-align: center;
+	font-size: 100%;
+	padding: 2% 3% 2% 3%;
+	border-radius: 8px;
+	border: none;
+	margin: 8% 0 8% 0;
 }
 
 #result_fournisseur{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .fournisseur{
 	display: flex;
 	width: 40%;
 	background-color: rgba(223, 116, 48, 0.3);
-  justify-content: space-around;
-  border-radius: 4px;
-  padding: 0.5%;
-  margin-top: 2%;
+	justify-content: space-around;
+	border-radius: 4px;
+	padding: 0.5%;
+	margin-top: 2%;
 }
 
 .fournisseur div{
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .fournisseur div h3{
-  padding: 5%;
-  border: solid black 1px;
+	padding: 5%;
+	border: solid black 1px;
 }
 
 .fournisseur div p:not(:last-child){
-  margin: 5% 0 0 0;
-  padding-bottom: 5%;
-  border-bottom: solid black 2px;
+	margin: 5% 0 0 0;
+	padding-bottom: 5%;
+	border-bottom: solid black 2px;
 }
 
 .fournisseur div p:last-child{
-  margin: 5% 0 0 0;
+	margin: 5% 0 0 0;
 }
 
 .fournisseur a:hover{
