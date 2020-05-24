@@ -1,3 +1,5 @@
+/* Auteur : peter-divry */
+
 html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
 	margin: 0;
 	padding: 0;
@@ -40,18 +42,13 @@ legend{
 	font-size: 130%;
 }
 
-#renseignement div:not(#divMotif){
+#renseignement div{
 	display: flex;
 	width: 46%;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 2%;
 	font-size: 110%;
-}
-
-#divMotif{
-	margin: 2% 0 2% 0;
-	width: 95%;
 }
 
 input{
@@ -61,26 +58,28 @@ input{
 }
 
 label{
-	width: 40%;
-}
-
-#divMotif label{
-	width: 100%;
+	width: 48%;
+	margin : auto;
 }
 
 label, fieldset{
-	font-size: 110%;
+	font-size: 105%;
+}
+
+#salarie select{
+	width: 100%;
 }
 
 select{
 	border: solid gray 1px;
 	border-radius: 4px;
-	margin : 5% 0 1% 0;
+	margin : 0% 0 1% 0;
 	padding: 0.5%;
+	width: 50%;
 }
 
 #entreeSortie{
-	margin-top: 0.75%;
+	margin-top: .75%;
 	width: 30%;
 }
 
@@ -109,7 +108,7 @@ select{
 	transition-duration: 250ms;
 }
 
-#valider label, #continuer{
+#valider label, #continuer {
 	background-color: rgba(81, 215, 59, 0.3);
 }
 
@@ -117,7 +116,7 @@ select{
 	background-color: rgba(81, 215, 59, 0.5);
 }
 
-#annuler{
+#annuler {
 	background-color: rgba(203, 75, 62, 0.5);
 	margin-bottom: 1%;
 }

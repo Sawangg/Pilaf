@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Modifier employé</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="peter-divry">
+	<link rel="stylesheet" type="text/css" href="../CSS/style_modifier_employe.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form>
+		<fieldset>
+          <legend>Mettre à jour les informations des employés</legend>
+          <div id="salarie">
+              <label>Employé :</label>
+              <select name="salarie">
+                <option>Mme Flotte - Secretaire</option>
+                <option>Mr Melet - Gestionnaire</option>
+                <option>Mr Billet - cadre commercial</option>
+                <option>Mme Double - Responsable des caisses</option>
+                <option>Mme Personne - Caisses</option>
+                <option>Mr Chose - Caisses</option>
+              </select>
+          </div>
+		  <div id="renseignement">
+			<div>
+			  <label>Nom de l'employé :</label>
+			  <input type="text">
+            </div>
+            <div>
+                <label>Poste :</label>
+                <input pattern="[0-9{0,12}]" type="text">
+            </div>
+			<div>
+				<label>Ville :</label>
+				<input pattern="[0-9{0,12}]" type="text">
+			</div>
+			<div>
+				<label>Salaire :</label>
+				<input type="number" min="0">
+			</div>
+			<div>
+				<label>Adresse :</label>
+				<input pattern="[0-9{0,12}]" type="text">
+			</div>
+                
+			<div id="valider">
+			  <!--input type="submit" value="Valider"-->
+			  <input type="checkbox" id="estVisible"/>
+			  <label for="estVisible">Valider</label>
+			  <p class="nonVisible">Validation effectutée</p>
+			  <button type="button" name="button" class="nonVisible" id="annuler">Annuler</button>
+			  <button type="button" name="button" class="nonVisible" id="continuer">Continuer</button>
+			</div>
+		  </div>
+		</fieldset>
+	</form>
+</body>
