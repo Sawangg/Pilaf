@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="Author" content="Sawang_">
-    <title>Enregistrer ventes</title>
-    <link rel="stylesheet" href="../CSS/style_ventes.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <form>
-      <fieldset id="fieldPrincipale">
-        <legend id="legendPrincipale">Caisses n°XX</legend>
-        <div id="content">
-          <fieldset id="scan">
-            <p>En attente du scan d'un article...</p>
-            <a href="ventes_manuelles.html">Entrée manuelle</a>
-          </fieldset>
-          
-          <fieldset id="produits">
-            <legend id="legendProduits">Liste des produits</legend>
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Sawang_">
+  <title>Enregistrer ventes</title>
+  <link rel="stylesheet" href="../CSS/style_ventes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset id="fieldPrincipale">
+      <legend id="legendPrincipale">Caisses n°XX</legend>
+      <div id="content">
+        <fieldset id="scan">
+          <p>En attente du scan d'un article...</p>
+          <a href="ventes_manuelles.html">Entrée manuelle</a>
+        </fieldset>
 
-            <div class="produitContent">
-              <div>
-                <p>Nom : <b>Banane</b></p>
-                <p>Code barre : 0123456789012</p>
-                <label for="quantity1">Quantité:</label>
-                <input type="number" id="quantity1" min="1">
-              </div>
-              <div>
-                <p>HT: _€</p>
-                <p>TVA: _€</p>
-                <p>Promo: _€</p>
-                <p><b>TTC: _€</b></p>
-              </div>
+        <fieldset id="produits">
+          <legend id="legendProduits">Liste des produits</legend>
+
+          <div class="produitContent">
+            <div>
+              <p>Nom : <b>Banane</b></p>
+              <p>Code barre : 0123456789012</p>
+              <label for="quantity1">Quantité:</label>
+              <input type="number" id="quantity1" min="1">
             </div>
-
-            <div class="produitContent">
-              <div>
-                <p>Nom : <b>Chocolat noir</b></p>
-                <p>Code barre : 210987654321</p>
-                <label for="quantity2">Quantité:</label>
-                <input type="number" id="quantity2" min="1">
-              </div>
-              <div>
-                <p>HT: _€</p>
-                <p>TVA: _€</p>
-                <p>Promo: _€</p>
-                <p><b>TTC: _€</b></p>
-              </div>
+            <div>
+              <p>HT: _€</p>
+              <p>TVA: _€</p>
+              <p>Promo: _€</p>
+              <p><b>TTC: _€</b></p>
             </div>
+          </div>
 
-            <!-- D'autres produits ici -->
-
-            <div id="total">
-              <div>
-                <p>Total HT: </p>
-                <p>Total TVA: </p>
-                <p><b>Total TTC: </b></p>
-              </div>
-              <div>
-                <p>_€</p>
-                <p>_€</p>
-                <p>_€</p>
-              </div>
+          <div class="produitContent">
+            <div>
+              <p>Nom : <b>Chocolat noir</b></p>
+              <p>Code barre : 210987654321</p>
+              <label for="quantity2">Quantité:</label>
+              <input type="number" id="quantity2" min="1">
             </div>
-          </fieldset>
-        </div>
-        <div id="boutons">
-          <button type="button" class="designBoutons" id="boutonAnnuler">Annuler la vente</button>
-          <a href="fidelite.html" class="designBoutons" id="boutonCarte">Carte client</a>
-          <button type="button" class="designBoutons" id="boutonValider">Valider la vente</button>
-        </div>
-      </fieldset>
-    </form>
-  </body>
+            <div>
+              <p>HT: _€</p>
+              <p>TVA: _€</p>
+              <p>Promo: _€</p>
+              <p><b>TTC: _€</b></p>
+            </div>
+          </div>
+
+          <!-- D'autres produits ici -->
+
+          <div id="total">
+            <div>
+              <p>Total HT: </p>
+              <p>Total TVA: </p>
+              <p><b>Total TTC: </b></p>
+            </div>
+            <div>
+              <p>_€</p>
+              <p>_€</p>
+              <p>_€</p>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div id="boutons">
+        <button type="button" class="designBoutons" id="boutonAnnuler">Annuler la vente</button>
+        <a href="fidelite.html" class="designBoutons" id="boutonCarte">Carte client</a>
+        <button type="button" class="designBoutons" id="boutonValider">Valider la vente</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
 </html>
