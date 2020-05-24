@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="sepios87">
+  <title>Consulter les stocks</title>
+  <link rel="stylesheet" href="../CSS/style_consulter_stocks.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Rechercher</legend>
+      <div id="outilRecherche">
+        <div>
+          <label>Code barre :</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Nom de l'article :</label>
+          <input type="text">
+        </div>
+        <div id="date">
+          <label>Date :</label>
+          <input type="date" min="2020-01-01" max="2021-01-01" value="2020-05-16">
+        </div>
+        <div>
+          <label>Etat :</label>
+          <select>
+            <option>Ajouté au stock</option>
+            <option>Retiré du stock</option>
+          </select>
+        </div>
+        <div>
+          <label>Code rayon :</label>
+          <input type="text">
+        </div>
+      </div>
+      <input type="button" value="Rechercher" id="boutonRechercher">
+    </fieldset>
+  </form>
+  <div id="resultatArticles">
+    <div class="produit">
+      <div>
+        <h3>Chocolat</h3>
+        <h4>Code barre : 453845168435</h4>
+        <p>Quantité : <strong>90</strong></p>
+      </div>
+      <div>
+        <h4>Dernière action :</h4>
+        <p>Date : 16/05/2020</p>
+        <p>Ajout de <strong>5</strong> produits au stock</p>
+        <button type="button" name="button">Consulter détails</button>
+        <button type="button" name="button">Voir plus d'actions</button>
+      </div>
+    </div>
+    <div class="produit">
+      <div>
+        <h3>Lait bio</h3>
+        <h4>Code barre : 685982695695</h4>
+        <p>Quantité : <strong>30</strong></p>
+      </div>
+      <div>
+        <h4>Dernière action :</h4>
+        <p>Date : 16/05/2020</p>
+        <p>Retrait de <strong>2</strong> produits au stock</p>
+        <button type="button">Consulter détails</button>
+        <button type="button">Voir plus d'actions</button>
+      </div>
+    </div>
+    <button type="button" name="button" id="bouttonAfficherPlus">Afficher Plus</button>
+  </div>
+</body>
+</html>

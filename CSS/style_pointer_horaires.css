@@ -1,0 +1,163 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#conteneur{
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+form{
+	width: 90%;
+	margin : auto;
+	font-family: 'Jost', sans-serif;
+}
+
+#nom{
+	margin: 2%;
+}
+
+fieldset{
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+}
+
+legend{
+	font-size: 130%;
+}
+
+#pointage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+input{
+	border: solid gray 1px;
+	border-radius: 4px;
+	margin : 1% 0 1% 0;
+}
+
+label, fieldset, #pointage div{
+	margin-top : 1%;
+	margin-bottom: 1%;
+	font-size: 110%;
+}
+select{
+	width: 80%;
+	padding: 0.5%;
+	margin-left: 1%;
+}
+
+#date{
+	width: 100%;
+}
+
+#date input{
+	width: 80%;
+}
+
+.horaire,.horaire input{
+	width: 50%;
+}
+
+.horaire label, .horaire input, #date input, #date label, #total{
+	padding: 1%;
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 120%;
+}
+
+#bouttonAjouterHoraire{
+	transition-duration: 200ms;
+	border: none;
+	margin-top: 3%;
+	padding: 1%;
+	background-color: rgba(223, 116, 48, 0.5);
+}
+
+#total{
+	width: 100%;
+	margin-top: 1%;
+}
+
+#estVisible{
+	display: none;
+}
+
+button.nonVisible{
+	display: none;
+}
+
+#valider{
+	display: flex;
+	justify-content: space-around;
+}
+
+#continuer{
+	background-color: rgba(81, 215, 59, 0.3);
+}
+
+#annuler{
+	background-color: rgba(203, 75, 62, 0.5);
+}
+
+#valider label, button.nonVisible{
+	border: none;
+	text-align: center;
+	width: auto;
+	margin: auto;
+	padding: 0.5% 1.5% 0.5% 1.5%;
+	font-size: 100%;
+	border-radius: 4px;
+	background-color: rgba(81, 215, 59, 0.3);
+	transition-duration: 250ms;
+}
+
+#continuer:hover {
+	background-color: rgba(81, 215, 59, 0.5);
+}
+
+#annuler:hover {
+	background-color: rgba(203, 75, 62, 0.7);
+}
+
+#valider p{
+	color: green;
+	font-size: 130%;
+	width: 50%;
+	margin: auto;
+	padding: 1%;
+	margin-top: 2%;
+	display: none;
+}
+
+#bouttonAjouterHoraire:hover{
+	background-color: rgba(223, 116, 48, 0.7);
+}
+
+#valider label:hover{
+	background-color: rgba(81, 215, 59, 0.5);
+}
+
+#estVisible:checked ~ .nonVisible{
+	display: block;
+}
+
+#estVisible:checked ~ label{
+	display: none;
+}

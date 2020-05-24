@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+      <meta name="Author" content="sepios87">
+  <title>Consulter horaires</title>
+  <link rel="stylesheet" href="../CSS/style_horaires.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Rechercher</legend>
+      <div id="outilRecherche">
+        <div>
+          <label>Salarié :</label>
+          <select name="salarie">
+            <option value="">Mme Flotte - Secretaire</option>
+            <option value="">Mr Melet - Gestionnaire</option>
+            <option value="">Mr Billet - cadre commercial</option>
+            <option value="">Mme Double - Responsable des caisses</option>
+            <option value="">Mme Personne - Caisses</option>
+            <option value="">Mr Chose - Caisses</option>
+          </select>
+        </div>
+        <div id="date">
+          <label>Date :</label>
+          <input type="date" id="start" min="2020-01-01" max="2021-01-01" value="2020-05-16">
+        </div>
+        <div class="horaire">
+          <label for="start">Heure de travail :</label>
+          <input type="time" name="trip-start">
+        </div>
+      </div>
+      <input type="button" value="Rechercher" id="boutonRechercher">
+    </fieldset>
+  </form>
+  <div class="resultat">
+    <div class="nomStatus">
+      <h3>Mme Flotte</h3>
+      <h4>Secretaire</h4>
+      <div class="boutonsStatus">
+        <button type="button" name="button">Consulter</button>
+        <button type="button" name="button">Modifier</button>
+      </div>
+    </div>
+    <div class="horaires">
+      <p>Date : 16/05/2020</p>
+      <p>Heure de début : 8h30</p>
+      <p>Heure de fin : 12h00</p>
+      <p>Heure de début : 13h00</p>
+      <p>Heure de fin : 18h30</p>
+    </div>
+  </div>
+  <div class="resultat">
+    <div class="nomStatus">
+      <h3>Mr Melet</h3>
+      <h4>Gestionnaire</h4>
+      <div class="boutonsStatus">
+        <button type="button" name="button">Consulter</button>
+        <button type="button" name="button">Modifier</button>
+      </div>
+    </div>
+    <div class="horaires">
+      <p>Date : 16/05/2020</p>
+      <p>Heure de début : 8h00</p>
+      <p>Heure de fin : 12h00</p>
+      <p>Heure de début : 14h00</p>
+      <p>Heure de fin : 19h00</p>
+    </div>
+  </div>
+  <div class="resultat">
+    <div class="nomStatus">
+      <h3>Mr Chose</h3>
+      <h4>Caisses</h4>
+      <div class="boutonsStatus">
+        <button type="button" name="button">Consulter</button>
+        <button type="button" name="button">Modifier</button>
+      </div>
+    </div>
+    <div class="horaires">
+      <p>Date : 16/05/2020</p>
+      <p>Heure de début : 8h00</p>
+      <p>Heure de fin : 10h</p>
+      <p>Heure de début : 10h30</p>
+      <p>Heure de fin : 12h</p>
+      <p>Heure de début : 13h00</p>
+      <p>Heure de fin : 19h30</p>
+    </div>
+  </div>
+  <button type="button" name="button" id="bouttonAfficherPlus">Afficher Plus</button>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Sawang_">
+    <title>Enregistrer ventes (Manuelle)</title>
+    <link rel="stylesheet" href="../CSS/style_ventes_manuelles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <form>
+      <fieldset id="fieldPrincipale">
+        <legend id="legendPrincipale">Entrée manuelle</legend>
+        <div id="content">
+          <fieldset id="scan">
+            <label for="codeb">Code Barre:</label>
+            <input type="text" id="codeb"><br>
+            <label for="name">Nom:</label>
+            <input type="text" id="name"><br>
+            <button type="button">Rechercher des produits correspondants</button>
+          </fieldset>
+          
+
+          <fieldset id="produits">
+            <legend id="legendProduits">Liste des produits correspondants :</legend>
+
+            <div class="produitContent">
+              <div>
+                <p>Nom : <b>Chocolat noir</b></p>
+                <p>Code barre : 210987654321</p>
+                <label for="quantity1">Quantité:</label>
+                <input type="number" id="quantity1" min="1">
+              </div>
+              <div>
+                <p>HT: _€</p>
+                <p>TVA: _€</p>
+                <p>Promo: _€</p>
+                <p><b>TTC: _€</b></p>
+              </div>
+            </div>
+
+            <div class="produitContent">
+              <div>
+                <p>Nom : <b>Chocolat au lait</b></p>
+                <p>Code barre : 997870717757</p>
+                <label for="quantity2">Quantité:</label>
+                <input type="number" id="quantity2" min="1">
+              </div>
+              <div>
+                <p>HT: _€</p>
+                <p>TVA: _€</p>
+                <p>Promo: _€</p>
+                <p><b>TTC: _€</b></p>
+              </div>
+            </div>
+            <!-- D'autres produits ici -->
+          </fieldset>
+        </div>
+        <div id="boutons">
+          <a href="ventes.html" class="designBoutons" id="boutonAnnuler">Annuler la saisie</a>
+          <button type="button" class="designBoutons" id="boutonValider">Confirmer la saisie</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

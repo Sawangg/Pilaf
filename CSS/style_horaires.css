@@ -1,0 +1,150 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+form, #bouttonAfficherPlus{
+	width: 90%;
+	display: block;
+	margin : auto;
+	font-family: 'Jost', sans-serif;
+}
+
+fieldset{
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#outilRecherche{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#outilRecherche div{
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+input, select{
+	border: solid gray 1px;
+	border-radius: 4px;
+	padding: 1%;
+	width: 80%;
+	margin-top : 1%;
+	margin-bottom: 1%;
+}
+
+label, fieldset{
+	margin : 1% 0 1% 0;
+	font-size: 110%;
+}
+select{
+	width: 80%;
+	margin-left: 1%;
+}
+
+#boutonRechercher{
+	transition-duration: 250ms;
+	border: none;
+	background-color: rgba(81, 215, 59, 0.3);
+	width: auto;
+	padding: 0.75% 2% 0.75% 2%;
+	display: block;
+	margin: 2% auto auto auto;
+	font-size: 120%;
+}
+
+.resultat{
+	width: 88%;
+	margin : 2% auto 2% auto;
+	background-color: rgba(223, 116, 48, 0.2);
+	border-radius: 3px;
+	padding: 1%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.horaires{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-left: solid black 1px;
+	padding-left : 1%;
+	font-size: 120%;
+}
+
+.nomStatus{
+	width: 38%;
+	font-size: 140%;
+}
+
+.nomStatus h3, .nomStatus h4{
+	text-align: center;
+}
+
+.horaires p:first-child{
+	text-align: center;
+	margin: 1%;
+	width: 100%;
+	background-color: rgba(223, 116, 48, 0.2);
+	border-radius: 2px;
+	padding: 1%;
+}
+
+.horaires p:not(first-child){
+	margin: 2% 0% 1% 10%;
+	width: 40%;
+	font-size: 120%;
+}
+
+.boutonsStatus{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.boutonsStatus button{
+	width: auto;
+	border: none;
+	padding: 2%;
+	margin-top: 1%;
+	border-radius: 10px;
+	background-color: rgba(81, 215, 59, 0.2);
+	transition-duration: 250ms;
+	font-size: 80%;
+}
+
+.boutonsStatus button:hover, #boutonRechercher:hover{
+	background-color: rgba(81, 215, 59, 0.4);
+}
+
+#bouttonAfficherPlus{
+	border : none;
+	padding: 1% 2% 1% 2%;
+	transition-duration: 200ms;
+	font-size: 125%;
+	margin-bottom: 3%;
+}
+
+#bouttonAfficherPlus:hover{
+	background-color: rgba(223, 116, 48, 0.4);
+}

@@ -1,0 +1,86 @@
+/* Auteur : sepios87, Sawang_ */
+
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+footer, header, nav {
+  display: block;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+form{
+  width: 80%;
+  display: block;
+  margin : auto;
+  margin-top: 10%;
+  font-family: 'Jost', sans-serif;
+}
+
+form div{
+  width: 96%;
+  display: flex;
+  padding: 2%;
+  font-size: 120%;
+}
+
+legend{
+  font-size: 150%;
+}
+
+fieldset{
+  background-image: url("../IMAGES/fonds/fondBleu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input{
+  width: 60%;
+}
+
+label{
+  width: 25%;
+}
+
+button {
+  transition: 250ms;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 200ms;
+  padding: 0.75%;
+}
+
+#aide {
+  font-size: 60%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #b7dbed;
+}
+
+#aide:hover {
+  background-color: #7dcaf0;
+}
+
+#connexion {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 100%;
+  width: auto;
+  padding: 0 2% 0 2%;
+  margin: 0 auto 0 auto;
+  background-color: rgba(81, 215, 59, 0.5);
+  border-radius: 8px;
+  border: none;
+}
+
+#connexion:hover {
+  background-color: rgba(81, 215, 59);
+}

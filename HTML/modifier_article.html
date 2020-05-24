@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Apokalypt">
+    <title>Modifier un article</title>
+    <link rel="stylesheet" href="../CSS/style_modifier_article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <form>
+      <fieldset id="fieldPrincipale">
+        <legend id="legendPrincipale">Modifier un article</legend>
+        <div id="content">
+            <div id="ajout">
+              <label id="nom_article" for="nom_article">Nom<span>*</span> :</label>  
+              <input type="text" id="input_nom_article" name="nom_article" pattern="[A-zÀ-ú]*" required value="Orangina">
+              
+              <label id="fournisseur_article" for="fournisseur_article">Fournisseur<span>*</span> :</label>  
+              <SELECT id="input_fournisseur_article" name="Fournisseur">
+                <OPTION selected>Panzani</OPTION>
+                <OPTION>Bell</OPTION>
+                <OPTION>Coca-cola</OPTION>
+              </SELECT>
+
+              <label id="barre_article" for="barre_article">Code barre<span>*</span> :</label>  
+              <input type="text" id="input_barre_article" name="barre_article" pattern="[0-9]*" required value="87954526462695">
+
+              <label id="prix_article" for="prix_article">Prix au kg HT<span>*</span> :</label>
+              <input type="text" id="input_prix_article" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required value="2.54">
+
+              <label id="tva_article" for="tva_article">Taux de TVA<span>*</span> :</label>  
+              <SELECT id="input_tva_article" name="TVA">
+                <OPTION>20%</OPTION>
+                <OPTION>10%</OPTION>
+                <OPTION selected>5,5%</OPTION>
+                <OPTION>2,1%</OPTION>
+              </SELECT>
+
+              <label id="rayon_article" for="rayon_article">Code rayon :</label>
+              <input type="text" id="input_rayon_article" name="rayon_article">
+
+              <img id="image_article" src="../IMAGES/produits/orangina.jpg" alt="Image article">
+              <input type="file" id ="button_image_article" name="button_image_article" accept="image/png, image/jpeg">
+
+              <p id="informations">* Obligatoire</p>
+            </div>
+        </div>
+
+        <div id="boutons">
+          <a href="../index.html" class="designBoutons" id="boutonAnnuler">Annuler</a>
+          <input type="submit" class="designBoutons" id="boutonValider" value="Sauvegarder les changements">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

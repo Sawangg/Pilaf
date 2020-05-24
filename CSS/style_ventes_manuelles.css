@@ -1,0 +1,146 @@
+/* Auteur : Sawang_ */
+
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+form {
+  width: 90%;
+  margin : auto;
+  font-family: 'Jost', sans-serif;
+}
+
+fieldset {
+  font-size: 110%;
+}
+
+#fieldPrincipale {
+  margin-top: 3%;
+  border : solid rgb(36, 128, 36) 1px;
+  border-radius: 2px;
+  background-image: url("../IMAGES/fonds/fondVert.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#legendPrincipale {
+  font-size: 130%;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#scan {
+  margin-top: 1.5%;
+  border : solid rgb(36, 128, 36) 1px;
+  border-radius: 2px;
+  width: 60%;
+  background-color: white;
+}
+
+#scan label {
+  margin-left: 1%;
+}
+
+#scan input {
+  margin: 1% 0 0 0.5%;
+  border: solid gray 1px;
+  border-radius: 2px;
+  width: 20%;
+}
+
+#scan input:last-of-type {
+  margin: 1% 0 2% 5.6%
+}
+
+#scan button {
+  display: block;
+  margin: 1% auto 0 auto;
+  width: auto;
+  text-align: center;
+  font-size: 100%;
+  padding: 0.75% 1.25% 0.75% 1.25%;
+  background-color: rgba(81, 215, 59, 0.3);
+  transition: 0.3s;
+  border: none;
+  border-radius: 8px;
+}
+
+#scan button:hover {
+  background-color: rgba(81, 215, 59, 0.7);
+}
+
+#produits {
+  width: 90%;
+  background-color: white;
+  margin-top: 3%;
+  border : solid rgb(36, 128, 36) 1px;
+  border-radius: 2px;
+  overflow: auto;
+}
+
+#legendProduits {
+  font-size: 100%;
+}
+
+.produitContent {
+  border-bottom: solid rgb(36, 128, 36) 1px;
+  padding: 1% 0 1% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.produitContent:last-of-type {
+  border-bottom: none;
+}
+
+#boutons {
+  margin: 1% 0 0.75% 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.designBoutons {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  width: auto;
+  text-align: center;
+  font-size: 100%;
+  padding: 0.5% 1% 0.5% 1%;
+  border-radius: 8px;
+  border: none;
+}
+
+#boutonAnnuler {
+  font-weight: bold;
+  font-size: 105%;
+  background-color: rgba(203, 75, 62, 0.5);
+}
+
+#boutonAnnuler:hover {
+  background-color: rgba(203, 75, 62, 0.75);
+}
+
+#boutonValider {
+  background-color: rgba(33, 119, 20, 0.7);
+}
+
+#boutonValider:hover {
+  background-color: rgba(33, 119, 20, 0.9);
+}

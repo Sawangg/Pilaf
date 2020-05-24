@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="sepios87">
+  <title>Pointage</title>
+  <link rel="stylesheet" href="../CSS/style_pointer_horaires.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset id="conteneur">
+      <legend>Pointage journalier</legend>
+      <label id="nom">Salarié : Mme Flotte</label>
+      <fieldset>
+        <div id="pointage">
+          <div id="date">
+            <label>Date</label>
+            <input type="date" min="2020-01-01" max="2021-01-01" value="2020-05-16" required>
+          </div>
+          <div class="horaire">
+            <label>Heure début</label>
+            <input type="time" id="start" name="trip-start" required>
+          </div>
+          <div class="horaire">
+            <label>Heure fin</label>
+            <input type="time">
+          </div>
+          <input type="button" value="Ajouter une plage horaire" id="bouttonAjouterHoraire" required>
+          <p id="total">TOTAL : 6h32</p>
+      </div>
+      </fieldset>
+      <div id="valider">
+        <!--input type="submit" value="Valider"-->
+        <input type="checkbox" id="estVisible" />
+        <label for="estVisible">Valider</label>
+        <p class="nonVisible">Validation effectutée</p>
+        <button type="button" name="button" class="nonVisible" id="annuler">Annuler</button>
+        <button type="button" name="button" class="nonVisible" id="continuer">Continuer</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

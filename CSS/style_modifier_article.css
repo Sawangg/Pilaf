@@ -1,0 +1,186 @@
+/* Auteur : Apokalypt */
+
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+form {
+    width: 90%;
+    margin : auto;
+    font-family: 'Jost', sans-serif;
+}
+
+fieldset {
+    font-size: 110%;
+}
+
+#fieldPrincipale {
+    margin-top: 3%;
+    border : solid rgb(223, 116, 48) 1px;
+    border-radius: 2px;
+    background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#legendPrincipale {
+    font-size: 130%;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#ajout {
+    width: 60%;
+    grid-column: 1;
+    grid-row: 1;
+
+    display: grid;
+    grid-row-gap: 20px;
+
+    background-color: white;
+
+    margin-top: 3%;
+    padding: 30px 20px 30px 20px;
+
+    border : solid rgb(223, 116, 48) 1px;
+    border-radius: 2px;
+}
+
+#ajout p {
+    color: red;
+    font-size: 70%;
+}
+
+input[type="text"] {
+    border: solid gray 1px;
+    border-radius: 2px;
+}
+
+#nom_article {
+    grid-column: 1;
+    grid-row: 1;
+}
+#input_nom_article {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#fournisseur_article {
+    grid-column: 1;
+    grid-row: 2;
+}
+#input_fournisseur_article {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#barre_article {
+    grid-column: 1;
+    grid-row: 3;
+}
+#input_barre_article {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#prix_article {
+    grid-column: 1;
+    grid-row: 4;
+}
+#input_prix_article {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#tva_article {
+    grid-column: 1;
+    grid-row: 5;
+}
+#input_tva_article {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#rayon_article {
+    grid-column: 1;
+    grid-row: 6;
+}
+#input_rayon_article {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+#informations {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+#image_article {
+    grid-column: 4;
+    grid-row: 1 / 6;
+}
+#button_image_article {
+    grid-column: 4;
+    grid-row: 6;
+}
+img {
+    height: 100%;
+    width: auto;
+}
+
+span {
+    color: red;
+}
+
+#boutons {
+    margin: 1% 0 0.75% 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.designBoutons {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    width: auto;
+    text-align: center;
+    font-size: 100%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    border: none;
+}
+  
+#boutonAnnuler {
+    font-weight: bold;
+    font-size: 105%;
+    background-color: rgba(203, 75, 62, 0.5);
+}
+  
+#boutonAnnuler:hover {
+    background-color: rgba(203, 75, 62, 0.75);
+}
+  
+#boutonValider {
+    background-color: rgba(33, 119, 20, 0.7);
+}
+  
+#boutonValider:hover {
+    background-color: rgba(33, 119, 20, 0.9);
+}

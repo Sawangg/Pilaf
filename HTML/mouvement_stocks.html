@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="sepios87">
+  <title>Mouvement stocks</title>
+  <link rel="stylesheet" href="../CSS/style_mouvements_stocks.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Enregistrer mouvement stock</legend>
+      <div id="renseignement">
+        <div>
+          <label>Nom du produit:</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Code barre:</label>
+          <input type="text" pattern="[0-9{0,12}]">
+        </div>
+        <div id="date">
+          <label for="start">Date:</label>
+          <input type="date" id="start" name="trip-start" min="2020-01-01" max="2021-01-01" value="2020-05-16">
+        </div>
+        <div>
+          <label>Quantité:</label>
+          <input type="number" min=1>
+          <select name="salarie" id="entreeSortie">
+            <option>Entrée</option>
+            <option>Sortie</option>
+          </select>
+        </div>
+        <div id="divMotif">
+          <label>Motif:</label>
+          <input type="text" id="motif">
+        </div>
+      </div>
+      <div id="valider">
+        <input type="checkbox" id="estVisible" />
+        <label for="estVisible">Valider</label>
+        <p class="nonVisible">Validation effectutée</p>
+        <button type="button" name="button" class="nonVisible" id="annuler">Annuler</button>
+        <button type="button" name="button" class="nonVisible" id="continuer">Continuer</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

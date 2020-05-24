@@ -1,0 +1,146 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+form{
+	width: 90%;
+	margin : auto;
+	font-family: 'Jost', sans-serif;
+}
+
+fieldset{
+	margin-top: 3%;
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#renseignement{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+legend{
+	font-size: 130%;
+}
+
+#renseignement div:not(#divMotif){
+	display: flex;
+	width: 46%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 2%;
+	font-size: 110%;
+}
+
+#divMotif{
+	margin: 2% 0 2% 0;
+	width: 95%;
+}
+
+input{
+	border: solid gray 1px;
+	border-radius: 4px;
+	width: 50%;
+}
+
+label{
+	width: 40%;
+}
+
+#divMotif label{
+	width: 100%;
+}
+
+label, fieldset{
+	font-size: 110%;
+}
+
+select{
+	border: solid gray 1px;
+	border-radius: 4px;
+	margin : 5% 0 1% 0;
+	padding: 0.5%;
+}
+
+#entreeSortie{
+	margin-top: 0.75%;
+	width: 30%;
+}
+
+#motif{
+	width: 100%;
+	height: 150px;
+}
+
+#valider{
+	display: flex;
+	flex-direction: column;
+}
+
+#estVisible{
+	display: none;
+}
+
+#valider label, button.nonVisible{
+	border: none;
+	text-align: center;
+	width: auto;
+	margin: auto;
+	padding: 0.5% 1.5% 0.5% 1.5%;
+	font-size: 100%;
+	border-radius: 4px;
+	background-color: rgba(81, 215, 59, 0.3);
+	transition-duration: 250ms;
+}
+
+#valider label, #continuer{
+	background-color: rgba(81, 215, 59, 0.3);
+}
+
+#valider label:hover{
+	background-color: rgba(81, 215, 59, 0.5);
+}
+
+#annuler{
+	background-color: rgba(203, 75, 62, 0.3);
+	margin-bottom: 1%;
+}
+
+button.nonVisible{
+	display: none;
+}
+
+p.nonVisible{
+	text-align: center;
+	color: green;
+	font-size: 130%;
+	width: 50%;
+	margin: auto;
+	padding: 1%;
+	display: none;
+}
+
+#estVisible:checked ~ .nonVisible{
+	display: block;
+}
+
+#estVisible:checked ~ label{
+	display: none;
+}
