@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Sawang_">
+    <title>Consulter factures</title>
+    <link rel="stylesheet" href="../CSS/style_consulter_factures.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+    <script>
+        function details() {
+            if (document.getElementById("details").style.display == "none") {
+                document.getElementById("details").style.display = "block";
+            } else {
+                document.getElementById("details").style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset id="fieldPrincipale">
+            <legend id="legendPrincipale">Factures</legend>
+            <div id="content">
+                <fieldset id="factures">
+                    <div id="recherche">
+
+                    </div>
+
+                    <div id="facture1" class="facturesContent" onclick="details()">
+                        <p>Coca-Cola</p>
+                        <p>25/05/2020</p>
+                        <p>#000001</p>
+                        <p id="status">Payé</p>
+                        <p><b>+255,02 €</b></p>
+                    </div>
+
+                    <div id="details">
+                        <p>?</p>
+                    </div>
+
+                    <div id="facture2" class="facturesContent">
+                        <p>Bell</p>
+                        <p>07/10/2020</p>
+                        <p>#000002</p>
+                        <p id="status">En attente</p>
+                        <p><b>-40,00 €</b></p>
+                    </div>
+
+                    <div id="facture3" class="facturesContent">
+                        <p>Herta</p>
+                        <p>10/07/2020</p>
+                        <p>#000003</p>
+                        <p id="status">Impayé</p>
+                        <p><b>+77,99 €</b></p>
+                    </div>
+                    <!-- D'autres factures ici -->
+                </fieldset>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

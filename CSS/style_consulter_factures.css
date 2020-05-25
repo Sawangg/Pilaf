@@ -1,0 +1,135 @@
+/* Auteur : Sawang_ */
+
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+form {
+	width: 90%;
+	margin : auto;
+	font-family: 'Jost', sans-serif;
+}
+
+fieldset {
+	font-size: 110%;
+}
+
+#fieldPrincipale {
+	margin-top: 3%;
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#legendPrincipale {
+	font-size: 130%;
+}
+
+#content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#factures {
+	width: 90%;
+	background-color: white;
+	margin-top: 3%;
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	overflow: auto;
+}
+
+#recherche {
+	margin-bottom: 3%;
+}
+
+#details {
+	display: none;
+	background-color: aqua;
+}
+
+.facturesContent {
+	margin-top: 1.5%;
+	transition: 250ms;
+	background-color: white;
+	padding: 1% 0 1% 0;
+	box-shadow: 2px 3px 5px #888888;
+	display: flex;
+	justify-content: space-around;
+}
+
+.facturesContent:hover {
+	background-color: rgba(223, 223, 223, 0.5);
+}
+
+.facturesContent #status {
+	border-radius: 8px;
+	text-align: center;
+	color: white;
+	padding: 0 1.5%;
+}
+
+#facture1 {
+	border-left: solid 5px green;
+}
+
+#facture1 #status {
+	background-color: green;
+}
+
+#facture2 {
+	border-left: solid 5px goldenrod;
+}
+
+#facture2 #status {
+	background-color: goldenrod;
+}
+
+#facture3 {
+	border-left: solid 5px red;
+}
+
+#facture3 #status {
+	background-color: red;
+}
+
+#boutons {
+	margin: 1% 0 0.75% 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.designBoutons {
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
+	width: auto;
+	text-align: center;
+	font-size: 100%;
+	padding: 0.5% 1% 0.5% 1%;
+	border-radius: 8px;
+	border: none;
+}
+
+#boutonAnnuler {
+	background-color: rgba(203, 75, 62, 0.5);
+}
+
+#boutonAnnuler:hover {
+	background-color: rgba(203, 75, 62, 0.75);
+}
