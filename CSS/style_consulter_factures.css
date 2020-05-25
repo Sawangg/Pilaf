@@ -58,9 +58,16 @@ fieldset {
 	margin-bottom: 3%;
 }
 
-#details {
+#details-toggle-cbox {
 	display: none;
-	background-color: aqua;
+}
+
+#details-toggle-cbox:checked ~ #facture1Details {
+	display: block;
+}
+
+#details-toggle-cbox:checked ~ #facture1Details {
+	display: block;
 }
 
 .facturesContent {
@@ -92,6 +99,24 @@ fieldset {
 	background-color: green;
 }
 
+#facture1Details {
+	display: none;
+
+	background-color: white;
+	padding: 1% 0 1% 0;
+	box-shadow: 2px 3px 5px #888888;
+	font-size: 90%;
+}
+
+#facture1Details p:first-of-type {
+	font-size: 120%;
+	margin: 0 0 1% 2.5%;
+}
+
+#facture1Details p {
+	margin-left: 2%;
+}
+
 #facture2 {
 	border-left: solid 5px goldenrod;
 }
@@ -106,30 +131,4 @@ fieldset {
 
 #facture3 #status {
 	background-color: red;
-}
-
-#boutons {
-	margin: 1% 0 0.75% 0;
-	display: flex;
-	justify-content: space-around;
-}
-
-.designBoutons {
-	text-decoration: none;
-	color: black;
-	transition: 0.3s;
-	width: auto;
-	text-align: center;
-	font-size: 100%;
-	padding: 0.5% 1% 0.5% 1%;
-	border-radius: 8px;
-	border: none;
-}
-
-#boutonAnnuler {
-	background-color: rgba(203, 75, 62, 0.5);
-}
-
-#boutonAnnuler:hover {
-	background-color: rgba(203, 75, 62, 0.75);
 }
