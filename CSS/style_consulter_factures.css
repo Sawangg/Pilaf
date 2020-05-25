@@ -8,10 +8,6 @@ html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
 	vertical-align: baseline;
 }
 
-footer, header, nav {
-	display: block;
-}
-
 html {
 	scroll-behavior: smooth;
 }
@@ -24,9 +20,11 @@ form {
 
 fieldset {
 	font-size: 110%;
+	padding-bottom: 1%;
 }
 
 #fieldPrincipale {
+	padding-bottom: 0;
 	margin-top: 3%;
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
@@ -35,7 +33,7 @@ fieldset {
 	background-size: cover;
 }
 
-#legendPrincipale {
+#fieldPrincipale legend {
 	font-size: 130%;
 }
 
@@ -56,18 +54,40 @@ fieldset {
 
 #recherche {
 	margin-bottom: 3%;
+	
 }
 
-#details-toggle-cbox {
+#factures input[type="checkbox"] {
 	display: none;
 }
 
-#details-toggle-cbox:checked ~ #facture1Details {
+#details-toggle-cbox1:checked ~ #facture1Details {
 	display: block;
 }
 
-#details-toggle-cbox:checked ~ #facture1Details {
+#details-toggle-cbox2:checked ~ #facture2Details {
 	display: block;
+}
+
+#details-toggle-cbox3:checked ~ #facture3Details {
+	display: block;
+}
+
+.details {
+	display: none;
+	background-color: white;
+	padding: 1% 0 1% 0;
+	box-shadow: 2px 3px 5px #888888;
+	font-size: 90%;
+}
+
+.details p:first-of-type {
+	font-size: 120%;
+	margin: 0 0 1% 2.5%;
+}
+
+.details p {
+	margin-left: 2%;
 }
 
 .facturesContent {
@@ -99,24 +119,6 @@ fieldset {
 	background-color: green;
 }
 
-#facture1Details {
-	display: none;
-
-	background-color: white;
-	padding: 1% 0 1% 0;
-	box-shadow: 2px 3px 5px #888888;
-	font-size: 90%;
-}
-
-#facture1Details p:first-of-type {
-	font-size: 120%;
-	margin: 0 0 1% 2.5%;
-}
-
-#facture1Details p {
-	margin-left: 2%;
-}
-
 #facture2 {
 	border-left: solid 5px goldenrod;
 }
@@ -131,4 +133,38 @@ fieldset {
 
 #facture3 #status {
 	background-color: red;
+}
+
+#boutons {
+	margin: 1% 0;
+	display: flex;
+	justify-content: space-around;
+}
+  
+.designBoutons {
+	color: black;
+	text-decoration: none;
+	transition: 250ms;
+	width: auto;
+	text-align: center;
+	font-size: 100%;
+	padding: 0.5% 1% 0.5% 1%;
+	border-radius: 8px;
+	border: none;
+}
+  
+#boutonRetour {
+	background-color: rgba(203, 75, 62, 0.5);
+}
+  
+#boutonRetour:hover {
+	background-color: rgba(203, 75, 62, 0.75);
+}
+  
+#boutonAjouter {
+	background-color: rgba(223, 116, 48, 0.5);
+}
+  
+#boutonAjouter:hover {
+	background-color: rgba(223, 116, 48, 0.7);
 }

@@ -10,7 +10,7 @@
 <body>
     <form>
         <fieldset id="fieldPrincipale">
-            <legend id="legendPrincipale">Factures</legend>
+            <legend>Factures</legend>
             <div id="content">
                 <fieldset id="factures">
                     <div id="recherche">
@@ -18,40 +18,62 @@
                     </div>
 
                     <div id="facture1">
-                        <input type="checkbox" id="details-toggle-cbox"/>
-                        <label for="details-toggle-cbox" class="facturesContent">
+                        <input type="checkbox" id="details-toggle-cbox1"/>
+                        <label for="details-toggle-cbox1" class="facturesContent">
                             <p>Coca-Cola</p>
                             <p>25/05/2020</p>
                             <p>#000001</p>
                             <p id="status">Payé</p>
                             <p><b>+255,02 €</b></p>                        
                         </label>
-                        <div id="facture1Details">
+                        <div id="facture1Details" class="details">
                             <p>#000001 - 25/05/2020</p>
-                            <p><b>Moyen de paiements: </b>Virement</p>
+                            <p><b>Moyen de paiement: </b>Virement</p>
                             <p><b>Client: </b> Coca-Cola</p>
                             <p><b>Total: </b> +255,02 €</p>
                             <p>Payé le 25/05/2020</p>
                         </div>
                     </div>
-
-                    <div id="facture2" class="facturesContent">
-                        <p>Bell</p>
-                        <p>07/10/2020</p>
-                        <p>#000002</p>
-                        <p id="status">En attente</p>
-                        <p><b>-40,00 €</b></p>
+                    <div id="facture2">
+                        <input type="checkbox" id="details-toggle-cbox2"/>
+                        <label for="details-toggle-cbox2" class="facturesContent">
+                            <p>Bell</p>
+                            <p>07/10/2020</p>
+                            <p>#000002</p>
+                            <p id="status">En attente</p>
+                            <p><b>-40,00 €</b></p>                    
+                        </label>
+                        <div id="facture2Details" class="details">
+                            <p>#000002 - 07/10/2020</p>
+                            <p><b>Moyen de paiement: </b>Espèces</p>
+                            <p><b>Client: </b> Bell</p>
+                            <p><b>Total: </b> -40,00 €</p>
+                            <p>En attente de confirmation</p>
+                        </div>
                     </div>
-
-                    <div id="facture3" class="facturesContent">
-                        <p>Herta</p>
-                        <p>10/07/2020</p>
-                        <p>#000003</p>
-                        <p id="status">Impayé</p>
-                        <p><b>+77,99 €</b></p>
+                    <div id="facture3">
+                        <input type="checkbox" id="details-toggle-cbox3"/>
+                        <label for="details-toggle-cbox3" class="facturesContent">
+                            <p>Herta</p>
+                            <p>16/12/2018</p>
+                            <p>#000003</p>
+                            <p id="status">Impayé</p>
+                            <p><b>+77,99 €</b></p>                 
+                        </label>
+                        <div id="facture3Details" class="details">
+                            <p>#000003 - 16/12/2018</p>
+                            <p><b>Moyen de paiement: </b>Inconnu</p>
+                            <p><b>Client: </b> Herta</p>
+                            <p><b>Total: </b> +77,99 €</p>
+                            <p>En attente de transaction</p>
+                        </div>
                     </div>
                     <!-- D'autres factures ici -->
                 </fieldset>
+            </div>
+            <div id="boutons">
+                <a href="../index.html" class="designBoutons" id="boutonRetour">Retour</a>
+                <a href="effectuer_factures.html" class="designBoutons" id="boutonAjouter">Créer une nouvelle facture</a>
             </div>
         </fieldset>
     </form>
