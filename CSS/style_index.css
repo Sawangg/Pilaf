@@ -1,0 +1,133 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+footer, header, nav {
+  display: block;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  display: flex;
+  height: 60px;
+  padding: 0.25% 3%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #b7dbed;
+  font-family: 'Jost', sans-serif;
+}
+
+#profil img{
+  width: 50px;
+  height: 50px;
+  margin: 6px;
+}
+
+#profil{
+  display: flex;
+  flex-direction: row;
+}
+
+#profil div{
+  margin: 10px 20px 0 5%;
+}
+
+nav{
+    width: 70%;
+    display: block;
+    margin-top: 18px;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  list-style: none;
+}
+
+.facturesContent{
+  font-size: 110%;
+	transition: 250ms;
+  border-left: solid rgba(210, 21, 50, 0) 4px;
+	display: flex;
+	justify-content: space-around;
+  padding-bottom : 3.5%;
+}
+
+header input[type="checkbox"] {
+	display: none;
+}
+
+.details {
+	display: none;
+  margin: 18px 8px;
+  padding: 5px 10%;
+  background: linear-gradient(rgba(28, 230, 151, 0.3), rgba(28, 230, 151, 0.5));
+  border-radius: 0 0 4px 4px ;
+  text-align: center;
+	font-size: 90%;
+}
+
+.details a{
+  padding: 6% 0;
+}
+
+.details a:not(:last-child){
+    border-bottom : solid white 1px;
+}
+
+.details a{
+  text-decoration: none;
+  color: black;
+}
+
+#details-toggle-cbox1:checked ~ #facture1Details {
+  display: flex;
+  flex-direction: column;
+}
+#details-toggle-cbox2:checked ~ #facture2Details {
+  display: flex;
+  flex-direction: column;
+}
+#details-toggle-cbox3:checked ~ #facture3Details {
+  display: flex;
+  flex-direction: column;
+}
+#details-toggle-cbox4:checked ~ #facture4Details {
+  display: flex;
+  flex-direction: column;
+}
+#details-toggle-cbox5:checked ~ #facture5Details {
+  display: flex;
+  flex-direction: column;
+}
+
+#deconnexion img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+#deconnexion p{
+  font-size: 80%;
+}
+
+#deconnexion{
+  text-align: center;
+}
+
+.facturesContent:hover{
+    border-left: solid rgba(210, 21, 50, 0.8) 4px;
+}
+
+.details a:hover{
+    background-color: rgba(28, 230, 151, 0.8);
+}
