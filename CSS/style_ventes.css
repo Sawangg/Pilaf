@@ -131,6 +131,7 @@ fieldset {
 	text-align: center;
 	font-size: 100%;
 	padding: 0.5% 1% 0.5% 1%;
+	box-shadow: 3px 4px 11px #3d3d3d4f;
 	border-radius: 8px;
 	border: none;
 }
