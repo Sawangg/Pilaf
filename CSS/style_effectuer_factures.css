@@ -52,11 +52,11 @@ fieldset {
 	overflow: auto;
 }
 
-#recherche {
-	margin-bottom: 3%;
+#selectionClient, #paiement, #produit {
+	margin: 1% 0 3% 5%;
 }
 
-#recherche select {
+select {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -69,7 +69,7 @@ fieldset {
 	color: #888888;
 	cursor: pointer;
 	border-bottom: solid 1px #888888;
-	margin: 1% 0 0 2%;
+	margin: 1% 0 0 3%;
 	width: 15%;
 	font-size: 95%;
 	padding: 0.5% 1%;
@@ -79,138 +79,44 @@ fieldset {
   	background-repeat: no-repeat;
 }
 
-#recherche select:focus {
+select:focus {
 	background-image:linear-gradient(45deg, gray 50%, transparent 50%), linear-gradient(135deg, transparent 50%, gray 50%);
 	background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
 }
 
-#recherche select:hover {
+select:hover {
 	background-color: rgba(223, 223, 223, 0.5);
 }
 
-#recherche option {
+option {
 	background-color: white;
 	font-size: 80%;
 }
 
-#recherche option:hover {
+option:hover {
 	background-color: rgba(223, 223, 223, 0.5);
 	border: 0;
 }
 
-#factures input[type="checkbox"] {
-	display: none;
-}
-
-#details-toggle-cbox1:checked ~ #facture1Details {
-	display: block;
-}
-
-#details-toggle-cbox2:checked ~ #facture2Details {
-	display: block;
-}
-
-#details-toggle-cbox3:checked ~ #facture3Details {
-	display: block;
-}
-
-#details-toggle-cbox4:checked ~ #facture4Details {
-	display: block;
-}
-
-.details {
-	display: none;
-	background-color: white;
-	padding: 1% 0 1% 0;
-	box-shadow: 2px 3px 5px #888888;
-	font-size: 90%;
-}
-
-.details p:first-of-type {
-	font-size: 120%;
-	margin: 0 0 1% 2.5%;
-}
-
-.details p {
-	margin-left: 2%;
-}
-
-.facturesContent {
-	margin-top: 1.5%;
-	transition: 250ms;
-	background-color: white;
-	padding: 1% 0 1% 0;
-	box-shadow: 2px 3px 5px #888888;
-	display: flex;
-	justify-content: space-around;
-}
-
-.facturesContent:hover {
-	cursor: pointer;
-	background-color: rgba(223, 223, 223, 0.5);
-}
-
-.facturesContent .status {
-	border-radius: 8px;
-	text-align: center;
-	color: white;
-	padding: 0 1.5%;
-}
-
-#facture1 {
-	border-left: solid 5px green;
-}
-
-#facture1 .status {
-	background-color: green;
-}
-
-#facture2 {
-	border-left: solid 5px goldenrod;
-}
-
-#facture2 .status {
-	background-color: goldenrod;
-}
-
-#facture3 {
-	border-left: solid 5px red;
-}
-
-#facture3 .status {
-	background-color: red;
-}
-
-#facture4 {
-	border-left: solid 5px grey;
-}
-
-#editer {
-	display: flex;
-	justify-content: flex-start;
-}
-
-#fixMargin {
-	font-size: 100%;
-	margin: 0 0 0 2%;
-}
-
-#facture4 a {
-	height: 1%;
+label {
 	margin-left: 3%;
-	padding: 0.2% 1.5%;
-	background-color: rgba(223, 116, 48, 0.5);
 }
 
-#facture4 a:hover {
-	background-color: rgba(223, 116, 48, 0.7);
+input[type="date"] {
+	text-align: center;
+	margin-left: 1%;
+	padding: 0.5% 1%;
+	border: 0;
+	border: #888888 solid 1px;
+	font-style: inherit;
 }
 
-#facture4 .status {
-	background-color: grey;
+#produit h2 {
+	margin-bottom: 1.75%;
 }
 
 #boutons {
+	color: #888888;
 	margin: 1% 0;
 	display: flex;
 	justify-content: space-around;
@@ -235,20 +141,20 @@ fieldset {
 #boutonRetour:hover {
 	background-color: rgba(203, 75, 62, 0.75);
 }
-  
-#boutonAjouter {
+
+.bAjouter {
+	margin-left: 3%;
 	background-color: rgba(223, 116, 48, 0.5);
 }
   
-#boutonAjouter:hover {
+.bAjouter:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
-#boutonAppliquer {
-	margin-left: 3%;
+#boutonValider {
 	background-color: rgba(81, 215, 59, 0.2);
 }
 
-#boutonAppliquer:hover {
+#boutonValider:hover {
 	background-color: rgba(81, 215, 59, 0.4);
 }
