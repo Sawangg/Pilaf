@@ -14,17 +14,26 @@
             <div id="content">
                 <fieldset id="factures">
                     <div id="recherche">
-
+                        <select id="rechercheBase">
+                            <option value="0" disabled selected>Filtrer par :</option>
+                            <option value="1">Client</option>
+                            <option value="2">Date de facturation</option>
+                            <option value="3">Moyen de paiement</option>
+                            <option value="4">Montant de la facture</option>
+                            <option value="5">Numéro de la facture</option>
+                            <option value="6">État de la facture</option>
+                        </select>
+                        <a href="" class="designBoutons" id="boutonAppliquer">Appliquer</a>
                     </div>
 
                     <div id="facture1">
                         <input type="checkbox" id="details-toggle-cbox1"/>
                         <label for="details-toggle-cbox1" class="facturesContent">
-                            <p>Coca-Cola</p>
-                            <p>25/05/2020</p>
-                            <p>#000001</p>
-                            <p id="status">Payé</p>
-                            <p><b>+255,02 €</b></p>                        
+                            <span>Coca-Cola</span>
+                            <span>25/05/2020</span>
+                            <span>#000001</span>
+                            <span class="status">Payé</span>
+                            <span><b>+255,02 €</b></span>                       
                         </label>
                         <div id="facture1Details" class="details">
                             <p>#000001 - 25/05/2020</p>
@@ -37,11 +46,11 @@
                     <div id="facture2">
                         <input type="checkbox" id="details-toggle-cbox2"/>
                         <label for="details-toggle-cbox2" class="facturesContent">
-                            <p>Bell</p>
-                            <p>07/10/2020</p>
-                            <p>#000002</p>
-                            <p id="status">En attente</p>
-                            <p><b>-40,00 €</b></p>                    
+                            <span>Bell</span>
+                            <span>07/10/2020</span>
+                            <span>#000002</span>
+                            <span class="status">En attente</span>
+                            <span><b>-40,00 €</b></span>                    
                         </label>
                         <div id="facture2Details" class="details">
                             <p>#000002 - 07/10/2020</p>
@@ -54,11 +63,11 @@
                     <div id="facture3">
                         <input type="checkbox" id="details-toggle-cbox3"/>
                         <label for="details-toggle-cbox3" class="facturesContent">
-                            <p>Herta</p>
-                            <p>16/12/2018</p>
-                            <p>#000003</p>
-                            <p id="status">Impayé</p>
-                            <p><b>+77,99 €</b></p>                 
+                            <span>Herta</span>
+                            <span>16/12/2018</span>
+                            <span>#000003</span>
+                            <span class="status">Impayé</span>
+                            <span><b>+77,99 €</b></span>                
                         </label>
                         <div id="facture3Details" class="details">
                             <p>#000003 - 16/12/2018</p>
@@ -66,6 +75,26 @@
                             <p><b>Client: </b> Herta</p>
                             <p><b>Total: </b> +77,99 €</p>
                             <p>En attente de transaction</p>
+                        </div>
+                    </div>
+                    <div id="facture4">
+                        <input type="checkbox" id="details-toggle-cbox4"/>
+                        <label for="details-toggle-cbox4" class="facturesContent">
+                            <span>Panzani</span>
+                            <span>21/04/2020</span>
+                            <span>#000004</span>
+                            <span class="status">Brouillon</span>
+                            <span><b>? €</b></span>
+                        </label>
+                        <div id="facture4Details" class="details">
+                            <div id="editer">
+                                <p>#000004 - 21/04/2020</p>
+                                <a href="effectuer_factures.html" class="designBoutons">Éditer</a>
+                            </div>
+                            <p id="fixMargin"><b>Moyen de paiement: </b>Non renseigné</p>
+                            <p><b>Client: </b> Panzani</p>
+                            <p><b>Total: </b> ? €</p>
+                            <p>Veuillez completer la facture</p>
                         </div>
                     </div>
                     <!-- D'autres factures ici -->
