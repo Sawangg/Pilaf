@@ -38,8 +38,12 @@ fieldset {
 }
 
 #content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
@@ -57,6 +61,7 @@ fieldset {
 }
 
 #recherche select {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -71,6 +76,7 @@ fieldset {
 	width: 15%;
 	font-size: 1vw;
 	padding: 0.5% 1%;
+	background-image: -o-linear-gradient(45deg, transparent 50%, gray 50%), -o-linear-gradient(315deg, gray 50%, transparent 50%);
 	background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
 	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
 	background-size: 5px 5px, 5px 5px, 1px 1.5em;
@@ -78,6 +84,7 @@ fieldset {
 }
 
 #recherche select:focus {
+	background-image: -o-linear-gradient(45deg, gray 50%, transparent 50%), -o-linear-gradient(315deg, transparent 50%, gray 50%);
 	background-image: linear-gradient(45deg, gray 50%, transparent 50%), linear-gradient(135deg, transparent 50%, gray 50%);
 	background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
 }
@@ -120,6 +127,7 @@ fieldset {
 	display: none;
 	background-color: white;
 	padding: 1% 0;
+	-webkit-box-shadow: 2px 3px 5px #888888;
 	box-shadow: 2px 3px 5px #888888;
 	font-size: 90%;
 }
@@ -135,10 +143,14 @@ fieldset {
 
 .facturesContent {
 	margin-top: 1.5%;
+	-webkit-transition: 250ms;
+	-o-transition: 250ms;
 	transition: 250ms;
 	background-color: white;
 	padding: 1% 0;
+	-webkit-box-shadow: 2px 3px 5px #888888;
 	box-shadow: 2px 3px 5px #888888;
+	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(5, 20%);
 	grid-auto-columns: auto;
@@ -192,7 +204,11 @@ fieldset {
 }
 
 #editer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
 	justify-content: flex-start;
 }
 
@@ -218,18 +234,24 @@ fieldset {
 
 #boutons {
 	margin: 1% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
   
 .designBoutons {
 	color: black;
 	text-decoration: none;
+	-webkit-transition: 250ms;
+	-o-transition: 250ms;
 	transition: 250ms;
 	width: auto;
 	text-align: center;
 	font-size: 100%;
 	padding: 0.5% 1% 0.5% 1%;
+	-webkit-box-shadow: 3px 4px 11px #3d3d3d4f;
 	box-shadow: 3px 4px 11px #3d3d3d4f;
 	border-radius: 8px;
 	border: none;
