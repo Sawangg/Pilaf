@@ -57,11 +57,9 @@ fieldset {
 }
 
 #recherche select {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-appearance:none;
-	-moz-appearance:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	overflow: hidden;
 	border: 0;
 	border-radius: 0;
@@ -71,7 +69,7 @@ fieldset {
 	border-bottom: solid 1px #888888;
 	margin: 1% 0 0 2%;
 	width: 15%;
-	font-size: 95%;
+	font-size: 1vw;
 	padding: 0.5% 1%;
 	background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
 	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
@@ -80,7 +78,7 @@ fieldset {
 }
 
 #recherche select:focus {
-	background-image:linear-gradient(45deg, gray 50%, transparent 50%), linear-gradient(135deg, transparent 50%, gray 50%);
+	background-image: linear-gradient(45deg, gray 50%, transparent 50%), linear-gradient(135deg, transparent 50%, gray 50%);
 	background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
 }
 
@@ -121,7 +119,7 @@ fieldset {
 .details {
 	display: none;
 	background-color: white;
-	padding: 1% 0 1% 0;
+	padding: 1% 0;
 	box-shadow: 2px 3px 5px #888888;
 	font-size: 90%;
 }
@@ -139,10 +137,15 @@ fieldset {
 	margin-top: 1.5%;
 	transition: 250ms;
 	background-color: white;
-	padding: 1% 0 1% 0;
+	padding: 1% 0;
 	box-shadow: 2px 3px 5px #888888;
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(5, 20%);
+	grid-auto-columns: auto;
+}
+
+.facturesContent span {
+	text-align: center;
 }
 
 .facturesContent:hover {
@@ -154,7 +157,10 @@ fieldset {
 	border-radius: 8px;
 	text-align: center;
 	color: white;
-	padding: 0 1.5%;
+	padding: 0 4%;
+	width: auto;
+	display: block;
+	margin: auto;
 }
 
 #facture1 {
@@ -224,6 +230,7 @@ fieldset {
 	text-align: center;
 	font-size: 100%;
 	padding: 0.5% 1% 0.5% 1%;
+	box-shadow: 3px 4px 11px #3d3d3d4f;
 	border-radius: 8px;
 	border: none;
 }
