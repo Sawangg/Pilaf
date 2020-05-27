@@ -54,7 +54,7 @@ nav ul{
   list-style: none;
 }
 
-.facturesContent{
+.nav_content{
   font-size: 110%;
   transition: 250ms;
   border-left: solid rgba(210, 21, 50, 0) 4px;
@@ -86,7 +86,7 @@ header input[type="checkbox"] {
   border-bottom : solid white 1px;
 }
 
-.details a{
+a{
   text-decoration: none;
   color: black;
 }
@@ -107,12 +107,12 @@ header input[type="checkbox"] {
   display: flex;
   flex-direction: column;
 }
-#details-toggle-cbox5:checked ~ #facture5Details {
+#details-toggle-cbox5:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
 
-.facturesContent:hover{
+.nav_content:hover{
   border-left: solid rgba(210, 21, 50, 0.8) 4px;
   color: rgba(210, 21, 50, 0.8);
 }
@@ -136,6 +136,22 @@ header input[type="checkbox"] {
   text-align: center;
 }
 
+#pointer{
+  font-size: 150%;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 2%;
+  border-radius: 8px;
+  background-color: rgba(223, 116, 48, 0.3);
+  transition: 250ms;
+}
+
+#pointer a{
+  width: 100%;
+  background-color: red;
+}
+
 .use_case{
   font-size: 200%;
   width: 80%;
@@ -146,7 +162,6 @@ header input[type="checkbox"] {
   background-size: cover;
   opacity: 0.8;
   transition: 250ms;
-  z-index: 7;
 }
 
 .use_case details{
@@ -166,7 +181,7 @@ header input[type="checkbox"] {
   background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
-.use_case:hover{
+.use_case:hover, #pointer:hover{
   opacity: 1;
   width: 83%;
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <title>Pilaf</title>
-    <link rel="stylesheet" href="CSS/style_index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Pilaf</title>
+  <link rel="stylesheet" href="CSS/style_index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -18,84 +18,88 @@
     <nav>
       <ul>
         <li>
-            <input type="checkbox" id="details-toggle-cbox1"/>
-            <label for="details-toggle-cbox1" class="facturesContent">
-              <span>Fournisseur</span>
-            </label>
-            <div id="facture1Details" class="details">
-              <a href="">coucou</a>
-              <a href="">coucou</a>
-              <a href="">coucou</a>
-              <a href="">coucou</a>
-            </div>
+          <input type="checkbox" id="details-toggle-cbox1"/>
+          <label for="details-toggle-cbox1" class="nav_content">
+            <span>Article</span>
+          </label>
+          <div class="details">
+            <a href="HTML/consulter_article.html">Consulter articles</a>
+            <a href="HTML/creer_article.html">Créer articles</a>
+          </div>
         </li>
         <li>
-            <input type="checkbox" id="details-toggle-cbox2"/>
-            <label for="details-toggle-cbox2" class="facturesContent">
-              <span>Client</span>
-            </label>
-            <div class="details">
-              <a href="">coucou</a>
-              <a href="">coucou</a>
-            </div>
+          <input type="checkbox" id="details-toggle-cbox2"/>
+          <label for="details-toggle-cbox2" class="nav_content">
+            <span>Caisse</span>
+          </label>
+          <div class="details">
+            <a href="HTML/vente.html">Caisse</a>
+          </div>
         </li>
         <li>
-            <input type="checkbox" id="details-toggle-cbox3"/>
-            <label for="details-toggle-cbox3" class="facturesContent">
-              <span>Caisse</span>
-            </label>
-            <div class="details">
-              <a href="">coucou</a>
-              <a href="">coucou</a>
-            </div>
+          <input type="checkbox" id="details-toggle-cbox3"/>
+          <label for="details-toggle-cbox3" class="nav_content">
+            <span>Client</span>
+          </label>
+          <div class="details">
+            <a href="HTML/creer_client.html">Créer client</a>
+          </div>
         </li>
         <li>
-            <input type="checkbox" id="details-toggle-cbox4"/>
-            <label for="details-toggle-cbox4" class="facturesContent">
-              <span>Facture</span>
-            </label>
-            <div class="details">
-              <a href="">coucou</a>
-            </div>
+          <input type="checkbox" id="details-toggle-cbox4"/>
+          <label for="details-toggle-cbox4" class="nav_content">
+            <span>Facture</span>
+          </label>
+          <div class="details">
+            <a href="HTML/effectuer_factures.html">Créer facture</a>
+          </div>
         </li>
         <li>
-            <input type="checkbox" id="details-toggle-cbox5"/>
-            <label for="details-toggle-cbox5" class="facturesContent">
-              <span>Article</span>
-            </label>
-            <div class="details">
-              <a href="">coucou</a>
-            </div>
+          <input type="checkbox" id="details-toggle-cbox5"/>
+          <label for="details-toggle-cbox5" class="nav_content">
+            <span>Fournisseur</span>
+          </label>
+          <div class="details">
+            <a href="HTML/consulter_fournisseur.html">Consulter fournisseurs</a>
+            <a href="HTML/creer_fournisseur.html">Créer fournisseur</a>
+            <a href="HTML/creer_catalogue_fournisseur.html">Créer catalogue fournisseur</a>
+          </div>
         </li>
-          </ul>
-        </nav>
-      <div id="deconnexion">
+      </ul>
+    </nav>
+    <div id="deconnexion">
+      <a href="HTML/connexion.html">
         <p>Déconnexion</p>
         <img src="IMAGES/deconnexion.png" alt="deconnexion">
-      </div>
+      </a>
+    </div>
   </header>
   <main>
-    <div id="use_case1" class="use_case">
-      <h1>Caisses</h1>
-      <details>
-        <summary>Details</summary>
-        Coucou
-      </details>
-    </div>
-    <div id="use_case2" class="use_case">
-      <h1>Secrétariat</h1>
-      <details>
-        <summary>Details</summary>
-        Coucou
-      </details>
-    </div>
-    <div id="use_case3" class="use_case">
-      <h1>Gestion</h1>
-      <details>
-        <summary>Details</summary>
-        Coucou
-      </details>
-    </div>
-  </main>
-</body>
-</html>
+    <a href="HTML/pointer_horaires.html">
+      <div id="pointer">
+        <p>Pointer horaire</p>
+      </div></a>
+      <div id="use_case1" class="use_case">
+        <h1>Caisses</h1>
+        <details>
+          <summary>Details</summary>
+          Coucou
+        </details>
+      </div>
+      <div id="use_case2" class="use_case">
+        <h1>Secrétariat</h1>
+        <details>
+          <summary>Details</summary>
+          Coucou
+        </details>
+      </div>
+      <div id="use_case3" class="use_case">
+        <h1>Gestion</h1>
+        <details>
+          <summary>Details</summary>
+          Coucou
+        </details>
+      </div>
+    </main>
+  </body>
+  </html>
