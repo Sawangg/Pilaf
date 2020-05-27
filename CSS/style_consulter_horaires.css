@@ -1,35 +1,16 @@
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, nav {
-	display: block;
-}
-
-html{
-	scroll-behavior: smooth;
-}
-
-form, #bouttonAfficherPlus{
+form, #bouttonAfficherPlus {
 	width: 90%;
 	display: block;
 	margin : auto;
-	font-family: 'Jost', sans-serif;
 }
 
-fieldset{
+fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
-#outilRecherche{
+#outilRecherche {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -42,7 +23,7 @@ fieldset{
 	justify-content: space-around;
 }
 
-input, select{
+input {
 	border: solid gray 1px;
 	border-radius: 4px;
 	padding: 1%;
@@ -51,19 +32,18 @@ input, select{
 	margin-bottom: 1%;
 }
 
-label, fieldset{
-	margin : 1% 0 1% 0;
+label, fieldset {
+	margin : 1% 0;
 	font-size: 110%;
 }
-select{
+
+select {
 	width: 80%;
-	margin-left: 1%;
+	margin: 1%;
 }
 
-#boutonRechercher{
-	transition-duration: 250ms;
+#boutonRechercher {
 	border: none;
-	background-color: rgba(81, 215, 59, 0.3);
 	width: auto;
 	padding: 0.75% 2% 0.75% 2%;
 	display: block;
@@ -71,7 +51,7 @@ select{
 	font-size: 120%;
 }
 
-.resultat{
+.resultat {
 	width: 88%;
 	margin : 2% auto 2% auto;
 	background-color: rgba(223, 116, 48, 0.2);
@@ -82,7 +62,7 @@ select{
 	flex-wrap: wrap;
 }
 
-.horaires{
+.horaires {
 	width: 60%;
 	display: flex;
 	flex-wrap: wrap;
@@ -92,16 +72,16 @@ select{
 	font-size: 120%;
 }
 
-.nomStatus{
+.nomStatus {
 	width: 38%;
 	font-size: 140%;
 }
 
-.nomStatus h3, .nomStatus h4{
+.nomStatus h3, .nomStatus h4 {
 	text-align: center;
 }
 
-.horaires p:first-child{
+.horaires p:first-child {
 	text-align: center;
 	margin: 1%;
 	width: 100%;
@@ -110,41 +90,28 @@ select{
 	padding: 1%;
 }
 
-.horaires p:not(first-child){
+.horaires p:not(first-child) {
 	margin: 2% 0% 1% 10%;
 	width: 40%;
 	font-size: 120%;
 }
 
-.boutonsStatus{
+.boutonsStatus {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
-.boutonsStatus button{
-	width: auto;
-	border: none;
+.boutonsStatus button {
 	padding: 2%;
 	margin-top: 1%;
-	border-radius: 10px;
-	background-color: rgba(81, 215, 59, 0.2);
-	transition-duration: 250ms;
 	font-size: 80%;
 }
 
-.boutonsStatus button:hover, #boutonRechercher:hover{
-	background-color: rgba(81, 215, 59, 0.4);
-}
-
-#bouttonAfficherPlus{
+#bouttonAfficherPlus {
 	border : none;
 	padding: 1% 2% 1% 2%;
-	transition-duration: 200ms;
+	transition-duration: 250ms;
 	font-size: 125%;
 	margin-bottom: 3%;
-}
-
-#bouttonAfficherPlus:hover{
-	background-color: rgba(223, 116, 48, 0.4);
 }

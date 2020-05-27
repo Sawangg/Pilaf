@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="Author" content="Sawang_">
     <title>Consulter factures</title>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_consulter_factures.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +12,7 @@
     <form>
         <fieldset id="fieldPrincipale">
             <legend>Vos factures</legend>
-            <div id="content">
+            <div class="flexAround">
                 <fieldset id="factures">
                     <div id="recherche">
                         <select>
@@ -23,7 +24,7 @@
                             <option value="5">Numéro de la facture</option>
                             <option value="6">État de la facture</option>
                         </select>
-                        <a href="" class="designBoutons" id="boutonAppliquer">Appliquer</a>
+                        <a href="" class="designBoutons boutonVert">Appliquer</a>
                     </div>
 
                     <div id="facture1">
@@ -35,7 +36,7 @@
                             <span class="status">Payé</span>
                             <span><b>+255,02 €</b></span>
                         </label>
-                        <div id="facture1Details" class="details">
+                        <div class="details">
                             <p>#000001 - 25/05/2020</p>
                             <p><b>Moyen de paiement: </b>Virement</p>
                             <p><b>Client: </b> Coca-Cola</p>
@@ -52,7 +53,7 @@
                             <span class="status">En attente</span>
                             <span><b>-40,00 €</b></span>                    
                         </label>
-                        <div id="facture2Details" class="details">
+                        <div class="details">
                             <p>#000002 - 07/10/2020</p>
                             <p><b>Moyen de paiement: </b>Espèces</p>
                             <p><b>Client: </b> Bell</p>
@@ -69,7 +70,7 @@
                             <span class="status">Impayé</span>
                             <span><b>+77,99 €</b></span>                
                         </label>
-                        <div id="facture3Details" class="details">
+                        <div class="details">
                             <p>#000003 - 16/12/2018</p>
                             <p><b>Moyen de paiement: </b>Inconnu</p>
                             <p><b>Client: </b> Herta</p>
@@ -86,7 +87,7 @@
                             <span class="status">Brouillon</span>
                             <span><b>? €</b></span>
                         </label>
-                        <div id="facture4Details" class="details">
+                        <div class="details">
                             <div id="editer">
                                 <p>#000004 - 21/04/2020</p>
                                 <a href="modifier_factures.html" class="designBoutons">Éditer</a>
@@ -101,8 +102,8 @@
                 </fieldset>
             </div>
             <div id="boutons">
-                <a href="../index.html" class="designBoutons" id="boutonRetour">Retour</a>
-                <a href="effectuer_factures.html" class="designBoutons" id="boutonAjouter">Créer une nouvelle facture</a>
+                <a href="../index.html" class="designBoutons boutonRouge">Retour</a>
+                <a href="effectuer_factures.html" class="designBoutons boutonOrange">Créer une nouvelle facture</a>
             </div>
         </fieldset>
     </form>

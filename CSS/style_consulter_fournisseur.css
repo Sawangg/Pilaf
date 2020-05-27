@@ -1,25 +1,8 @@
 /* Auteur : Sawang_ */
 
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, nav {
-	display: block;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
 body {
     width: 90%;
     margin : auto;
-    font-family: 'Jost', sans-serif;
 }
 
 fieldset {
@@ -31,18 +14,10 @@ fieldset {
     border : solid rgb(223, 116, 48) 1px;
     border-radius: 2px;
     background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 #legendPrincipale {
     font-size: 130%;
-}
-
-#content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 #content div {
@@ -73,46 +48,4 @@ fieldset {
 	display: flex;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-}
-  
-.designBoutons {
-	color: black;
-	text-decoration: none;
-	-webkit-transition: 250ms;
-	-o-transition: 250ms;
-	transition: 250ms;
-	width: auto;
-	text-align: center;
-	font-size: 100%;
-	padding: 0.5% 1% 0.5% 1%;
-	-webkit-box-shadow: 3px 4px 11px #3d3d3d4f;
-	box-shadow: 3px 4px 11px #3d3d3d4f;
-	border-radius: 8px;
-	border: none;
-}
-  
-#boutonRetour {
-	background-color: rgba(203, 75, 62, 0.5);
-}
-  
-#boutonRetour:hover {
-	background-color: rgba(203, 75, 62, 0.75);
-}
-  
-.boutonConsulter {
-	padding: 1% 2%;
-	background-color: rgba(223, 116, 48, 0.5);
-}
-  
-.boutonConsulter:hover {
-	background-color: rgba(223, 116, 48, 0.7);
-}
-
-#boutonModifier {
-	margin-left: 3%;
-	background-color: rgba(81, 215, 59, 0.2);
-}
-
-#boutonModifier:hover {
-	background-color: rgba(81, 215, 59, 0.4);
 }

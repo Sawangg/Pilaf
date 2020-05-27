@@ -1,15 +1,3 @@
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-html{
-  font-family: 'Jost', sans-serif;
-}
-
 header{
   position: relative;
   display: flex;

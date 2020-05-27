@@ -1,13 +1,5 @@
 /* Auteur : sepios87, Sawang_ */
 
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
-
 form {
   width: 80%;
   display: block;
