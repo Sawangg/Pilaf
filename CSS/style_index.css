@@ -12,17 +12,19 @@ footer, header, nav {
 
 html{
   scroll-behavior: smooth;
+  font-family: 'Jost', sans-serif;
 }
 
 header{
+  position: relative;
   display: flex;
   height: 60px;
   padding: 0.25% 3%;
+  margin-bottom: 5%;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #b7dbed;
-  font-family: 'Jost', sans-serif;
+  background-color: rgb(183, 219, 237);
+  z-index: 1;
 }
 
 #profil img{
@@ -41,9 +43,9 @@ header{
 }
 
 nav{
-    width: 70%;
-    display: block;
-    margin-top: 18px;
+  width: 70%;
+  display: block;
+  margin-top: 18px;
 }
 
 nav ul{
@@ -54,25 +56,26 @@ nav ul{
 
 .facturesContent{
   font-size: 110%;
-	transition: 250ms;
+  transition: 250ms;
   border-left: solid rgba(210, 21, 50, 0) 4px;
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   padding-bottom : 3.5%;
+  cursor : pointer;
 }
 
 header input[type="checkbox"] {
-	display: none;
+  display: none;
 }
 
 .details {
-	display: none;
+  display: none;
   margin: 18px 8px;
   padding: 5px 10%;
-  background: linear-gradient(rgba(28, 230, 151, 0.3), rgba(28, 230, 151, 0.5));
+  background: linear-gradient(rgba(183, 219, 237, 0.7), rgb(183, 219, 237));
   border-radius: 0 0 4px 4px ;
   text-align: center;
-	font-size: 90%;
+  font-size: 90%;
 }
 
 .details a{
@@ -80,7 +83,7 @@ header input[type="checkbox"] {
 }
 
 .details a:not(:last-child){
-    border-bottom : solid white 1px;
+  border-bottom : solid white 1px;
 }
 
 .details a{
@@ -88,25 +91,34 @@ header input[type="checkbox"] {
   color: black;
 }
 
-#details-toggle-cbox1:checked ~ #facture1Details {
+#details-toggle-cbox1:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
-#details-toggle-cbox2:checked ~ #facture2Details {
+#details-toggle-cbox2:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
-#details-toggle-cbox3:checked ~ #facture3Details {
+#details-toggle-cbox3:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
-#details-toggle-cbox4:checked ~ #facture4Details {
+#details-toggle-cbox4:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
 #details-toggle-cbox5:checked ~ #facture5Details {
   display: flex;
   flex-direction: column;
+}
+
+.facturesContent:hover{
+  border-left: solid rgba(210, 21, 50, 0.8) 4px;
+  color: rgba(210, 21, 50, 0.8);
+}
+
+.details a:hover{
+  color: rgba(210, 21, 50, 0.8);
 }
 
 #deconnexion img{
@@ -124,10 +136,37 @@ header input[type="checkbox"] {
   text-align: center;
 }
 
-.facturesContent:hover{
-    border-left: solid rgba(210, 21, 50, 0.8) 4px;
+.use_case{
+  font-size: 200%;
+  width: 80%;
+  height: 180px;
+  border-radius: 8px;
+  margin: 3% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  transition: 250ms;
+  z-index: 7;
 }
 
-.details a:hover{
-    background-color: rgba(28, 230, 151, 0.8);
+.use_case details{
+  margin-top: 2%;
+  font-size: 60%;
+}
+
+#use_case1{
+  background-image: url("../IMAGES/fonds/fondBleu.png");
+}
+
+#use_case2{
+  background-image: url("../IMAGES/fonds/fondVert.png");
+}
+
+#use_case3{
+  background-image: url("../IMAGES/fonds/fondOrange.png");
+}
+
+.use_case:hover{
+  opacity: 1;
+  width: 83%;
 }
