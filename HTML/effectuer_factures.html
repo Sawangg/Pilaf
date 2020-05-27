@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="Author" content="Sawang_">
     <title>Effectuer factures</title>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_effectuer_factures.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +12,7 @@
     <form>
         <fieldset id="fieldPrincipale">
             <legend>Effectuer une facture</legend>
-            <div id="content">
+            <div class="flexAround">
                 <fieldset id="factures">
                     <div id="selectionClient">
                         <h2>Sélectionnez un client :</h2>
@@ -22,8 +23,8 @@
                             <option value="3">Herta</option>
                             <option value="4">Panzani</option>
                         </select>
-                        <a href="creer_client.html" class="designBoutons bAjouter">Ajouter un nouveau client</a>
-                        <a href="creer_fournisseur.html" class="designBoutons bAjouter">Ajouter un nouveau fournisseur</a>
+                        <a href="creer_client.html" class="designBoutons boutonOrange noSelect">Ajouter un nouveau client</a>
+                        <a href="creer_fournisseur.html" class="designBoutons boutonOrange noSelect">Ajouter un nouveau fournisseur</a>
                     </div>
 
                     <div id="paiement">
@@ -50,13 +51,13 @@
 
                     <div id="produit">
                         <h2>Sélection de vos produits/services :</h2>
-                        <a href="" class="designBoutons bAjouter">Ajouter un produit/service</a>
+                        <a href="" class="designBoutons boutonOrange noSelect">Ajouter un produit/service</a>
                     </div>
                 </fieldset>
             </div>
             <div id="boutons">
-                <a href="consulter_factures.html" class="designBoutons" id="boutonRetour">Retour</a>
-                <a href="" class="designBoutons" id="boutonValider">Valider</a>
+                <a href="consulter_factures.html" class="designBoutons boutonRouge noSelect">Retour</a>
+                <a href="" class="designBoutons boutonVert noSelect">Valider</a>
             </div>
         </fieldset>
     </form>

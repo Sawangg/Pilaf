@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="Author" content="sepios87">
   <title>Consulter les stocks</title>
+  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_consulter_stocks.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +12,7 @@
   <form>
     <fieldset>
       <legend>Rechercher</legend>
-      <div id="outilRecherche">
+      <div class="flexAround">
         <div>
           <label>Code barre :</label>
           <input type="text">
@@ -36,7 +37,7 @@
           <input type="text">
         </div>
       </div>
-      <input type="button" value="Rechercher" id="boutonRechercher">
+      <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercher">
     </fieldset>
   </form>
   <div id="resultatArticles">
@@ -50,8 +51,8 @@
         <h4>Dernière action :</h4>
         <p>Date : 16/05/2020</p>
         <p>Ajout de <strong>5</strong> produits au stock</p>
-        <button type="button" name="button">Consulter détails</button>
-        <button type="button" name="button">Voir plus d'actions</button>
+        <button type="button" class="designBoutons boutonVert">Consulter détails</button>
+        <button type="button" class="designBoutons boutonVert">Voir plus d'actions</button>
       </div>
     </div>
     <div class="produit">
@@ -64,11 +65,11 @@
         <h4>Dernière action :</h4>
         <p>Date : 16/05/2020</p>
         <p>Retrait de <strong>2</strong> produits au stock</p>
-        <button type="button">Consulter détails</button>
-        <button type="button">Voir plus d'actions</button>
+        <button type="button" class="designBoutons boutonVert">Consulter détails</button>
+        <button type="button" class="designBoutons boutonVert">Voir plus d'actions</button>
       </div>
     </div>
-    <button type="button" name="button" id="bouttonAfficherPlus">Afficher Plus</button>
+    <button type="button" class="designBoutons boutonGris" id="bouttonAfficherPlus">Afficher Plus</button>
   </div>
 </body>
 </html>

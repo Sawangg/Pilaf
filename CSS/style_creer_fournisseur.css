@@ -1,47 +1,17 @@
-/* Auteur : peter-divry */
+/* Auteur : Sawang_ */
 
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, nav {
-	display: block;
-}
-
-html{
-	scroll-behavior: smooth;
-}
-
-form{
-	width: 90%;
-	margin : auto;
-	font-family: 'Jost', sans-serif;
-}
-
-fieldset{
+fieldset {
 	margin-top: 3%;
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#renseignement {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 legend {
 	font-size: 130%;
 }
 
-#renseignement div {
+.flexAround div {
 	display: flex;
 	width: 46%;
 	flex-wrap: wrap;
@@ -50,31 +20,23 @@ legend {
 	font-size: 110%;
 }
 
-input{
+input {
 	border: solid gray 1px;
 	border-radius: 4px;
 	width: 50%;
 }
 
-label{
+label {
 	width: 48%;
 	margin : auto;
 }
 
-label, fieldset{
+label, fieldset {
 	font-size: 105%;
 }
 
-#fournisseur select{
+#fournisseur select {
 	width: 100%;
-}
-
-select{
-	border: solid gray 1px;
-	border-radius: 4px;
-	margin : 0% 0 1% 0;
-	padding: 0.5%;
-	width: 50%;
 }
 
 #tproduit {
@@ -82,20 +44,8 @@ select{
 	margin: 2% 0 0 2.3%;
 }
 
-#valider{
+input[type="submit"] {
 	display: block;
-	text-decoration: none;
-	color: black;
-	text-align: center;
-	font-size: 100%;
-	width: auto;
-	padding: 0.75% 2% 0.75% 2%;
-	margin: 0 auto 0 auto;
-	background-color: rgba(81, 215, 59, 0.3);
-	border-radius: 8px;
-	border: none;
-}
-
-#valider:hover {
-	background-color: rgba(81, 215, 59, 0.5);
+	padding: 0.75% 2% ;
+	margin: 0 auto;
 }

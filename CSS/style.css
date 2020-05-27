@@ -26,7 +26,7 @@ a:focus, button:focus {
     outline: none;
 }
 
-form{
+form {
 	width: 90%;
 	margin : auto;
 }
@@ -70,6 +70,14 @@ fieldset {
 	flex-wrap: wrap;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
+}
+
+.isNotVisible {
+	display: none;
+}
+
+.isVisible {
+	display: block;
 }
 
 .boutonRouge {

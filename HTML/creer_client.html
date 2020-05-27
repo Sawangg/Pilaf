@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="Author" content="Sawang_">
   <title>Créer un nouveau client</title>
+  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_creer_client.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +12,7 @@
   <form>
     <fieldset id="fieldPrincipale">
       <legend id="legendPrincipale">Créer un nouveau client</legend>
-      <div id="content">
+      <div class="flexAround">
         <div id="ajout">
           <label for="prénom">Prénom<span>*</span> :</label>
           <input type="text" id="prénom" name="prénom" pattern="[A-zÀ-ú]*" required><br>
@@ -33,7 +34,7 @@
       </div>
 
       <div id="boutons">
-        <a href="ventes.html" class="designBoutons" id="boutonAnnuler">Annuler</a>
+        <a href="ventes.html" class="designBoutons boutonRouge">Annuler</a>
         <input type="submit" class="designBoutons" id="boutonValider" value="Créer le client">
       </div>
     </fieldset>

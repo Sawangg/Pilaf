@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="Author" content="Sawang_">
     <title>Effectuer factures</title>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_modifier_factures.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
@@ -22,8 +23,8 @@
                             <option value="3">Herta</option>
                             <option value="4">Panzani</option>
                         </select>
-                        <a href="creer_client.html" class="designBoutons bAjouter">Ajouter un nouveau client</a>
-                        <a href="creer_fournisseur.html" class="designBoutons bAjouter">Ajouter un nouveau fournisseur</a>
+                        <a href="creer_client.html" class="designBoutons boutonOrange noSelect">Ajouter un nouveau client</a>
+                        <a href="creer_fournisseur.html" class="designBoutons boutonOrange noSelect">Ajouter un nouveau fournisseur</a>
                     </div>
 
                     <div id="paiement">
@@ -50,13 +51,13 @@
 
                     <div id="produit">
                         <h2>Sélection de vos produits/services :</h2>
-                        <a href="" class="designBoutons bAjouter">Ajouter un produit/service</a>
+                        <a href="" class="designBoutons boutonOrange noSelect">Ajouter un produit/service</a>
                     </div>
                 </fieldset>
             </div>
             <div id="boutons">
-                <a href="consulter_factures.html" class="designBoutons" id="boutonRetour">Annuler les changements</a>
-                <a href="" class="designBoutons" id="boutonValider">Modifier les changements</a>
+                <a href="consulter_factures.html" class="designBoutons noSelect boutonRouge">Annuler les changements</a>
+                <a href="" class="designBoutons noSelect boutonVert" id="boutonValider">Modifier les changements</a>
             </div>
         </fieldset>
     </form>

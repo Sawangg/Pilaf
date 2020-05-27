@@ -3,6 +3,7 @@
 <head>
 	<title>Modifier employé</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="../CSS/style.css">
 	<meta name="Author" content="peter-divry">
 	<link rel="stylesheet" type="text/css" href="../CSS/style_modifier_employe.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
 					<option>Mr Chose - Caisses</option>
 				</select>
 			</div>
-			<div id="renseignement">
+			<div class="flexAround">
 				<div>
 					<label>Nom de l'employé :</label>
 					<input type="text">
@@ -45,11 +46,11 @@
 				</div>
 
 				<div id="valider">
-					<input type="checkbox" id="estVisible"/>
-					<label for="estVisible">Valider</label>
-					<p class="nonVisible">Validation effectutée</p>
-					<button type="button" name="button" class="nonVisible" id="annuler">Annuler</button>
-					<button type="button" name="button" class="nonVisible" id="continuer">Continuer</button>
+					<input type="checkbox" id="cb" class="isVisible"/>
+					<label for="cb" class="designBoutons boutonVert noSelect">Valider</label>
+					<p class="isNotVisible ">Validation effectutée</p>
+					<button type="button" class="isNotVisible designBoutons boutonRouge noSelect">Annuler</button>
+					<button type="button" class="isNotVisible designBoutons boutonVert noSelect">Continuer</button>
 				</div>
 			</div>
 		</fieldset>

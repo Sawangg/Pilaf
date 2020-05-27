@@ -1,48 +1,17 @@
-/* Auteur : peter-divry */
-
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, nav {
-	display: block;
-}
-
-html{
-	scroll-behavior: smooth;
-}
-
-form{
-	width: 90%;
-	margin : auto;
-	font-family: 'Jost', sans-serif;
-}
+/* Auteur : Sawang_ */
 
 fieldset{
 	margin-top: 3%;
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
-#renseignement{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-legend{
+legend {
 	font-size: 130%;
 }
 
-#renseignement div{
+.flexAround div {
 	display: flex;
 	width: 46%;
 	flex-wrap: wrap;
@@ -51,75 +20,45 @@ legend{
 	font-size: 110%;
 }
 
-input{
+input {
 	border: solid gray 1px;
 	border-radius: 4px;
 	width: 50%;
 }
 
-label{
+label {
 	width: 48%;
 	margin : auto;
 }
 
-label, fieldset{
+label, fieldset {
 	font-size: 105%;
 }
 
-#salarie select{
+#salarie label {
+	margin-left: 1%;
+}
+
+select {
 	width: 100%;
 }
 
-select{
-	border: solid gray 1px;
-	border-radius: 4px;
-	margin : 0% 0 1% 0;
-	padding: 0.5%;
-	width: 50%;
-}
-
-#valider{
+#valider {
 	display: flex;
 	flex-direction: column;
 }
 
-#estVisible{
-	display: none;
-}
-
-#valider label, button.nonVisible{
-	border: none;
-	text-align: center;
+#valider label, #valider button {
 	width: auto;
 	margin: auto;
-	padding: 0.5% 1.5% 0.5% 1.5%;
-	font-size: 100%;
-	border-radius: 4px;
-	transition-duration: 250ms;
+	padding: 0.75% 2%;
 }
 
-#valider label, #continuer {
-	background-color: rgba(81, 215, 59, 0.3);
+#valider button {
+	margin-top: 3%;
 }
 
-#valider label:hover, #continuer:hover {
-	background-color: rgba(81, 215, 59, 0.5);
-}
-
-#annuler {
-	background-color: rgba(203, 75, 62, 0.5);
-	margin-bottom: 1%;
-}
-
-#annuler:hover {
-	background-color: rgba(203, 75, 62, 0.7);
-}
-
-button.nonVisible{
-	display: none;
-}
-
-p.nonVisible{
+p.isNotVisible {
 	text-align: center;
 	color: green;
 	font-size: 130%;
@@ -129,10 +68,10 @@ p.nonVisible{
 	display: none;
 }
 
-#estVisible:checked ~ .nonVisible{
-	display: block;
+#cb {
+	display: none;
 }
 
-#estVisible:checked ~ label{
-	display: none;
+#cb:checked ~ .isNotVisible {
+	display: inline-block;
 }

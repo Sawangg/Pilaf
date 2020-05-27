@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="Author" content="sepios87">
   <title>Créer catalogue fournisseur</title>
+  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_creer_catalogue_fournisseur.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +21,7 @@
           <option>Panzani</option>
         </select>
       </div>
-      <div id="renseignement">
+      <div class="flexAround">
         <div>
           <label>Nom du produit:</label>
           <input type="text" required>
@@ -35,7 +36,7 @@
         </div>
         <div>
           <label>Prix au kg (€):</label>
-          <input type="number" min=0 required>
+          <input type="number" min=1 required>
         </div>
         <div>
           <label>Frais de livraison (€):</label>
@@ -51,8 +52,8 @@
           </select>
         </div>
         <div id="valider">
-          <button type="button">Valider et ajouter un nouvel article</button>
-          <button type="button">Valider et quitter</button>
+          <button type="button" class="designBoutons boutonVert">Valider et ajouter un nouvel article</button>
+          <button type="button" class="designBoutons boutonRouge">Valider et quitter</button>
         </div>
       </div>
     </fieldset>

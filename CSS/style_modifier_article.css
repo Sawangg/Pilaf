@@ -1,27 +1,5 @@
 /* Auteur : Apokalypt */
 
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, nav {
-	display: block;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-form {
-    width: 90%;
-    margin : auto;
-    font-family: 'Jost', sans-serif;
-}
-
 fieldset {
     font-size: 110%;
 }
@@ -31,34 +9,22 @@ fieldset {
     border : solid rgb(223, 116, 48) 1px;
     border-radius: 2px;
     background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 #legendPrincipale {
     font-size: 130%;
 }
 
-#content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 #ajout {
     width: auto;
     grid-column: 1;
     grid-row: 1;
-
     display: grid;
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-
     background-color: white;
-
     margin-top: 3%;
     padding: 30px 20px 30px 20px;
-
     border : solid rgb(223, 116, 48) 1px;
     border-radius: 2px;
 }
@@ -71,10 +37,8 @@ fieldset {
 input[type="text"] {
     border: solid gray 1px;
     border-radius: 2px;
-
     padding-left: 3px;
     padding-right: 3px;
-
     display: block;
     white-space:nowrap;
 }
@@ -83,6 +47,7 @@ input[type="text"] {
     grid-column: 1;
     grid-row: 1;
 }
+
 #input_nom_article {
     grid-column: 2;
     grid-row: 1;
@@ -92,6 +57,7 @@ input[type="text"] {
     grid-column: 1;
     grid-row: 2;
 }
+
 #input_fournisseur_article {
     grid-column: 2;
     grid-row: 2;
@@ -101,6 +67,7 @@ input[type="text"] {
     grid-column: 1;
     grid-row: 3;
 }
+
 #input_barre_article {
     grid-column: 2;
     grid-row: 3;
@@ -110,6 +77,7 @@ input[type="text"] {
     grid-column: 1;
     grid-row: 4;
 }
+
 #input_prix_article {
     grid-column: 2;
     grid-row: 4;
@@ -119,6 +87,7 @@ input[type="text"] {
     grid-column: 1;
     grid-row: 5;
 }
+
 #input_tva_article {
     grid-column: 2;
     grid-row: 5;
@@ -128,6 +97,7 @@ input[type="text"] {
     grid-column: 1;
     grid-row: 6;
 }
+
 #input_rayon_article {
     grid-column: 2;
     grid-row: 6;
@@ -141,18 +111,18 @@ input[type="text"] {
 #image_article {
     grid-column: 8;
     grid-row: 1 / 6;   
-
     height: inherit;
-
     background-image: url("../IMAGES/produits/orangina.jpg");
     background-size: auto 100%;
     background-position: center;
     background-repeat: none;
 }
+
 #button_image_article {
     grid-column: 8;
     grid-row: 6;
 }
+
 img {
     height: 100%;
     width: auto;
@@ -164,36 +134,15 @@ span {
 
 #boutons {
     margin: 1% 0 0.75% 0;
-
     display: flex;
     justify-content: space-around;
 }
 
-.designBoutons {
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-    width: auto;
-    text-align: center;
-    font-size: 100%;
-    padding: 5px 10px 5px 10px;
-    border-radius: 8px;
-    border: none;
+#boutons a {
+    padding: 0.5% 1%;
 }
-  
-#boutonAnnuler {
-    font-weight: bold;
-    font-size: 105%;
-    background-color: rgba(203, 75, 62, 0.5);
-}
-  
-#boutonAnnuler:hover {
-    background-color: rgba(203, 75, 62, 0.75);
-}
-  
-#boutonValider {
-    background-color: rgba(81, 215, 59, 0.3);
-}
-#boutonValider:hover {
-    background-color: rgba(81, 215, 59, 0.5);
+
+input[type="submit"] {
+    font-weight: normal;
+	font-size: 90%;
 }

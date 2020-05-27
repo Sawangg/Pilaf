@@ -1,4 +1,4 @@
-header{
+header {
   position: relative;
   display: flex;
   height: 60px;
@@ -10,34 +10,34 @@ header{
   z-index: 1;
 }
 
-#profil img{
+#profil img {
   width: 50px;
   height: 50px;
   margin: 6px;
 }
 
-#profil{
+#profil {
   display: flex;
   flex-direction: row;
 }
 
-#profil div{
+#profil div {
   margin: 10px 20px 0 5%;
 }
 
-nav{
+nav {
   width: 70%;
   display: block;
   margin-top: 8px;
 }
 
-nav ul{
+nav ul {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   list-style: none;
 }
 
-.nav_content{
+.nav_content {
   font-size: 110%;
   transition: 250ms;
   border-left: solid rgba(210, 21, 50, 0) 4px;
@@ -61,15 +61,15 @@ header input[type="checkbox"] {
   font-size: 90%;
 }
 
-.details a{
+.details a {
   padding: 6% 0;
 }
 
-.details a:not(:last-child){
+.details a:not(:last-child) {
   border-bottom : solid white 1px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -99,33 +99,33 @@ a{
   flex-direction: column;
 }
 
-.nav_content:hover{
+.nav_content:hover {
   border-left: solid white 4px;
   background-color: rgb(127, 176, 201);
   color: white
 }
 
-.details a:hover{
+.details a:hover {
   color: white
 }
 
-#deconnexion img{
+#deconnexion img {
   width: 40px;
   height: 40px;
   display: block;
   margin: 0 auto;
 }
 
-#deconnexion p{
+#deconnexion p {
   font-size: 80%;
 }
 
-#deconnexion{
+#deconnexion {
   transition: 250ms;
   text-align: center;
 }
 
-#deconnexion:hover p{
+#deconnexion:hover p {
   color: white;
 }
 
@@ -142,7 +142,7 @@ a{
   box-shadow: 3px 4px 11px #3d3d3d4f;
 }
 
-.use_case{
+.use_case {
   font-size: 200%;
   width: 80%;
   height: 180px;
@@ -156,24 +156,24 @@ a{
   box-shadow: 3px 4px 11px #3d3d3d4f;
 }
 
-.use_case details{
+.use_case details {
   margin-top: 2%;
   font-size: 60%;
 }
 
-#use_case1{
+#use_case1 {
   background-image: url("../IMAGES/fonds/fondVert.png");
 }
 
-#use_case2{
+#use_case2 {
   background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
-#use_case3{
+#use_case3 {
   background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
-.use_case:hover, #pointer:hover{
+.use_case:hover, #pointer:hover {
   opacity: 1;
   width: 83%;
 }
