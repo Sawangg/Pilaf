@@ -22,15 +22,20 @@ body {
 	background: white;
 }
 
-a:focus {
+a:focus, button:focus {
     outline: none;
+}
+
+form{
+	width: 90%;
+	margin : auto;
 }
 
 fieldset {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-  
+
 .designBoutons {
 	color: black;
 	text-decoration: none;
@@ -45,6 +50,7 @@ fieldset {
 	box-shadow: 3px 4px 11px #3d3d3d4f;
 	border-radius: 8px;
 	border: none;
+	cursor: pointer;
 }
 
 .noSelect {
@@ -69,16 +75,16 @@ fieldset {
 .boutonRouge {
 	background-color: rgba(203, 75, 62, 0.5);
 }
-  
+
 .boutonRouge:hover {
 	background-color: rgba(203, 75, 62, 0.75);
 }
-  
+
 .boutonOrange {
 	padding: 1% 2%;
 	background-color: rgba(223, 116, 48, 0.5);
 }
-  
+
 .boutonOrange:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }

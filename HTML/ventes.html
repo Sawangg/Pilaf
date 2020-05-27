@@ -5,16 +5,17 @@
   <meta name="Author" content="Sawang_">
   <title>Enregistrer ventes</title>
   <link rel="stylesheet" href="../CSS/style_ventes.css">
+  <link rel="stylesheet" href="../CSS/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
   <form>
     <fieldset id="fieldPrincipale">
       <legend id="legendPrincipale">Caisses n°XX</legend>
-      <div id="content">
+      <div class="flexAround">
         <fieldset id="scan">
           <p>En attente du scan d'un article...</p>
-          <a href="ventes_manuelles.html">Entrée manuelle</a>
+          <a href="ventes_manuelles.html" class="designBoutons boutonVert">Entrée manuelle</a>
         </fieldset>
 
         <fieldset id="produits">
@@ -66,10 +67,10 @@
           </div>
         </fieldset>
       </div>
-      <div id="boutons">
-        <button type="button" class="designBoutons" id="boutonAnnuler">Annuler la vente</button>
-        <a href="fidelite.html" class="designBoutons" id="boutonCarte">Carte client</a>
-        <button type="button" class="designBoutons" id="boutonValider">Valider la vente</button>
+      <div id="boutons" class="flexAround">
+        <a class="designBoutons boutonRouge">Annuler la vente</a>
+        <a href="fidelite.html" class="designBoutons boutonOrange">Carte client</a>
+        <a class="designBoutons" id="boutonValider">Valider la vente</a>
       </div>
     </fieldset>
   </form>

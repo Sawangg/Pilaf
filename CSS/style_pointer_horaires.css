@@ -1,29 +1,7 @@
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, nav {
-	display: block;
-}
-
-html{
-	scroll-behavior: smooth;
-}
-
 #conteneur{
 	background-image: url("../IMAGES/fonds/fondOrange.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-form{
-	width: 90%;
-	margin : auto;
-	font-family: 'Jost', sans-serif;
 }
 
 #nom{
@@ -83,11 +61,7 @@ select{
 }
 
 #bouttonAjouterHoraire{
-	transition-duration: 200ms;
-	border: none;
 	margin-top: 3%;
-	padding: 1%;
-	background-color: rgba(223, 116, 48, 0.5);
 }
 
 #total{
@@ -108,24 +82,13 @@ button.nonVisible{
 	justify-content: space-around;
 }
 
-#continuer{
-	background-color: rgba(81, 215, 59, 0.3);
-}
-
 #annuler{
 	background-color: rgba(203, 75, 62, 0.5);
 }
 
 #valider label, button.nonVisible{
-	border: none;
-	text-align: center;
-	width: auto;
 	margin: auto;
 	padding: 0.5% 1.5% 0.5% 1.5%;
-	font-size: 100%;
-	border-radius: 4px;
-	background-color: rgba(81, 215, 59, 0.3);
-	transition-duration: 250ms;
 }
 
 #continuer:hover {
@@ -144,14 +107,6 @@ button.nonVisible{
 	padding: 1%;
 	margin-top: 2%;
 	display: none;
-}
-
-#bouttonAjouterHoraire:hover{
-	background-color: rgba(223, 116, 48, 0.7);
-}
-
-#valider label:hover{
-	background-color: rgba(81, 215, 59, 0.5);
 }
 
 #estVisible:checked ~ .nonVisible{

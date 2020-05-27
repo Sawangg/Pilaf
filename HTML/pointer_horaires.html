@@ -5,6 +5,7 @@
   <meta name="Author" content="sepios87">
   <title>Pointage</title>
   <link rel="stylesheet" href="../CSS/style_pointer_horaires.css">
+  <link rel="stylesheet" href="../CSS/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,17 +27,17 @@
             <label>Heure fin</label>
             <input type="time">
           </div>
-          <input type="button" value="Ajouter une plage horaire" id="bouttonAjouterHoraire">
+          <input type="button" value="Ajouter une plage horaire" class="designBoutons boutonOrange" id="bouttonAjouterHoraire">
           <p id="total">TOTAL : 6h32</p>
         </div>
       </fieldset>
       <div id="valider">
         <!--input type="submit" value="Valider"-->
         <input type="checkbox" id="estVisible" />
-        <label for="estVisible">Valider</label>
+        <label for="estVisible" class="designBoutons boutonVert">Valider</label>
         <p class="nonVisible">Validation effectutée</p>
-        <button type="button" name="button" class="nonVisible" id="annuler">Annuler</button>
-        <button type="button" name="button" class="nonVisible" id="continuer">Continuer</button>
+        <button type="button" name="button" class="nonVisible designBoutons boutonRouge" id="annuler">Annuler</button>
+        <button type="button" name="button" class="nonVisible designBoutons boutonVert" id="continuer">Continuer</button>
       </div>
     </fieldset>
   </form>
