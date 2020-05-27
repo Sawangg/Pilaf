@@ -6,12 +6,7 @@ html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
   vertical-align: baseline;
 }
 
-footer, header, nav {
-  display: block;
-}
-
 html{
-  scroll-behavior: smooth;
   font-family: 'Jost', sans-serif;
 }
 

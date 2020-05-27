@@ -8,15 +8,7 @@ html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
   vertical-align: baseline;
 }
 
-footer, header, nav {
-  display: block;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-form{
+form {
   width: 80%;
   display: block;
   margin : auto;
@@ -24,43 +16,32 @@ form{
   font-family: 'Jost', sans-serif;
 }
 
-form div{
+form div {
   width: 96%;
   display: flex;
   padding: 2%;
   font-size: 120%;
 }
 
-legend{
+legend {
   font-size: 150%;
 }
 
-fieldset{
+fieldset {
   background-image: url("../IMAGES/fonds/fondBleu.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-input{
+input {
   width: 60%;
 }
 
-label{
+label {
   width: 25%;
-}
-
-button {
-  transition: 250ms;
-  border: none;
-  border-radius: 10px;
-  transition-duration: 200ms;
-  padding: 0.75%;
 }
 
 #aide {
   font-size: 60%;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding: 0.75% 1%;
   background-color: #b7dbed;
 }
 
@@ -69,16 +50,9 @@ button {
 }
 
 #connexion {
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  font-size: 100%;
-  width: auto;
-  padding: 0 2% 0 2%;
+  padding: 0 2%;
   margin: 0 auto 0 auto;
   background-color: rgba(81, 215, 59, 0.5);
-  border-radius: 8px;
-  border: none;
 }
 
 #connexion:hover {
