@@ -137,13 +137,14 @@ a{
 }
 
 #pointer{
+  opacity: 0.85;
   font-size: 150%;
   width: 75%;
   margin: auto;
   text-align: center;
   padding: 2%;
   border-radius: 8px;
-  background-color: rgba(223, 116, 48, 0.3);
+  background-color: rgba(223, 116, 48, 0.4);
   transition: 250ms;
 }
 
