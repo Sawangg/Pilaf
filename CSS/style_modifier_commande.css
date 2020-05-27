@@ -1,0 +1,194 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+fieldset{
+	margin : 1% 0 1% 0;
+}
+legend {
+	font-size: 130%;
+}
+
+label {
+	font-size: 120%;
+}
+
+#formulaire_commande{
+	width: 90%;
+	display: block;
+	margin: auto;
+	font-family: 'Jost', sans-serif;
+}
+
+#formulaire_commande fieldset{
+	border: solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#formulaire_commande div {
+	margin: 10px;
+}
+
+#formulaire_commande select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	overflow: hidden;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+	color: #888888;
+	cursor: pointer;
+	border-bottom: solid 1px #888888;
+	margin: 1% 0 0 2%;
+	width: auto;
+	font-size: 95%;
+	padding: 0.5% 1%;
+	padding-right: 30px;
+	background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  	background-repeat: no-repeat;
+}
+
+#formulaire_commande select:focus {
+	background-image:linear-gradient(45deg, gray 50%, transparent 50%), linear-gradient(135deg, transparent 50%, gray 50%);
+	background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
+}
+
+#formulaire_commande select:hover {
+	background-color: rgba(223, 223, 223, 0.5);
+}
+
+#catalogue_fournisseur {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.produits {
+	width: 31%;
+	height: auto;
+
+	background-color: rgb(255, 212, 185);
+
+	border: solid gray 1.5px;
+    border-radius: 10px;
+}
+
+.informations {
+	font-weight: bold;
+}
+
+.produits div.en_tete {
+	display: flex;
+	flex-wrap: wrap;
+}
+.produits .en_tete img {
+	width: 20%;
+	height: auto;
+}
+.produits .en_tete label {
+	margin: auto;
+
+	margin-left: 10px;
+
+	line-height: inherit;
+	font-weight: bold;
+}
+
+.produits div input {
+	padding-left: 4px;
+}
+
+.produits div .bouton_article {
+	width: auto;
+
+	padding: 10px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 100%;
+
+    transition: 0.3s;
+
+    border-radius: 8px;
+    border: none;
+}
+.produits .bouton {
+	margin-top: 10px;
+
+	text-align: center;
+}
+
+#total {
+	text-align: right;
+
+	margin-top: 40px;
+	padding-right: 50px;
+}
+
+#total .informations {
+	font-weight: bold;
+}
+
+#boutons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#boutons input {
+	width: auto;
+	
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+
+    padding: 10px;
+
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 100%;
+
+    transition: 0.3s;
+
+    border-radius: 8px;
+    border: none;
+}
+  
+#annuler_commande, .bouton_article {
+    background-color: rgba(203, 75, 62, 0.5);
+}
+#annuler_commande:hover, .bouton_article:hover {
+    background-color: rgba(203, 75, 62, 0.75);
+}
+  
+#valider_commande {
+    background-color: rgba(81, 215, 59, 0.3);
+}
+#valider_commande:hover {
+    background-color: rgba(81, 215, 59, 0.5);
+}

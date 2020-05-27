@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Apokalypt">
+  <title>Réceptionner une commande</title>
+  <link rel="stylesheet" href="../CSS/style_receptionner_commande.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <fieldset id="box_main">
+      <legend>Réceptionner une commande</legend>
+
+      <div id="main">
+        <div>
+          <label class="information">Date de la commande : </label>
+          <label>XX/XX/XXXX</label>
+        </div>
+
+        <br>
+
+        <div>
+          <label class="information">Numéro de commande : </label>
+          <label>XXXXXXX</label>
+        </div>
+  
+        <fieldset id="box_fournisseur">
+          <legend>Fournisseur</legend>
+  
+          <div id="fournisseur">
+            <div>
+              <label class="information">Nom : </label>
+              <label>XXXXXXX</label>
+            </div>
+    
+            <div>
+              <label class="information">Adresse : </label>
+              <label>XXXXXXX</label>
+            </div>
+    
+            <div>
+              <label class="information">Code postal : </label>
+              <label>XXXXXXX</label>
+            </div>
+    
+            <div>
+              <label class="information">Ville : </label>
+              <label>XXXXXXX</label>
+            </div>
+    
+            <div>
+              <label class="information">Pays : </label>
+              <label>XXXXXXX</label>
+            </div>
+
+            <div id="bouton">
+              <input type="button" value="Plus d'informations" id="bouton_fournisseur">
+            </div>
+          </div>
+        </fieldset>
+  
+        <br>
+  
+        <fieldset id="box_produits">
+          <legend>Liste des produits</legend>
+
+          <div class="produit">
+            <div class="image_produit"></div>
+
+            <label class="nom_produit">Orangina</label>
+            <div class="reference_produit">
+              <label class="information">Référence : </label>
+              <label>XXXXXXXXXXXXX</label>
+            </div>
+
+            <div class="prix_HT_produit">
+              <label class="information">Prix HT  : </label>
+              <label>11,99€</label>
+            </div>
+            <div class="TVA_produit">
+              <label class="information">T.V.A. : </label>
+              <label>5,5%</label>
+            </div>
+            <div class="prix_TTC_produit">
+              <label class="information">Prix TTC : </label>
+              <label>12,99€</label>
+            </div>
+
+            <div class="quantite_com_produit">
+              <label class="information">Quantité commandée : </label>
+              <label>5</label>
+            </div>
+
+            <div class="quantite_liv_produit">
+              <label class="information">Quantité livrée : </label>
+              <input type="number" name="quantite" value="0" min="0" max="5">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="produit">
+            <div class="image_produit"></div>
+
+            <label class="nom_produit">Orangina</label>
+            <div class="reference_produit">
+              <label class="information">Référence : </label>
+              <label>XXXXXXXXXXXXX</label>
+            </div>
+
+            <div class="prix_HT_produit">
+              <label class="information">Prix HT  : </label>
+              <label>11,99€</label>
+            </div>
+            <div class="TVA_produit">
+              <label class="information">T.V.A.  : </label>
+              <label>5,5%</label>
+            </div>
+            <div class="prix_TTC_produit">
+              <label class="information">Prix TTC : </label>
+              <label>12,99€</label>
+            </div>
+
+            <div class="quantite_com_produit">
+              <label class="information">Quantité commandée : </label>
+              <label>5</label>
+            </div>
+
+            <div class="quantite_liv_produit">
+              <label class="information">Quantité livrée : </label>
+              <input type="number" name="quantite" value="0" min="0" max="5">
+            </div>
+          </div>
+        </fieldset>
+  
+        <div id="boutons">
+          <input type="button" value="Retour" id="bouton_retour">
+          <input type="button" value="Valider la livraison" id="bouton_reception">
+        </div>
+      </div>
+    </fieldset>  
+</body>
+</html>
