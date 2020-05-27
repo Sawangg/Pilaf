@@ -127,7 +127,7 @@ select {
 	cursor: pointer;
 	border-bottom: solid 1px #888888;
 	width: auto;
-	font-size: 1vw;
+	font-size: 90%;
 	padding: 0.5% 1%;
 	background-image: -o-linear-gradient(45deg, transparent 50%, gray 50%), -o-linear-gradient(315deg, gray 50%, transparent 50%);
 	background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);

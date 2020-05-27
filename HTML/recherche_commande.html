@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Apokalypt">
+  <title>Rechercher une commande</title>
+  <link rel="stylesheet" href="../CSS/style_recherche_commande.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form id="formCommande">
+    <fieldset>
+      <legend>Rechercher une commande</legend>
+      <div id="outilRechercheCommande">
+        <div>
+          <label>Fournisseur :</label>
+          <select required>
+            <OPTION value="" disabled selected>Sélectionner un fournisseur</OPTION>
+            <OPTION value="1">Coca cola</OPTION>
+            <OPTION value="2">Bell</OPTION>
+            <OPTION value="3">Panzani</OPTION>
+          </select>
+        </div>
+        <div>
+          <label>Numéro commande :</label>
+          <div id="parametre_numero">
+            <select required>
+              <OPTION value="" selected>=</OPTION>
+              <OPTION value="1">&lt;=</OPTION>
+              <OPTION value="2">&lt;</OPTION>
+              <OPTION value="3">>=</OPTION>
+              <OPTION value="4">></OPTION>
+            </select>
+            <input type="text">
+          </div>
+        </div>
+        <div>
+          <label>Montant TTC :</label>
+          <div id="parametre_montant">
+            <select required>
+              <OPTION value="" selected>=</OPTION>
+              <OPTION value="1">&lt;=</OPTION>
+              <OPTION value="2">&lt;</OPTION>
+              <OPTION value="3">>=</OPTION>
+              <OPTION value="4">></OPTION>
+            </select>
+            <input type="text">
+          </div>
+        </div>
+        <div>
+          <label>Date :</label>
+          <div id="parametre_date">
+            <select required>
+              <OPTION value="" selected>=</OPTION>
+              <OPTION value="1">&lt;=</OPTION>
+              <OPTION value="2">&lt;</OPTION>
+              <OPTION value="3">>=</OPTION>
+              <OPTION value="4">></OPTION>
+            </select>
+            <input type="date">
+          </div>        
+        </div>
+      </div>
+      <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercherCommande">
+    </fieldset>
+  </form>
+  <div id="result_commande">
+    <div class="commande">
+      <div>
+        <h3>0001</h3>
+        <p><strong>Montant TTC : </strong>103.46€</p>
+        <p><strong>Etat commande : </strong>Brouillon</p>
+        <p><strong>Date : </strong>01 janvier 2020</p>
+      </div>
+      <div>
+        <a class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="commande">
+      <div>
+        <h3>0002</h3>
+        <p><strong>Montant TTC : </strong>234.54€</p>
+        <p><strong>Etat commande : </strong>Livrée</p>
+        <p><strong>Date : </strong>16 février 2020</p>
+      </div>
+      <div>
+        <a class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+      </div>
+    </div>
+    <div class="commande">
+      <div>
+        <h3>0003</h3>
+        <p><strong>Montant TTC : </strong>34.40€</p>
+        <p><strong>Etat commande : </strong>En attente de livraison</p>
+        <p><strong>Date : </strong>17 février 2020</p>
+      </div>
+      <div>
+        <a class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a class="designBoutons boutonOrange noSelect">Réceptionner livraison</a>
+      </div>
+    </div>
+    <div class="commande">
+      <div>
+        <h3>0004</h3>
+        <p><strong>Montant TTC : </strong>871.23€</p>
+        <p><strong>Etat commande : </strong>Livrée</p>
+        <p><strong>Date : </strong>15 mars 2020</p>
+      </div>
+      <div>
+        <a class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+      </div>
+    </div>
+  </div>
+  <button type="button" id="bouttonAfficherPlus" class="designBoutons boutonGris">Afficher Plus</button>
+</body>
+</html>

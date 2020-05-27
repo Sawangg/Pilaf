@@ -14,23 +14,23 @@
         <legend id="legendPrincipale">Créer un article</legend>
         <div class="flexAround">
             <div id="ajout">
-              <label for="nom_article">Nom<span>*</span> :</label>  
+              <label id="nom_article" for="input_nom_article">Nom<span>*</span> :</label>  
               <input type="text" id="input_nom_article" name="nom_article" pattern="[A-zÀ-ú]*" required>
 
-              <label id="fournisseur_article" for="fournisseur_article">Fournisseur<span>*</span> :</label>  
+              <label id="fournisseur_article" for="input_fournisseur_article">Fournisseur<span>*</span> :</label>  
               <SELECT id="input_fournisseur_article" name="Fournisseur">
                 <OPTION>Panzani</OPTION>
                 <OPTION>Bell</OPTION>
                 <OPTION>Coca-cola</OPTION>
               </SELECT>
 
-              <label id="barre_article" for="barre_article">Code barre<span>*</span> :</label>  
+              <label id="barre_article" for="input_barre_article">Code barre<span>*</span> :</label>  
               <input type="text" id="input_barre_article" name="barre_article" pattern="[0-9]*" required>
 
-              <label id="prix_article" for="prix_article">Prix au kg HT<span>*</span> :</label>
+              <label id="prix_article" for="input_prix_article">Prix au kg HT<span>*</span> :</label>
               <input type="text" id="input_prix_article" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
 
-              <label id="tva_article" for="tva_article">Taux de TVA<span>*</span> :</label>  
+              <label id="tva_article" for="input_tva_article">Taux de TVA<span>*</span> :</label>  
               <SELECT id="input_tva_article" name="TVA">
                 <OPTION>20%</OPTION>
                 <OPTION>10%</OPTION>
@@ -38,7 +38,7 @@
                 <OPTION>2,1%</OPTION>
               </SELECT>
 
-              <label id="rayon_article" for="rayon_article">Code rayon :</label>
+              <label id="rayon_article" for="input_rayon_article">Code rayon :</label>
               <input type="text" id="input_rayon_article" name="rayon_article">
 
               <div id="image_article"></div>

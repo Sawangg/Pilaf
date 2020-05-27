@@ -1,0 +1,124 @@
+html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#formArticle{
+	width: 90%;
+	display: block;
+	margin : auto;
+	font-family: 'Jost', sans-serif;
+}
+
+#formArticle fieldset{
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 2px;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#outilRechercheArticle{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#outilRechercheArticle div{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+div#parametre_prix {
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+}
+#parametre_prix select {
+	width: 20%;
+}
+#parametre_prix input {
+	width: 80%;
+}
+
+label, fieldset{
+	margin : 1% 0 1% 0;
+	font-size: 110%;
+}
+
+#boutonRechercherArticle{
+	padding: 0.75% 2% 0.75% 2%;
+	display: block;
+	margin: 2% auto auto auto;
+	font-size: 120%;
+}
+
+.article a {
+	font-size: 110%;
+	margin: 8% 0 8% 0;
+}
+
+#result_article{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.article{
+	display: flex;
+	width: 40%;
+	background-color: rgba(223, 116, 48, 0.3);
+	justify-content: space-around;
+	border-radius: 4px;
+	padding: 0.5%;
+	margin-top: 2%;
+}
+
+.article div{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.article div h3{
+	padding: 5%;
+	border: solid black 1px;
+}
+
+.article div p:not(:last-child){
+	margin: 5% 0 0 0;
+	padding-bottom: 5%;
+	border-bottom: solid black 2px;
+}
+
+.article div p:last-child{
+	margin: 5% 0 0 0;
+}
+
+.article a:hover{
+	background-color: rgba(223, 116, 48, 0.7);
+}
+
+#bouttonAfficherPlus{
+	padding: 1% 2% 1% 2%;
+	font-size: 125%;
+	display: block;
+	margin: 3% auto 2% auto;
+	width: 92%;
+}
