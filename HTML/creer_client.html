@@ -5,7 +5,7 @@
   <meta name="Author" content="Sawang_">
   <title>Créer un nouveau client</title>
   <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/style_creer_client.css">
+  <link rel="stylesheet" href="../CSS/style_creer_modifier_client.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,14 +30,14 @@
           <input type="text" id="adresse" name="adresse" pattern="[A-zÀ-ú]*"><br>
 
           <label for="ddn">Date de naissance :</label>
-          <input type="text" id="ddn" name="ddn" pattern="[A-zÀ-ú]*"><br>
-          
+          <input type="date" min="1900-01-01" max="2021-01-01"><br>
+
           <p>* Obligatoire</p>
         </div>
       </div>
 
       <div id="boutons">
-        <a href="ventes.html" class="designBoutons boutonRouge">Annuler</a>
+        <a href="ventes.html" class="designBoutons boutonRouge" id="annuler">Annuler</a>
         <input type="submit" class="designBoutons" id="boutonValider" value="Créer le client">
       </div>
     </fieldset>

@@ -63,7 +63,7 @@ fieldset {
 	margin: 2% 0 0 5%;
 }
 
-input[type="text"] {
+input {
 	margin-top: 2%;
 	margin-left: 3%;
 	border: solid gray 1px;
