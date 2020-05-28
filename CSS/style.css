@@ -155,9 +155,10 @@ footer {
 	margin: 2% 2% 0.5%;
 	display: flex;
 	justify-content: flex-end;
+	width: 100%;
 }
 
-footer a {
+footer a:first-of-type {
 	color: black;
 	text-decoration: none;
 	text-align: center;

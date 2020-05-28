@@ -23,12 +23,12 @@ legend {
   border-radius: 2px;
 }
 
-#renseignements label, #renseignements p{
+#renseignements label, #renseignements p {
     width: 49%;
     margin-top: 5%;
 }
 
-#renseignements{
+#renseignements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,4 +50,8 @@ img {
 
 #boutons a {
     padding: 0.5% 1%;
+}
+
+footer {
+    bottom: 0;
 }
