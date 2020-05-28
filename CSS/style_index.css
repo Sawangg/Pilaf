@@ -26,14 +26,14 @@ header {
 }
 
 nav {
-  width: 70%;
+  width: 85%;
   display: block;
   margin-top: 8px;
 }
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(6, 16.6%);
+  grid-template-columns: repeat(8, 12.4%);
   list-style: none;
 }
 
@@ -103,6 +103,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+#details-toggle-cbox6:checked ~ .details {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .nav_content:hover {
   border-left: solid white 4px;
