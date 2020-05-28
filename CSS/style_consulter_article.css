@@ -13,6 +13,8 @@ legend {
 }
 
 #ajout {
+  width: 80%;
+  margin : 2% auto;
   display: flex;
   justify-content: space-around;
   background-color: white;
@@ -39,7 +41,7 @@ legend {
 
 img {
     height: 100%;
-    width: 40%;
+    width: 30%;
 }
 
 #boutons {

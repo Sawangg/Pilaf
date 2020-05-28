@@ -90,7 +90,7 @@ select {
 	flex-wrap: wrap;
 }
 
-.boutonsStatus button {
+.boutonsStatus a {
 	padding: 2%;
 	margin-top: 1%;
 	font-size: 80%;

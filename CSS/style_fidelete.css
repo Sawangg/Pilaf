@@ -81,7 +81,14 @@ span {
 	justify-content: space-around;
 }
 
+#boutons a{
+	width: auto;
+	margin: auto 0;
+}
+
 #boutonValider {
+	margin: auto 0;
+	padding: 0.5% 1%;
 	font-weight: normal;
 	font-size: 90%;
 	background-color: rgba(33, 119, 20, 0.7);

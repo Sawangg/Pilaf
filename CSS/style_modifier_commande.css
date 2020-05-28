@@ -55,7 +55,7 @@ label {
 
 .produits .en_tete img {
 	width: 20%;
-	height: auto;
+	height: 100%;
 }
 
 .produits .en_tete label {

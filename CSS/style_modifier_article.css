@@ -1,40 +1,42 @@
 /* Auteur : Apokalypt */
 
 fieldset {
-    font-size: 110%;
-    margin-top: 3%;
-    border : solid rgb(223, 116, 48) 1px;
-    border-radius: 2px;
-    background-image: url("../IMAGES/fonds/fondOrange.png");
+  font-size: 110%;
+  margin-top: 3%;
+  border : solid rgb(223, 116, 48) 1px;
+  border-radius: 2px;
+  background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
 legend {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 #ajout {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    padding-bottom: 2%;
-    border : solid rgb(223, 116, 48) 1px;
-    border-radius: 2px;
+  width: 80%;
+  margin : auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding-bottom: 2%;
+  border : solid rgb(223, 116, 48) 1px;
+  border-radius: 2px;
 }
 
 #ajout p {
-    color: red;
-    font-size: 70%;
+  color: red;
+  font-size: 70%;
 }
 
 #renseignements input, #renseignements label, #renseignements select{
-    width: 49%;
-    margin-top: 5%;
+  width: 49%;
+  margin-top: 5%;
 }
 
 input[type="text"] {
-    border: solid gray 1px;
-    border-radius: 2px;
-    padding: 0 0.5%;
+  border: solid gray 1px;
+  border-radius: 2px;
+  padding: 0 0.5%;
 }
 
 #renseignements{
@@ -45,31 +47,31 @@ input[type="text"] {
 }
 
 #image_article {
-    height: 80%;
-    background-image: url("../IMAGES/produits/orangina.jpg");
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 80%;
+  background-image: url("../IMAGES/produits/orangina.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #button_image_article {
-    grid-column: 8;
-    grid-row: 6;
+  grid-column: 8;
+  grid-row: 6;
 }
 
 span {
-    color: red;
+  color: red;
 }
 
 #boutons {
-    margin: 2% 0 0.75% 0;
+  margin: 2% 0 0.75% 0;
 }
 
 #boutons a {
-    padding: 0.5% 1%;
+  padding: 0.5% 1%;
 }
 
 input[type="submit"] {
   font-weight: normal;
-	font-size: 90%;
+  font-size: 90%;
 }

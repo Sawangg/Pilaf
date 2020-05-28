@@ -93,8 +93,16 @@ select {
 	margin-bottom: 3%;
 }
 
-#resultatArticles, #bouttonAfficherPlus {
+#resultatArticles {
 	width: 90%;
 	display: block;
 	margin : auto;
+}
+
+#bouttonAfficherPlus {
+	padding: 1% 2%;
+	font-size: 125%;
+	display: block;
+	margin: 3% auto 2%;
+	width: 100%;
 }

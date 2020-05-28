@@ -52,3 +52,7 @@ label, fieldset {
 #boutons{
 	margin-top: 2%;
 }
+
+#boutons a{
+	padding: 0.5% 1%;
+}
