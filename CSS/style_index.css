@@ -22,7 +22,7 @@ header {
 }
 
 #profil div {
-  margin: 10px 20px 0 5%;
+  margin: 10px 2% 0 5%;
 }
 
 nav {
@@ -33,8 +33,9 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(8, 12.4%);
+  grid-template-columns: repeat(9, 11.1%);
   list-style: none;
+  font-size: 90%;
 }
 
 .nav_content {
@@ -109,6 +110,12 @@ a {
   flex-direction: column;
 }
 
+#details-toggle-cbox7:checked ~ .details {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .nav_content:hover {
   border-left: solid white 4px;
@@ -181,15 +188,7 @@ a {
   background-image: url("../IMAGES/fonds/fondVert.png");
 }
 
-#use_case2 {
-  background-image: url("../IMAGES/fonds/fondOrange.png");
-}
-
-#use_case3 {
-  background-image: url("../IMAGES/fonds/fondOrange.png");
-}
-
-#use_case4 {
+#use_case2, #use_case3, #use_case4 {
   background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
@@ -199,14 +198,17 @@ a {
 }
 
 details{
-  width: 80%;
+  width: 100%;
   cursor: pointer;
 }
 
 details div{
-  margin-top: 15px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+}
+
+details a{
+  margin-left: 10px;
+  margin-top: 10px;
 }

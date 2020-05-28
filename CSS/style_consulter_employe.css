@@ -1,58 +1,58 @@
 /* Auteur : Sawang_ */
 
 body {
-    width: 90%;
-    margin : auto;
+  width: 90%;
+  margin : auto;
 }
 
 fieldset {
-    font-size: 110%;
+  font-size: 110%;
 }
 
 #fieldPrincipale {
-    margin-top: 3%;
-    border : solid rgb(223, 116, 48) 1px;
-    border-radius: 2px;
-    background-image: url("../IMAGES/fonds/fondOrange.png");
+  margin-top: 3%;
+  border : solid rgb(223, 116, 48) 1px;
+  border-radius: 2px;
+  background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
 #legendPrincipale {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 #content div {
-    width: 80%;
-    background-color: white;
-    margin-top: 3%;
-    padding: 30px 20px;
-    border : solid rgb(223, 116, 48) 1px;
-	border-radius: 2px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+  width: 80%;
+  background-color: white;
+  margin-top: 3%;
+  padding: 30px 20px;
+  border : solid rgb(223, 116, 48) 1px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #content div p {
-	margin: 1%;
-	width: 40%;
+  margin: 1%;
+  width: 40%;
 }
 
 #content div p b {
-	margin-left: 40%;
+  margin-left: 40%;
 }
 
 #boutons {
-	margin: 1% 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
+  margin: 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 footer{
