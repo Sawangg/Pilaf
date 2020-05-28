@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Apokalypt">
+  <title>Statistiques</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style_consulter_statistiques.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Statistiques</legend>
+      <div id="box_CA">
+        <label><b>Chiffre d'affaires</b></label>
+        <div class="flexAround">
+          <div>
+            <label>Aujourd'hui</label>
+            <label class="stats_valeur">XX.XX €</label>
+            <label class="stats_comparaison">+2,00 € (+10,01%)<br>
+              Comparé au même jour de la semaine précédente</label>
+          </div>
+          <div>
+            <label>Hier</label>
+            <label class="stats_valeur">XX.XX €</label>
+            <label class="stats_comparaison">+2,00 € (+10,01%)<br>
+              Comparé au même jour de la semaine précédente</label>
+          </div>
+          <div>
+            <label>Cette semaine</label>
+            <label class="stats_valeur">XX.XX €</label>
+            <label class="stats_comparaison">+2,00 € (+10,01%)<br>
+              Comparé au même jour de la semaine précédente</label>
+          </div>
+          <div>
+            <label>Ce mois</label>
+            <label class="stats_valeur">XX.XX €</label>
+            <label class="stats_comparaison">+2,00 € (+10,01%)<br>
+              Comparé au même jour du mois précédent</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flexAround">
+        <a href="../index.html" class="designBoutons boutonRouge noSelect">Retour</a>
+        <a href="#" class="designBoutons boutonVert noSelect">Imprimer</a>
+      </div>
+
+      <div id="flex">
+        <div class="graphe" id="graphe1">
+          <label><b>Fidélité</b></label>
+
+          <select>
+            <option selected>Aujourd'hui</option>
+            <option>Cette semaine</option>
+            <option>Les 7 derniers jour</option>
+            <option>Ce mois-ci</option>
+            <option>Les 30 derniers jours</option>
+          </select>
+
+          <img src="../IMAGES/statistiques/fidelite.png" alt="Camembert fidélité">
+        </div>
+
+        <div class="graphe" id="graphe4">
+          <label><b>Ventes</b></label>
+
+          <select>
+            <option>Aujourd'hui</option>
+            <option>Cette semaine</option>
+            <option selected>Les 7 derniers jour</option>
+            <option>Ce mois-ci</option>
+            <option>Les 30 derniers jours</option>
+          </select>
+
+          <select>
+            <option>Statistiques par heures</option>
+            <option selected>Statistiques par jour</option>
+          </select>
+
+          <img src="../IMAGES/statistiques/vente_journaliere.png" alt="Bâton vente">
+        </div>
+
+        <div class="graphe" id="graphe6">
+          <label><b>Promotion</b></label>
+
+          <select>
+            <option>Aujourd'hui</option>
+            <option selected>Cette semaine</option>
+            <option>Les 7 derniers jour</option>
+            <option>Ce mois-ci</option>
+            <option>Les 30 derniers jours</option>
+          </select>
+
+          <img src="../IMAGES/statistiques/promotion.png" alt="Tableau promotion">
+
+          <a class="designBoutons boutonGris noSelect" id="retour">Voir plus</a>
+        </div>
+
+        <div class="graphe" id="graphe2">
+          <label><b>Produits vendus</b></label>
+
+          <select>
+            <option selected>Aujourd'hui</option>
+            <option>Cette semaine</option>
+            <option>Les 7 derniers jour</option>
+            <option>Ce mois-ci</option>
+            <option>Les 30 derniers jours</option>
+          </select>
+
+          <select>
+            <option selected>Du plus vendu au moins vendu</option>
+            <option>Du moins vendu au plus vendu</option>
+          </select>
+
+          <img src="../IMAGES/statistiques/ventes.png" alt="Graphe vente">
+
+          <a class="designBoutons boutonGris noSelect" id="retour">Voir plus</a>
+        </div>
+
+        <div class="graphe" id="graphe3">
+          <label><b>Chiffres d'affaires</b></label>
+
+          <select>
+            <option selected>Aujourd'hui</option>
+            <option>Cette semaine</option>
+            <option>Les 7 derniers jour</option>
+            <option>Ce mois-ci</option>
+            <option>Les 30 derniers jours</option>
+          </select>
+
+          <img src="../IMAGES/statistiques/CA.png" alt="Graphique chiffre d'affaire">
+        </div>
+
+        <div class="graphe" id="graphe5">
+          <label><b>Personnes présentes</b></label>
+
+          <select>
+            <option>Aujourd'hui</option>
+            <option>Cette semaine</option>
+            <option selected>Les 7 derniers jour</option>
+            <option>Ce mois-ci</option>
+            <option>Les 30 derniers jours</option>
+          </select>
+
+          <img src="../IMAGES/statistiques/personnes.png" alt="Bâton vente">
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <footer>
+    <a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+    <a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+  </footer>
+</body>
+</html>
