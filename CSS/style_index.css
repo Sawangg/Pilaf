@@ -47,6 +47,11 @@ nav ul {
   cursor : pointer;
 }
 
+li a{
+  width: 100%;
+  text-align: center;
+}
+
 header input[type="checkbox"] {
   display: none;
 }
@@ -75,11 +80,6 @@ a {
 }
 
 #details-toggle-cbox1:checked ~ .details {
-  display: flex;
-  flex-direction: column;
-}
-
-#details-toggle-cbox2:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
@@ -130,16 +130,21 @@ a {
 }
 
 #pointer{
+  display: flex;
+  width: 80%;
   opacity: 0.85;
-  font-size: 150%;
-  width: 75%;
   margin: auto;
   text-align: center;
-  padding: 2%;
   border-radius: 8px;
   background-color: rgb(183, 219, 237);
   transition: 250ms;
   box-shadow: 3px 4px 11px #3d3d3d4f;
+}
+
+#pointer a{
+  font-size: 150%;
+  width: 100%;
+  padding: 2%;
 }
 
 .use_case {
@@ -173,7 +178,11 @@ a {
   background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
+#use_case4 {
+  background-image: url("../IMAGES/fonds/fondOrange.png");
+}
+
 .use_case:hover, #pointer:hover {
   opacity: 1;
-  width: 83%;
+  width: 85%;
 }

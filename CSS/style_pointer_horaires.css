@@ -69,11 +69,11 @@ select{
 	margin-top: 1%;
 }
 
-#estVisible{
+#valider input{
 	display: none;
 }
 
-button.nonVisible{
+.nonVisible{
 	display: none;
 }
 
@@ -109,10 +109,18 @@ button.nonVisible{
 	display: none;
 }
 
+#valider a{
+	margin: auto;
+}
+
 #estVisible:checked ~ .nonVisible{
 	display: block;
 }
 
 #estVisible:checked ~ label{
 	display: none;
+}
+
+#rendreVisible:checked ~ label{
+	display: block;
 }

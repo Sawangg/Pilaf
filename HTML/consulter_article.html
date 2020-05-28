@@ -6,38 +6,36 @@
     <title>Consulter un article</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_consulter_article.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
   </head>
   <body>
     <form>
-      <fieldset id="fieldPrincipale">
-        <legend id="legendPrincipale">Consulter un article</legend>
-        <div class="flexAround">
-          <div id="ajout">
-            <label id="nom_article">Nom :</label>
-            <p id="value_nom_article">Orangina</p>
+      <fieldset>
+        <legend>Consulter un article</legend>
+          <div id="ajout" class="flexAround">
+            <div id="renseignements">
+            <label>Nom :</label>
+            <p>Orangina</p>
 
-            <label id="fournisseur_article">Fournisseur :</label>  
-            <p id="value_fournisseur_article">Panzani</p>
+            <label>Fournisseur :</label>
+            <p>Panzani</p>
 
-            <label id="barre_article">Code barre :</label>  
-            <p id="value_barre_article">87954526462695</p>
+            <label>Code barre :</label>
+            <p>87954526462695</p>
 
-            <label id="prix_article">Prix au kg HT :</label>
-            <p id="value_prix_article">2.54€</p>
+            <label>Prix au kg HT :</label>
+            <p>2.54€</p>
 
-            <label id="tva_article">Taux TVA :</label>
-            <p id="value_tva_article">5,5%</p>
+            <label>Taux TVA :</label>
+            <p>5,5%</p>
 
-            <label id="rayon_article">Code rayon :</label>
-            <p id="value_rayon_article"></p>
-
-            <div id="image_article"></div>
-            <input type="file" id ="button_image_article" name="button_image_article" accept="image/png, image/jpeg" disabled>
+            <label>Code rayon :</label>
+            <p>AKZEUJF6853</p>
           </div>
+          <img src="../IMAGES/produits/orangina.jpg" alt="">
       </div>
 
-        <div id="boutons">
+        <div id="boutons" class="flexAround">
           <a href="" class="designBoutons noSelect boutonRouge">Retour</a>
           <a href="" class="designBoutons noSelect boutonOrange">Commander l'article</a>
           <a href="modifier_article.html" class="designBoutons noSelect boutonVert">Modifier l'article</a>
