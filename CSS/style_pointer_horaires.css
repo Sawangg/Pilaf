@@ -1,58 +1,52 @@
-#conteneur{
-	background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+/* Auteur : sepios87 */
 
-#nom{
-	margin: 2%;
-}
-
-fieldset{
+fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 }
 
-legend{
+legend {
 	font-size: 130%;
 }
 
-#pointage{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+#conteneur {
+	background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
-input{
+#nom {
+	margin: 2%;
+}
+
+input {
 	border: solid gray 1px;
 	border-radius: 4px;
-	margin : 1% 0 1% 0;
+	margin : 1% 0;
 }
 
-label, fieldset, #pointage div{
-	margin-top : 1%;
-	margin-bottom: 1%;
+label, fieldset, #pointage div {
+	margin: 1% 0;
 	font-size: 110%;
 }
-select{
+
+select {
 	width: 80%;
 	padding: 0.5%;
 	margin-left: 1%;
 }
 
-#date{
+#date {
 	width: 100%;
 }
 
-#date input{
+#date input {
 	width: 80%;
 }
 
-.horaire,.horaire input{
+.horaire,.horaire input {
 	width: 50%;
 }
 
-.horaire label, .horaire input, #date input, #date label, #total{
+.horaire label, .horaire input, #date input, #date label, #total {
 	padding: 1%;
 	display: block;
 	margin: auto;
@@ -60,46 +54,34 @@ select{
 	font-size: 120%;
 }
 
-#bouttonAjouterHoraire{
+#bouttonAjouterHoraire {
 	margin-top: 3%;
 }
 
-#total{
+#total {
 	width: 100%;
 	margin-top: 1%;
 }
 
-#valider input{
+#valider input {
 	display: none;
 }
 
-.nonVisible{
+.nonVisible {
 	display: none;
 }
 
-#valider{
+#valider {
 	display: flex;
 	justify-content: space-around;
 }
 
-#annuler{
-	background-color: rgba(203, 75, 62, 0.5);
-}
-
-#valider label, button.nonVisible{
+#valider label, button.nonVisible {
 	margin: auto;
-	padding: 0.5% 1.5% 0.5% 1.5%;
+	padding: 0.5% 1.5%;
 }
 
-#continuer:hover {
-	background-color: rgba(81, 215, 59, 0.5);
-}
-
-#annuler:hover {
-	background-color: rgba(203, 75, 62, 0.7);
-}
-
-#valider p{
+#valider p {
 	color: green;
 	font-size: 130%;
 	width: 50%;
@@ -109,18 +91,18 @@ select{
 	display: none;
 }
 
-#valider a{
+#valider a {
 	margin: auto;
 }
 
-#estVisible:checked ~ .nonVisible{
+#estVisible:checked ~ .nonVisible {
 	display: block;
 }
 
-#estVisible:checked ~ label{
+#estVisible:checked ~ label {
 	display: none;
 }
 
-#rendreVisible:checked ~ label{
+#rendreVisible:checked ~ label {
 	display: block;
 }

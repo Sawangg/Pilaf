@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="Author" content="sepios87">
-  <title>Consulter horaires</title>
+  <title>Consulter les horaires</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_consulter_horaires.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
   <form>
     <fieldset>
       <legend>Rechercher</legend>
-      <div id="outilRecherche">
+      <div class="flexAround">
         <div>
           <label>Salarié :</label>
           <select name="salarie">
@@ -33,7 +33,7 @@
           <input type="time" name="trip-start">
         </div>
       </div>
-      <input type="button" value="Rechercher" class="boutonVert" id="boutonRechercher">
+      <input type="button" value="Rechercher" class="designBoutons boutonVert noSelect" id="boutonRechercher">
     </fieldset>
   </form>
   <div class="resultat">
@@ -41,8 +41,8 @@
       <h3>Mme Flotte</h3>
       <h4>Secretaire</h4>
       <div class="boutonsStatus">
-        <button class="designBoutons boutonVert" type="button">Consulter</button>
-        <button class="designBoutons boutonVert" type="button">Modifier</button>
+        <button class="designBoutons boutonVert noSelect" type="button">Consulter</button>
+        <button class="designBoutons boutonVert noSelect" type="button">Modifier</button>
       </div>
     </div>
     <div class="horaires">
@@ -58,8 +58,8 @@
       <h3>Mr Melet</h3>
       <h4>Gestionnaire</h4>
       <div class="boutonsStatus">
-        <button class="designBoutons boutonVert" type="button">Consulter</button>
-        <button class="designBoutons boutonVert" type="button">Modifier</button>
+        <button class="designBoutons boutonVert noSelect" type="button">Consulter</button>
+        <button class="designBoutons boutonVert noSelect" type="button">Modifier</button>
       </div>
     </div>
     <div class="horaires">
@@ -75,8 +75,8 @@
       <h3>Mr Chose</h3>
       <h4>Caisses</h4>
       <div class="boutonsStatus">
-        <button class="designBoutons boutonVert" type="button">Consulter</button>
-        <button class="designBoutons boutonVert" type="button">Modifier</button>
+        <button class="designBoutons boutonVert noSelect" type="button">Consulter</button>
+        <button class="designBoutons boutonVert noSelect" type="button">Modifier</button>
       </div>
     </div>
     <div class="horaires">
@@ -89,6 +89,6 @@
       <p>Heure de fin : 19h30</p>
     </div>
   </div>
-  <button type="button" class="boutonGris" id="bouttonAfficherPlus">Afficher Plus</button>
+  <button type="button" class="designBoutons boutonGris noSelect" id="bouttonAfficherPlus">Afficher Plus</button>
 </body>
 </html>

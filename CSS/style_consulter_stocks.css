@@ -1,3 +1,5 @@
+/* Auteur : Sawang_ */
+
 fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
@@ -32,7 +34,6 @@ select {
 }
 
 #boutonRechercher {
-	border: none;
 	width: auto;
 	padding: 0.75% 2%;
 	display: block;
@@ -87,7 +88,7 @@ select {
 
 #bouttonAfficherPlus {
 	border : none;
-	padding: 1% 2% 1% 2%;
+	padding: 1% 2%;
 	font-size: 125%;
 	margin-bottom: 3%;
 }

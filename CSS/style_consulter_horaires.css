@@ -1,16 +1,12 @@
+/* Auteur : sepios87 */
+
 fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
-#outilRecherche {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-#outilRecherche div{
+.flexAround div{
 	width: 33%;
 	display: flex;
 	flex-direction: column;
@@ -37,17 +33,15 @@ select {
 }
 
 #boutonRechercher {
-	border: none;
-	width: auto;
-	padding: 0.75% 2% 0.75% 2%;
+	padding: 0.75% 2%;
 	display: block;
-	margin: 2% auto auto auto;
+	margin: 2% auto auto;
 	font-size: 120%;
 }
 
 .resultat {
 	width: 88%;
-	margin : 2% auto 2% auto;
+	margin : 2% auto;
 	background-color: rgba(223, 116, 48, 0.2);
 	border-radius: 3px;
 	padding: 1%;
@@ -106,8 +100,7 @@ select {
 	width: 90%;
 	display: block;
 	margin : auto;
-	border : none;
-	padding: 1% 2% 1% 2%;
+	padding: 1% 2%;
 	font-size: 125%;
 	margin-bottom: 3%;
 }

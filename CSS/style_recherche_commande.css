@@ -1,41 +1,12 @@
-html, body, div, iframe, h1, h2, p, a, img, ul, li, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
+/* Auteur : Apokalypt */
 
-footer, header, nav {
-	display: block;
-}
-
-html{
-	scroll-behavior: smooth;
-}
-
-#formCommande{
-	width: 90%;
-	display: block;
-	margin : auto;
-	font-family: 'Jost', sans-serif;
-}
-
-#formCommande fieldset{
+fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
-#outilRechercheCommande{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-#outilRechercheCommande div{
+.flexAround div {
 	width: 20%;
 	display: flex;
 	flex-direction: column;
@@ -44,41 +15,42 @@ html{
 
 div#parametre_numero, div#parametre_montant, div#parametre_date {
 	width: 100%;
-
 	display: flex;
 	flex-direction: row;
 }
+
 #parametre_numero select, #parametre_montant select, #parametre_date select {
 	width: 20%;
 }
+
 #parametre_numero input, #parametre_montant input, #parametre_date input {
 	width: 80%;
 }
 
-label, fieldset{
-	margin : 1% 0 1% 0;
+label, fieldset {
+	margin : 1% 0;
 	font-size: 110%;
 }
 
-#boutonRechercherCommande{
-	padding: 0.75% 2% 0.75% 2%;
+#boutonRechercherCommande {
+	padding: 0.75% 2%;
 	display: block;
-	margin: 2% auto auto auto;
+	margin: 2% auto auto;
 	font-size: 120%;
 }
 
 .commande a {
 	font-size: 110%;
-	margin: 8% 0 8% 0;
+	margin: 8% 0;
 }
 
-#result_commande{
+#result_commande {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.commande{
+.commande {
 	display: flex;
 	width: 40%;
 	background-color: rgba(223, 116, 48, 0.3);
@@ -88,7 +60,7 @@ label, fieldset{
 	margin-top: 2%;
 }
 
-.commande div{
+.commande div {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
@@ -96,29 +68,29 @@ label, fieldset{
 	text-align: center;
 }
 
-.commande div h3{
+.commande div h3 {
 	padding: 5%;
 	border: solid black 1px;
 }
 
-.commande div p:not(:last-child){
+.commande div p:not(:last-child) {
 	margin: 5% 0 0 0;
 	padding-bottom: 5%;
 	border-bottom: solid black 2px;
 }
 
-.commande div p:last-child{
+.commande div p:last-child {
 	margin: 5% 0 0 0;
 }
 
-.commande a:hover{
+.commande a:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
 #bouttonAfficherPlus{
-	padding: 1% 2% 1% 2%;
+	padding: 1% 2%;
 	font-size: 125%;
 	display: block;
-	margin: 3% auto 2% auto;
+	margin: 3% auto 2%;
 	width: 92%;
 }

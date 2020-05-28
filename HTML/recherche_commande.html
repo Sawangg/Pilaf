@@ -4,33 +4,33 @@
   <meta charset="utf-8">
   <meta name="Author" content="Apokalypt">
   <title>Rechercher une commande</title>
-  <link rel="stylesheet" href="../CSS/style_recherche_commande.css">
   <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style_recherche_commande.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
   <form id="formCommande">
     <fieldset>
       <legend>Rechercher une commande</legend>
-      <div id="outilRechercheCommande">
+      <div class="flexAround">
         <div>
           <label>Fournisseur :</label>
           <select required>
-            <OPTION value="" disabled selected>Sélectionner un fournisseur</OPTION>
-            <OPTION value="1">Coca cola</OPTION>
-            <OPTION value="2">Bell</OPTION>
-            <OPTION value="3">Panzani</OPTION>
+            <option value="" disabled selected>Sélectionner un fournisseur</option>
+            <option value="1">Coca cola</option>
+            <option value="2">Bell</option>
+            <option value="3">Panzani</option>
           </select>
         </div>
         <div>
           <label>Numéro commande :</label>
           <div id="parametre_numero">
             <select required>
-              <OPTION value="" selected>=</OPTION>
-              <OPTION value="1">&lt;=</OPTION>
-              <OPTION value="2">&lt;</OPTION>
-              <OPTION value="3">>=</OPTION>
-              <OPTION value="4">></OPTION>
+              <option value="" selected>=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3">>=</option>
+              <option value="4">></option>
             </select>
             <input type="text">
           </div>
@@ -39,11 +39,11 @@
           <label>Montant TTC :</label>
           <div id="parametre_montant">
             <select required>
-              <OPTION value="" selected>=</OPTION>
-              <OPTION value="1">&lt;=</OPTION>
-              <OPTION value="2">&lt;</OPTION>
-              <OPTION value="3">>=</OPTION>
-              <OPTION value="4">></OPTION>
+              <option value="" selected>=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3">>=</option>
+              <option value="4">></option>
             </select>
             <input type="text">
           </div>
@@ -52,11 +52,11 @@
           <label>Date :</label>
           <div id="parametre_date">
             <select required>
-              <OPTION value="" selected>=</OPTION>
-              <OPTION value="1">&lt;=</OPTION>
-              <OPTION value="2">&lt;</OPTION>
-              <OPTION value="3">>=</OPTION>
-              <OPTION value="4">></OPTION>
+              <option value="" selected>=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3">>=</option>
+              <option value="4">></option>
             </select>
             <input type="date">
           </div>
