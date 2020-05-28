@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Sawang_">
+  <title>Créer un nouvel employé</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style_creer_employe.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form action="../index.html">
+    <fieldset id="fieldPrincipale">
+      <legend id="legendPrincipale">Créer un nouvel employé</legend>
+      <div class="flexAround">
+        <div id="ajout">
+          <label for="prénom">Prénom<span>*</span> :</label>
+          <input type="text" id="prénom" name="prénom" pattern="[A-zÀ-ú]*" required><br>
+
+          <label for="nom">Nom<span>*</span> :</label>
+          <input type="text" id="nom" name="nom" pattern="[A-zÀ-ú]*" required><br>
+
+          <label for="poste">Poste<span>*</span> :</label>
+          <input type="text" id="poste" name="poste" pattern="[A-zÀ-ú]*" required><br>
+
+          <label for="tel">Téléphone<span>*</span> :</label>
+          <input type="text" id="tel" name="tel" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required><br>
+
+          <label for="email">E-mail<span>*</span> :</label>
+          <input type="text" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required><br>
+
+          <label for="adresse">Adresse<span>*</span> :</label>
+          <input type="text" id="adresse" name="adresse" pattern="[A-zÀ-ú]*" required><br>
+
+          <label for="ddc">Date de contrat<span>*</span> :</label>
+          <input type="date" min="1900-01-01" max="2021-01-01" required><br>
+
+          <label for="ddn">Date de naissance<span>*</span> :</label>
+          <input type="date" min="1900-01-01" max="2021-01-01" required><br>
+
+          <label for="cb">Coordonnées bancaires :</label>
+          <input type="text" id="cb" name="cb" pattern="[A-zÀ-ú]*"><br>
+
+          <p>* Obligatoire</p>
+        </div>
+      </div>
+
+      <div id="boutons">
+        <a href="../index.html" class="designBoutons boutonRouge noSelect" id="annuler">Annuler</a>
+        <input type="submit" class="designBoutons boutonVert" id="boutonValider" value="Créer l'employé">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
