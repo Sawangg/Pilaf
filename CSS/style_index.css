@@ -1,10 +1,17 @@
 header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 60px;
   padding: 0.25% 1.5%;
   margin-bottom: 5%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: rgb(183, 219, 237);
   z-index: 1;
@@ -17,7 +24,12 @@ header {
 }
 
 #profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -32,7 +44,9 @@ nav {
 }
 
 nav ul {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (11.1%);
   grid-template-columns: repeat(9, 11.1%);
   list-style: none;
   font-size: 90%;
@@ -40,9 +54,14 @@ nav ul {
 
 .nav_content {
   font-size: 110%;
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
   transition: 250ms;
   border-left: solid rgba(210, 21, 50, 0) 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 3.5% 0;
   cursor : pointer;
@@ -61,6 +80,8 @@ header input[type="checkbox"] {
   display: none;
   margin: 18px 8px;
   padding: 5px 10%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(183, 219, 237, 0.7)), to(rgb(183, 219, 237)));
+  background: -o-linear-gradient(rgba(183, 219, 237, 0.7), rgb(183, 219, 237));
   background: linear-gradient(rgba(183, 219, 237, 0.7), rgb(183, 219, 237));
   border-radius: 0 0 4px 4px ;
   text-align: center;
@@ -81,41 +102,74 @@ a {
 }
 
 #details-toggle-cbox1:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #details-toggle-cbox2:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #details-toggle-cbox3:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #details-toggle-cbox4:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #details-toggle-cbox5:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #details-toggle-cbox6:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #details-toggle-cbox7:checked ~ .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
-
-
 
 .nav_content:hover {
   border-left: solid white 4px;
@@ -139,6 +193,8 @@ a {
 }
 
 #deconnexion {
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
   transition: 250ms;
   text-align: center;
 }
@@ -148,6 +204,8 @@ a {
 }
 
 #pointer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 80%;
   opacity: 0.85;
@@ -155,7 +213,10 @@ a {
   text-align: center;
   border-radius: 8px;
   background-color: rgb(183, 219, 237);
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
   transition: 250ms;
+  -webkit-box-shadow: 3px 4px 11px #3d3d3d4f;
   box-shadow: 3px 4px 11px #3d3d3d4f;
 }
 
@@ -175,13 +236,20 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
   transition: 250ms;
+  -webkit-box-shadow: 3px 4px 11px #3d3d3d4f;
   box-shadow: 3px 4px 11px #3d3d3d4f;
 }
 
 .use_case details {
   margin-top: 10px;
   font-size: 60%;
+}
+
+.detailUseCase a {
+  font-size: 90%;
 }
 
 #use_case1 {
@@ -203,7 +271,9 @@ details{
 }
 
 details div{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
 }

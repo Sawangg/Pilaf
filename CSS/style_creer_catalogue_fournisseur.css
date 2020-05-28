@@ -64,6 +64,7 @@ select:last-of-type {
 }
 
 #boutons {
+	width: 100%;
 	margin: 1% 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
