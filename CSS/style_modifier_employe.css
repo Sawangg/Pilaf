@@ -43,39 +43,6 @@ select {
 	width: 100%;
 }
 
-#valider {
-	display: flex;
-	flex-direction: column;
-}
-
-#valider label, #valider button {
-	width: auto;
-	margin: auto;
-	padding: 0.75% 2%;
-}
-
-#valider button {
-	margin-top: 3%;
-}
-
-p.isNotVisible {
-	text-align: center;
-	color: green;
-	font-size: 130%;
-	width: 50%;
-	margin: auto;
-	padding: 1%;
-	display: none;
-}
-
-#cb {
-	display: none;
-}
-
-#cb:checked ~ .isNotVisible {
-	display: inline-block;
-}
-
 footer {
 	bottom : 0;
 }
