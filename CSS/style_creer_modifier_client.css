@@ -22,8 +22,13 @@ fieldset {
 	border : solid rgb(36, 128, 36) 1px;
 	border-radius: 2px;
 	padding: 1% 0 1% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -45,6 +50,8 @@ input {
 	border: solid gray 1px;
 	border-radius: 2px;
 	width: 48%;
+	font-family: inherit;
+	padding-left: 1%;
 }
 
 span {
@@ -53,7 +60,10 @@ span {
 
 #boutons {
 	margin: 1% 0 0.75%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 

@@ -15,7 +15,10 @@ legend {
 #ajout {
   width: 80%;
   margin : auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   background-color: white;
   padding-bottom: 2%;
@@ -40,8 +43,13 @@ input[type="text"] {
 }
 
 #renseignements{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 45%;
 }
@@ -55,7 +63,9 @@ input[type="text"] {
 }
 
 #button_image_article {
+  -ms-grid-column: 8;
   grid-column: 8;
+  -ms-grid-row: 6;
   grid-row: 6;
 }
 

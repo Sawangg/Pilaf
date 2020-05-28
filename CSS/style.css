@@ -57,7 +57,6 @@ fieldset {
 .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -153,7 +152,11 @@ footer {
 	position: absolute;
 	right: 0;
 	margin: 2% 2% 0.5%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 	width: 100%;
 }

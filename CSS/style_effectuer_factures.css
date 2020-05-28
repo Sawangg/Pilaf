@@ -60,7 +60,10 @@ input[type="date"] {
 #boutons {
 	color: #888888;
 	margin: 1% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 

@@ -13,14 +13,17 @@ legend {
 }
 
 #ajout {
-  width: 80%;
-  margin : 2% auto;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  padding-bottom: 2%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
+    width: 80%;
+    margin : 2% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: white;
+    padding-bottom: 2%;
+    border : solid rgb(223, 116, 48) 1px;
+    border-radius: 2px;
 }
 
 #renseignements label, #renseignements p {
@@ -29,10 +32,15 @@ legend {
 }
 
 #renseignements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 45%;
 }
 
 #ajout label {

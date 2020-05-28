@@ -10,8 +10,14 @@ fieldset {
 .flexAround div {
 	width: 20%;
 	margin-top: 0.5%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
@@ -43,9 +49,15 @@ label, fieldset {
 #flex {
 	width: 100%;
 	margin: 0.5%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
 	align-items: baseline;
 }
 
@@ -53,12 +65,18 @@ label, fieldset {
 	width: 25%;
 	height: auto;
 	margin-top: 2%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	padding: 1%;
 	background-color: white;
 	border : solid gray 1px;
 	border-radius: 4px;
+	-webkit-box-shadow: 3px 4px 11px #3d3d3d4f;
 	box-shadow: 3px 4px 11px #3d3d3d4f;
 }
 

@@ -1,80 +1,87 @@
 /* Auteur : Apokalypt */
 
 fieldset {
-    font-size: 110%;
-    margin-top: 3%;
-    border : solid rgb(223, 116, 48) 1px;
-    border-radius: 2px;
-    background-image: url("../IMAGES/fonds/fondOrange.png");
+  font-size: 110%;
+  margin-top: 3%;
+  border : solid rgb(223, 116, 48) 1px;
+  border-radius: 2px;
+  background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
 legend {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 #ajout {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    background-color: white;
-    padding: 2% 3%;
-    border : solid rgb(223, 116, 48) 1px;
-    border-radius: 2px;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 2% 3%;
+  border : solid rgb(223, 116, 48) 1px;
+  border-radius: 2px;
 }
 
 #ajout p {
-    color: red;
-    font-size: 70%;
+  color: red;
+  font-size: 70%;
 }
 
-#renseignements{
+#renseignements {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 45%;
 }
 
-#renseignements input, #renseignements label, #renseignements select{
-    width: 49%;
-    margin-top: 5%;
+#renseignements input, #renseignements label, #renseignements select {
+  width: 49%;
+  margin-top: 5%;
 }
 
 input[type="text"] {
-    border: solid gray 1px;
-    border-radius: 2px;
-    padding: 0 0.5%;
+  border: solid gray 1px;
+  border-radius: 2px;
+  padding: 0 0.5%;
 }
 
-#image{
-  width : 48%;
+#image {
+width : 48%;
 }
 
 #image_article {
-    margin-top: 5%;
-    background-image: url();
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: none;
+  margin-top: 5%;
+  background-image: url();
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: none;
 }
 
 img {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
 span {
-    color: red;
+  color: red;
 }
 
 #boutons {
-    margin-top : 2%;
+  margin-top : 2%;
 }
 
-#boutons a{
+#boutons a {
   margin : auto 0;
 }
 
-#boutons input{
+#boutons input {
   padding: 1%;
   font-size: 90%;
 }

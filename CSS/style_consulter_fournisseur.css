@@ -27,8 +27,13 @@ fieldset {
     padding: 30px 20px;
     border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -50,6 +55,6 @@ fieldset {
 	justify-content: space-around;
 }
 
-footer{
+footer {
   bottom :0;
 }

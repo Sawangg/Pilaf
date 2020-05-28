@@ -8,8 +8,14 @@ fieldset {
 
 .flexAround div {
 	width: 20%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
@@ -30,15 +36,22 @@ label, fieldset {
 }
 
 #result_employe {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
 .employe {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 40%;
 	background-color: rgba(223, 116, 48, 0.3);
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	border-radius: 4px;
 	padding: 0.5%;
@@ -47,8 +60,15 @@ label, fieldset {
 
 .employe div {
 	width: 40%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	text-align: center;
 }
@@ -72,7 +92,7 @@ label, fieldset {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
-#bouttonAfficherPlus{
+#bouttonAfficherPlus {
 	padding: 1% 2%;
 	font-size: 125%;
 	display: block;

@@ -8,8 +8,14 @@ fieldset {
 
 .flexAround div {
 	width: 20%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
@@ -30,16 +36,24 @@ label, fieldset {
 }
 
 #resultClient {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
 .client {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+  	-ms-flex-wrap: wrap;
   	flex-wrap: wrap;
 	width: 40%;
 	background-color: rgba(223, 116, 48, 0.3);
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	border-radius: 4px;
 	padding: 1%;
@@ -48,8 +62,15 @@ label, fieldset {
 
 .client div{
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	text-align: center;
 }

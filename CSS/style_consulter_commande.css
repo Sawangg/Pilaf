@@ -71,14 +71,19 @@ label {
 }
 
 .produit {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 150px;
 	grid-template-columns: 150px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
 .produit .image_produit {
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 3;
 	grid-row: 1 / 4;
+	-ms-grid-column: 1;
 	grid-column: 1;
 	background-image: url("../IMAGES/produits/orangina.jpg");
 	background-repeat: no-repeat;
@@ -87,39 +92,53 @@ label {
 }
 
 .produit .nom_produit {
+	-ms-grid-row: 1;
 	grid-row: 1;
+	-ms-grid-column: 2;
 	grid-column: 2;
 }
 
 .produit .reference_produit {
+	-ms-grid-row: 3;
 	grid-row: 3;
+	-ms-grid-column: 2;
 	grid-column: 2;
 }
 
 .produit .prix_HT_produit {
+	-ms-grid-row: 1;
 	grid-row: 1;
+	-ms-grid-column: 3;
 	grid-column: 3;
 }
 
 .produit .TVA_produit {
+	-ms-grid-row: 2;
 	grid-row: 2;
+	-ms-grid-column: 3;
 	grid-column: 3;
 }
 
 .produit .prix_TTC_produit {
+	-ms-grid-row: 3;
 	grid-row: 3;
+	-ms-grid-column: 3;
 	grid-column: 3;
 }
 
 .produit .quantite_com_produit {
+	-ms-grid-row: 2;
 	grid-row: 2;
+	-ms-grid-column: 4;
 	grid-column: 4;
 	text-align: center;
 	padding-right: 20px;
 }
 
 .produit .quantite_liv_produit {
+	-ms-grid-row: 2;
 	grid-row: 2;
+	-ms-grid-column: 5;
 	grid-column: 5;
 	text-align: right;
 	padding-right: 20px;

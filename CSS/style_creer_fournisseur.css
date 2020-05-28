@@ -12,9 +12,14 @@ legend {
 }
 
 .flexAround div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 46%;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-top: 2%;
 	font-size: 110%;
@@ -44,10 +49,19 @@ label, fieldset {
 	margin: 2% 0 0 2.3%;
 }
 
-input[type="submit"] {
-	display: block;
-	padding: 0.75% 2% ;
-	margin: 0 auto;
+#boutons {
+	margin: 1% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+#boutons input, #boutons a {
+	width: auto;
+	margin: 20px 40px 0;
+	padding: 0.5% 1%;
 }
 
 footer {

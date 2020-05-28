@@ -46,8 +46,13 @@ fieldset {
 .ajoutContent {
 	margin-left: 5%;
 	padding: 1% 0 1% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -77,7 +82,10 @@ span {
 
 #boutons {
 	margin: 1% 0 0.75% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 

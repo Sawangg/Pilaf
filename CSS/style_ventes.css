@@ -60,13 +60,21 @@ fieldset {
 .produitContent {
 	border-bottom: solid rgb(36, 128, 36) 1px;
 	padding: 1% 0 1% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
 #total {
 	margin-top: 1%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
