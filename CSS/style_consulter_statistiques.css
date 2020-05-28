@@ -4,38 +4,33 @@ fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
-
 	padding-bottom: 2%;
-}
-
-#box_CA {
-	background-image: url("../IMAGES/fonds/fondOrange.png");
-
-	border : solid rgb(223, 116, 48) 1px;
-	border-radius: 20px;
-
-	margin: 2%;
-	padding: 1%;
-}
-#box_CA b {
-	font-size: 120%;
-}
-
-form {
-	margin-bottom: 2%;
 }
 
 .flexAround div {
 	width: 20%;
 	margin-top: 0.5%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
+
+#box_CA {
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	border : solid rgb(223, 116, 48) 1px;
+	border-radius: 20px;
+	margin: 2%;
+	padding: 1%;
+}
+
+#box_CA b {
+	font-size: 120%;
+}
+
 .stats_valeur {
 	font-weight: bold;
 }
+
 .stats_comparaison {
 	font-size: 70%;
 }
@@ -48,7 +43,6 @@ label, fieldset {
 #flex {
 	width: 100%;
 	margin: 0.5%;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -59,24 +53,18 @@ label, fieldset {
 	width: 25%;
 	height: auto;
 	margin-top: 2%;
-
 	display: flex;
 	flex-direction: column;
-
 	padding: 1%;
-
 	background-color: white;
-
 	border : solid gray 1px;
 	border-radius: 4px;
-
 	box-shadow: 3px 4px 11px #3d3d3d4f;
 }
 
 .graphe img {
 	height: auto;
 	width: 100%;
-
 	margin-top: 20px;
 	margin-bottom: auto;
 }
