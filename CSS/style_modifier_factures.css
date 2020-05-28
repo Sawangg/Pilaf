@@ -63,3 +63,7 @@ input[type="date"] {
 	margin-left: 3%;
 	padding: 0.5% 1%;
 }
+
+footer {
+	bottom: 0;
+}
