@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="Author" content="Apokalypt">
   <title>Consulter une commande</title>
+  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_consulter_commande.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <fieldset id="box_main">
+    <fieldset id="box_main" class="box">
       <legend>Consulter une commande</legend>
 
       <div id="main">
@@ -28,7 +29,7 @@
           <label>XXXXXXX</label>
         </div>
   
-        <fieldset id="box_fournisseur">
+        <fieldset id="box_fournisseur" class="box">
           <legend>Fournisseur</legend>
   
           <div id="fournisseur">
@@ -57,9 +58,7 @@
               <label>XXXXXXX</label>
             </div>
 
-            <div id="bouton">
-              <input type="button" value="Plus d'informations" id="bouton_fournisseur">
-            </div>
+            <input type="button" class="designBoutons boutonRouge noSelect" value="Plus d'informations">
           </div>
         </fieldset>
   
@@ -77,7 +76,7 @@
 
         <br>
   
-        <fieldset id="box_produits">
+        <fieldset id="box_produits" class="box">
           <legend>Liste des produits</legend>
   
           <div class="produit">
@@ -174,8 +173,8 @@
         </fieldset>
   
         <div id="boutons">
-          <input type="button" value="Retour" id="bouton_retour">
-          <input type="button" value="Réceptionner commande" id="bouton_reception">
+          <a href="recherche_commande.html" class="designBoutons boutonRouge noSelect">Retour</a>
+          <input type="button"  class="designBoutons boutonVert noSelect" value="Réceptionner commande" id="bouton_reception">
         </div>
       </div>
     </fieldset>  
