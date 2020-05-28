@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="sepios87">
+  <title>Consulter catalogue fournisseur</title>
+  <link rel="stylesheet" href="../CSS/style_recherche_client.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form id="formClient">
+    <fieldset>
+      <legend>Rechercher client</legend>
+      <div id="outilRechercheClient">
+        <div>
+          <label>Nom :</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Prenom :</label>
+          <input type="text">
+        </div>
+        <div>
+            <label>Age :</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Ville :</label>
+          <input type="text">
+        </div>
+      </div>
+      <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercherClient">
+    </fieldset>
+  </form>
+  <div id="resultClient">
+    <div class="client">
+      <div>
+        <h3>Palapa</h3>
+        <p><strong>Téléphone : </strong>0606060606</p>
+        <p><strong>E-mail : </strong>palapa@gmail.com</p>
+        <p><strong>Adresse : </strong>86 rue XXXX Limoges</p>
+        <p><strong>Date de naissance : </strong>20/01/1998</p>
+      </div>
+      <div id="bouton">
+        <a href="modifier_client" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="client">
+      <div>
+        <h3>Palapa</h3>
+        <p><strong>Téléphone : </strong>0606060606</p>
+        <p><strong>E-mail : </strong>palapa@gmail.com</p>
+        <p><strong>Adresse : </strong>86 rue XXXX Limoges</p>
+        <p><strong>Date de naissance : </strong>20/01/1998</p>
+      </div>
+      <div id="bouton">
+        <a href="modifier_client" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+      <button type="button" id="bouttonAfficherPlus" class="designBoutons boutonGris">Afficher Plus</button>
+  </div>
+  </html>
