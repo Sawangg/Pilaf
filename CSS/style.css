@@ -20,6 +20,9 @@ html {
 body {
 	color: black;
 	background: white;
+	height: 100%;
+	position: relative;
+	min-height: 100vh;
 }
 
 a:focus, button:focus, summary:focus{
@@ -147,4 +150,28 @@ select option {
 select option:hover {
 	background-color: rgba(223, 223, 223, 0.5);
 	border: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: -10%;
+	right: 0;
+	margin: 2% 0 0.5%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+footer a {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: auto 1%;
+	font-size: 80%;
+}
+
+footer img {
+	margin-right: 1%;
+	width: 55px;
+	height: 55px;
 }
