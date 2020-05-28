@@ -155,7 +155,7 @@ a {
 .use_case {
   font-size: 200%;
   width: 80%;
-  height: 180px;
+  height: 190px;
   border-radius: 8px;
   margin: 3% auto;
   padding: 1% 3%;
@@ -167,7 +167,7 @@ a {
 }
 
 .use_case details {
-  margin-top: 2%;
+  margin-top: 10px;
   font-size: 60%;
 }
 
@@ -190,4 +190,17 @@ a {
 .use_case:hover, #pointer:hover {
   opacity: 1;
   width: 85%;
+}
+
+details{
+  width: 80%;
+  cursor: pointer;
+}
+
+details div{
+  margin-top: 15px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

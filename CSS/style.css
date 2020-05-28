@@ -22,8 +22,9 @@ body {
 	background: white;
 }
 
-a:focus, button:focus {
-    outline: none;
+a:focus, button:focus, summary:focus{
+  outline: 0;
+  outline: none;
 }
 
 form {

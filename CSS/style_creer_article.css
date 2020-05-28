@@ -13,9 +13,9 @@ legend {
 }
 
 #ajout {
-    width: auto;
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
     background-color: white;
     padding: 2% 3%;
     border : solid rgb(223, 116, 48) 1px;
