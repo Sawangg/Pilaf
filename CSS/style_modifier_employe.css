@@ -75,3 +75,7 @@ p.isNotVisible {
 #cb:checked ~ .isNotVisible {
 	display: inline-block;
 }
+
+footer {
+	bottom : 0;
+}

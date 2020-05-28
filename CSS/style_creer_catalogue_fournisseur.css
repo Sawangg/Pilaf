@@ -68,3 +68,7 @@ select:last-of-type {
 	margin: auto;
 	margin-top: 3%;
 }
+
+footer {
+	bottom : 0;
+}

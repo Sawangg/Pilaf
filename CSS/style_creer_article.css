@@ -78,3 +78,7 @@ span {
   padding: 1%;
   font-size: 90%;
 }
+
+footer {
+  bottom :0;
+}

@@ -88,3 +88,7 @@ fieldset {
 #boutonValider:hover {
   background-color: rgba(33, 119, 20, 0.9);
 }
+
+footer {
+  bottom : 0;
+}

@@ -75,3 +75,7 @@ input[type="submit"] {
   font-weight: normal;
   font-size: 90%;
 }
+
+footer {
+  bottom : 0;
+}

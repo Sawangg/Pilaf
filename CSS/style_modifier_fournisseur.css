@@ -56,3 +56,7 @@ label, fieldset {
 #boutons a{
 	padding: 0.5% 1%;
 }
+
+footer {
+	bottom : 0;
+}

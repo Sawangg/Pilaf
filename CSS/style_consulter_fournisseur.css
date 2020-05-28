@@ -49,3 +49,7 @@ fieldset {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
+
+footer{
+  bottom :0;
+}

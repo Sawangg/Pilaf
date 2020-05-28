@@ -11,12 +11,6 @@ label {
 	font-size: 120%;
 }
 
-hr {
-	border-color: gray;
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
 select {
 	width: 15%;
 }
@@ -50,7 +44,7 @@ fieldset {
 
 .produits .en_tete img {
 	width: 20%;
-	height: auto;
+	height: 100%;
 }
 
 .produits .en_tete label {

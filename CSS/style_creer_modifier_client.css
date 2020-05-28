@@ -72,3 +72,7 @@ span {
 #annuler{
 	margin: auto 0;
 }
+
+footer {
+	bottom : 0;
+}

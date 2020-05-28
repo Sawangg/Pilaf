@@ -63,3 +63,7 @@ span {
 	margin: auto 0;
 	padding: 0.5% 1%;
 }
+
+footer {
+	bottom : 0;
+}

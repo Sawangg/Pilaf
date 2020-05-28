@@ -174,7 +174,11 @@ fieldset {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
-  
+
 .designBoutons {
 	padding: 0.5% 1%;
+}
+
+footer{
+	bottom : 0;
 }
