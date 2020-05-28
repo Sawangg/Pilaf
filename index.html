@@ -10,7 +10,7 @@
 <body>
   <header>
     <div id="profil">
-      <img src="IMAGES/profil.png" alt="profil">
+      <img src="IMAGES/profil.png" alt="profil" class="noSelect">
       <div>
         <p>Mme.Personne</p>
         <p>Secretaire</p>
@@ -25,31 +25,42 @@
           </label>
           <div class="details noSelect">
             <a href="HTML/creer_article.html">Créer articles</a>
-            <a href="HTML/rechercher_article.html">Rechercher articles</a>
+            <a href="HTML/recherche_article.html">Rechercher articles</a>
           </div>
         </li>
         <li>
-          <input type="checkbox" id="details-toggle-cbox2"/>
           <label class="nav_content noSelect">
-            <a href="HTML/ventes.html">Caisse</a>
+            <a href="HTML/ventes.html" class="noSelect">Caisse</a>
           </label>
         </li>
         <li>
-          <input type="checkbox" id="details-toggle-cbox3"/>
-          <label for="details-toggle-cbox3" class="nav_content noSelect">
+          <input type="checkbox" id="details-toggle-cbox2"/>
+          <label for="details-toggle-cbox2" class="nav_content noSelect">
             <span>Client</span>
           </label>
           <div class="details">
             <a href="HTML/creer_client.html">Créer client</a>
+            <a href="HTML/recherche_client.html">Rechercher client</a>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" id="details-toggle-cbox3"/>
+          <label for="details-toggle-cbox3" class="nav_content noSelect">
+            <span>Commande</span>
+          </label>
+          <div class="details noSelect">
+            <a href="HTML/creer_commande.html">Créer commande</a>
+            <a href="HTML/recherche_commande.html">Rechercher commande</a>
           </div>
         </li>
         <li>
           <input type="checkbox" id="details-toggle-cbox4"/>
           <label for="details-toggle-cbox4" class="nav_content noSelect">
-            <span>Commande</span>
+            <span>Employé</span>
           </label>
-          <div class="details noSelect">
-            <a href="HTML/recherche_commande.html">Rechercher commande</a>
+          <div class="details">
+            <a href="HTML/creer_employe.html">Créer employé</a>
+            <a href="HTML/recherche_employe.html">Rechercher employé</a>
           </div>
         </li>
         <li>
@@ -65,7 +76,7 @@
         </li>
       </ul>
     </nav>
-    <div id="deconnexion">
+    <div id="deconnexion" class="noSelect">
       <a href="HTML/connexion.html">
         <p>Déconnexion</p>
         <img src="IMAGES/deconnexion.png" alt="deconnexion">
@@ -74,7 +85,7 @@
   </header>
   <main>
       <div id="pointer">
-        <a href="HTML/pointer_horaires.html">Pointer horaire</a>
+        <a href="HTML/pointer_horaires.html" class="noSelect">Pointer horaire</a>
       </div>
       <div id="use_case1" class="use_case noSelect">
         <h1>Espace Caisses</h1>

@@ -33,7 +33,7 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(6, 16.6%);
   list-style: none;
 }
 
@@ -80,6 +80,11 @@ a {
 }
 
 #details-toggle-cbox1:checked ~ .details {
+  display: flex;
+  flex-direction: column;
+}
+
+#details-toggle-cbox2:checked ~ .details {
   display: flex;
   flex-direction: column;
 }
