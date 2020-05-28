@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Sawang_">
+  <title>Rechercher une commande</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style_recherche_employe.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Rechercher un employé</legend>
+      <div class="flexAround">
+        <div>
+          <label>Poste :</label>
+          <select required>
+            <option value="" disabled selected>Sélectionner un poste</option>
+            <option value="1">Dirigeant</option>
+            <option value="2">Secrétaire</option>
+            <option value="3">Gestionnaire</option>
+            <option value="4">Cadre commercial</option>
+            <option value="5">Autre</option>
+          </select>
+        </div>
+        <div>
+          <label>Nom :</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Prénom :</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Date de contrat :</label>
+          <input type="date">
+        </div>
+      </div>
+      <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercherEmploye">
+    </fieldset>
+  </form>
+  <div id="result_employe">
+    <div class="employe">
+      <div>
+        <h3>Mr. Pilaf</h3>
+        <p><strong>Poste : </strong>Dirigeant</p>
+        <p><strong>Nom : </strong>Pilaf</p>
+        <p><strong>Date de contrat : </strong>01 janvier 2016</p>
+      </div>
+      <div>
+        <a href="consulter_employe.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_employe.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="employe">
+      <div>
+        <h3>Mme. Flotte</h3>
+        <p><strong>Poste : </strong>Secrétaire</p>
+        <p><strong>Nom : </strong>Flotte</p>
+        <p><strong>Date de contrat : </strong>01 octobre 2016</p>
+      </div>
+      <div>
+        <a href="consulter_employe.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_employe.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="employe">
+      <div>
+        <h3>Mr. Melet</h3>
+        <p><strong>Poste : </strong>Gestionnaire</p>
+        <p><strong>Nom : </strong>Melet</p>
+        <p><strong>Date de contrat : </strong>28 février 2016</p>
+      </div>
+      <div>
+        <a href="consulter_employe.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_employe.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="employe">
+      <div>
+        <h3>Mr. Billet</h3>
+        <p><strong>Poste : </strong>Cadre commercial</p>
+        <p><strong>Nom : </strong>Billet</p>
+        <p><strong>Date de contrat : </strong>21 avril 2018</p>
+      </div>
+      <div>
+        <a href="consulter_employe.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_employe.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+  </div>
+  <button type="button" id="bouttonAfficherPlus" class="designBoutons boutonGris">Afficher Plus</button>
+</body>
+</html>
