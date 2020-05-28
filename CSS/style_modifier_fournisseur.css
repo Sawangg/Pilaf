@@ -49,8 +49,6 @@ label, fieldset {
 	margin: auto;
 }
 
-input[type="submit"] {
-	display: block;
-	margin: 0 auto;
-	padding: 0.75% 2%;
+#boutons{
+	margin-top: 2%;
 }
