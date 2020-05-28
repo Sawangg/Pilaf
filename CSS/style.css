@@ -73,14 +73,6 @@ fieldset {
 	justify-content: space-around;
 }
 
-.isNotVisible {
-	display: none;
-}
-
-.isVisible {
-	display: block;
-}
-
 .boutonRouge {
 	background-color: rgba(203, 75, 62, 0.5);
 }

@@ -2,16 +2,16 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="Author" content="sepios87">
+  <meta name="Author" content="Sawang_">
   <title>Consulter les stocks</title>
   <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/style_recherche_mouvement_stock.css">
+  <link rel="stylesheet" href="../CSS/style_recherche_mouvements_stock.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
   <form>
     <fieldset>
-      <legend>Rechercher</legend>
+      <legend>Rechercher les mouvements de stock</legend>
       <div class="flexAround">
         <div>
           <label>Code barre :</label>
@@ -37,36 +37,39 @@
           <input type="text">
         </div>
       </div>
-      <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercher">
+      <div class="flexAround">
+        <a href="../index.html" class="designBoutons boutonRouge noSelect" id="retour">Retour</a>
+        <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercherStocks">
+      </div>
     </fieldset>
   </form>
-  <div id="resultatArticles">
-    <div class="produit">
-      <div>
-        <h3>Chocolat</h3>
-        <h4>Code barre : 453845168435</h4>
-        <p>Quantité : <b>90</b></p>
-      </div>
-      <div>
-        <h4>Dernière action :</h4>
-        <p>Date : 16/05/2020</p>
-        <p>Ajout de <b>5</b> produits au stock</p>
-        <button type="button" class="designBoutons boutonVert">Consulter détails</button>
-        <button type="button" class="designBoutons boutonVert">Voir plus d'actions</button>
-      </div>
-    </div>
-    <div class="produit">
+  <div id="result_stock">
+    <div class="stock">
       <div>
         <h3>Lait bio</h3>
         <h4>Code barre : 685982695695</h4>
         <p>Quantité : <b>30</b></p>
-      </div>
-      <div>
         <h4>Dernière action :</h4>
         <p>Date : 16/05/2020</p>
         <p>Retrait de <b>2</b> produits au stock</p>
-        <button type="button" class="designBoutons boutonVert">Consulter détails</button>
-        <button type="button" class="designBoutons boutonVert">Voir plus d'actions</button>
+      </div>
+      <div>
+        <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter détails</a>
+        <a href="modifier_mouvement_stock.html" class="designBoutons boutonOrange noSelect">Modifier l'action</a>
+      </div>
+    </div>
+    <div class="stock">
+      <div>
+        <h3>Chocolat</h3>
+        <h4>Code barre : 453845168435</h4>
+        <p>Quantité : <b>90</b></p>
+        <h4>Dernière action :</h4>
+        <p>Date : 16/05/2020</p>
+        <p>Ajout de <b>5</b> produits au stock</p>
+      </div>
+      <div>
+        <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter détails</a>
+        <a href="modifier_mouvement_stock.html" class="designBoutons boutonOrange noSelect">Modifier l'action</a>
       </div>
     </div>
     <button type="button" id="bouttonAfficherPlus" class="designBoutons boutonGris">Afficher Plus</button>

@@ -1,4 +1,4 @@
-/* Auteur : sepios87 */
+/* Auteur : Sawang_ */
 
 fieldset {
 	border : solid rgb(223, 116, 48) 1px;
@@ -13,29 +13,36 @@ fieldset {
 	justify-content: space-around;
 }
 
+input {
+	padding: 1%;
+	width: 80%;
+	margin: 1% 0;
+}
+
 label, fieldset {
 	margin : 1% 0;
 	font-size: 110%;
 }
 
-#boutonRechercherFournisseur, #retour {
+select {
+	width: 80%;
+	margin-left: 1%;
+}
+
+#boutonRechercherStocks, #retour {
 	padding: 0.5% 1%;
-	margin-top: 2%;
 	font-size: 110%;
+	width: auto;
+	margin: 2% 0 0;
 }
 
-.fournisseur a {
-	font-size: 110%;
-	margin: 8% 0;
-}
-
-#result_fournisseur {
+#result_stock {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.fournisseur {
+.stock {
 	display: flex;
 	width: 40%;
 	background-color: rgba(223, 116, 48, 0.3);
@@ -45,7 +52,7 @@ label, fieldset {
 	margin-top: 2%;
 }
 
-.fournisseur div {
+.stock div {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
@@ -53,19 +60,32 @@ label, fieldset {
 	text-align: center;
 }
 
-.fournisseur div h3 {
+.stock a {
+	font-size: 110%;
+	margin: 8% 0;
+}
+
+.stock h4:first-of-type {
+	margin-top: 0;
+}
+
+.stock h4:last-of-type {
+	margin-top: 3%;
+
+}
+.stock div h3 {
 	padding: 5%;
 	border: solid black 1px;
 }
 
-.fournisseur div p:not(:last-child) {
-	margin: 5% 0 0;
+.stock div p:not(:last-child) {
+	margin: 0;
 	padding-bottom: 5%;
 	border-bottom: solid black 2px;
 }
 
-.fournisseur div p:last-child {
-	margin: 5% 0 0;
+.stock div p:last-child {
+	margin: 5% 0 2%;
 }
 
 #bouttonAfficherPlus {
