@@ -6,7 +6,7 @@
     <title>Créer un article</title>
     <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/style_creer_article.css">
+    <link rel="stylesheet" href="../CSS/style_creer_article_bis.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -33,40 +33,24 @@
 
                 <label>Type de produit</label>
                 <SELECT name="Prix">
-                  <OPTION selected>Unitaire</OPTION>
-                  <OPTION>Pack</OPTION>
+                  <OPTION>Unitaire</OPTION>
+                  <OPTION selected>Pack</OPTION>
                 </SELECT>
 
-                <div>
-                  <label>Prix à l'unité </label>
-                  <SELECT name="Prix" class="choix_type_prix">
-                    <OPTION selected>HT</OPTION>
-                    <OPTION>TTC</OPTION>
-                  </SELECT>
-                  <label><span>*</span> :</label>
-                  <input type="text" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
-                </div>
+                <br>
+                <button type="button" class="designBoutons boutonGris noSelect">Sélectionner article</button>
+                <br>
 
-                <label>Poids (en KG) : </label>
-                <input type="text" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
+                <label>Quantité<span>*</span> : </label>
+                <input type="number" name="quantité_pack" value="2" min="2">
 
-                <div>
-                  <label>Prix au kg </label>
-                  <SELECT name="Prix" class="choix_type_prix">
-                    <OPTION selected>HT</OPTION>
-                    <OPTION>TTC</OPTION>
-                  </SELECT>
-                  <label><span>*</span> :</label>
-                  <input type="text" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
-                </div>
-
-                <label>Taux de TVA<span>*</span> :</label>
-                <SELECT name="TVA">
-                  <OPTION>20%</OPTION>
-                  <OPTION>10%</OPTION>
-                  <OPTION selected>5,5%</OPTION>
-                  <OPTION>2,1%</OPTION>
-                </SELECT>
+                <br>
+                <br>
+                <label><b>Prix  HT :</b> XX,XX €</label>
+                <br>
+                <label><b>Pourcentage TVA :</b> XX,X%</label>
+                <br>
+                <label><b>Prix TTC :</b> XX,XX €</label>
               </fieldset>
 
               <fieldset>
@@ -74,18 +58,17 @@
 
                 <label>Type de promotion : </label>
                 <select>
-                  <option selected>Réduction pourcentage</option>
-                  <option>Réduction par groupe</option>
+                  <option>Réduction pourcentage</option>
+                  <option selected>Réduction par groupe</option>
                 </select>
 
-                <br>
-
-                <label> Réduction de </label>
-                <input type="number" name="réduction" value="0" min="0" max="100">
-                <label>%</label>
-
-                <br>
-
+                <div id="promotion_groupe">
+                  <input type="number" name="réduction" value="1" min="1">
+                  <label> acheté(e)(s) = </label>
+                  <input type="number" name="réduction" value="1" min="1">
+                  <label> offert(e)(s)</label>
+                </div>
+                
                 <label>Date de début : </label>
                 <input type="date" name="date_début_promotion">
                 <br>

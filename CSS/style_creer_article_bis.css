@@ -56,9 +56,17 @@ input[type="text"] {
   width: 100%;
 }
 
-#renseignements fieldset div select.choix_type_prix {
-  width: auto;
-  padding-right: 28px;
+#renseignements fieldset button {
+  width: 100%;
+
+  margin-top: 2%;
+}
+
+#promotion_groupe {
+  display: flex;
+}
+#promotion_groupe input {
+  margin-right: 1%;
 }
 
 #image {
