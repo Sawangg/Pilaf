@@ -15,10 +15,10 @@ fieldset div{
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 #recherche div{
@@ -46,8 +46,8 @@ fieldset div{
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
@@ -78,6 +78,10 @@ label, fieldset {
 	margin: 8% 0;
 }
 
+#modePaiementPref{
+	margin: 1.5% 0;
+}
+
 #result_fournisseur {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -97,12 +101,13 @@ label, fieldset {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	border-radius: 4px;
-	padding: 0.5%;
+	padding: 2%;
 	margin-top: 2%;
 }
 
 .fournisseur div {
-	width: 40%;
+	width: auto;
+	padding: 0 5%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

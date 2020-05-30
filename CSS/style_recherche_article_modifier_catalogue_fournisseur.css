@@ -7,7 +7,9 @@ fieldset {
 }
 
 .flexAround div {
-	width: 19%;
+	width: 24%;
+	margin-top: 2%;
+	margin-bottom: 1%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -17,13 +19,6 @@ fieldset {
 	flex-direction: column;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-}
-div.ligne2 {
-	width: 23%;
-}
-
-div.ligne2, div.ligne3 {
-	margin-top: 2%;
 }
 
 div#parametre_prix {
@@ -116,6 +111,14 @@ label, fieldset{
 
 .article a:hover {
 	background-color: rgba(223, 116, 48, 0.7);
+}
+
+#validation{
+	border-radius: 4px;
+	margin: auto;
+	width: 70%;
+	background-color: rgba(223, 116, 48, 0.5);
+	padding: 1.5% 0.5%;
 }
 
 #bouttonAfficherPlus {
