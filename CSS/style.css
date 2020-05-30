@@ -37,6 +37,10 @@ fieldset {
 	background-size: cover;
 }
 
+p {
+    word-break: break-all;
+}
+
 .designBoutons {
 	color: black;
 	text-decoration: none;
