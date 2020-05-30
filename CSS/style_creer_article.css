@@ -1,88 +1,61 @@
-/* Auteur : Apokalypt */
+fieldset{
+    margin-top: 3%;
+    
+    font-size: 110%;
 
-fieldset {
-  font-size: 110%;
-  margin-top: 3%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
-  background-image: url("../IMAGES/fonds/fondOrange.png");
+    border: solid #df7430 1px;
+    border-radius: 2px;
+
+    background-image: url(../IMAGES/fonds/fondOrange.png);
+}
+legend{
+    font-size: 130%;
+}
+label{
+    font-weight: bold;
+}
+span{
+    color: red
 }
 
-legend {
-  font-size: 130%;
+#renseignements{
+    width: 60%;
+    
+    margin: auto;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
+.groupe_informations div,input,label,select{
+    width: 49%;
 
-#ajout {
-  width: 80%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  padding: 2% 3%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
+    margin-top: 3%;
 }
-
-#ajout p {
-  color: red;
-  font-size: 70%;
+#renseignements fieldset{
+    width: 100%;
 }
-
-#renseignements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 45%;
+.groupe_informations{
+    display: flex;
+    flex-wrap: nowrap;
 }
+select.choix_type_prix{
+    width:  auto;
 
-#renseignements input, #renseignements label, #renseignements select {
-  width: 49%;
-  margin-top: 5%;
+    margin-top:  0;
+
+    padding-right:  28px;
+
+    font-weight: bold;
 }
-
-input[type="text"] {
-  border: solid gray 1px;
-  border-radius: 2px;
-  padding: 0 0.5%;
-}
-
-#renseignements fieldset {
-  width: 100%;
-}
-
-#renseignements fieldset div select.choix_type_prix {
-  width: auto;
-  padding-right: 28px;
-}
-
-#image {
-  width : 48%;
-}
-
-img {
-  height: auto;
-  width: 100%;
-}
-
-span {
-  color: red;
-}
-
-#boutons {
-  margin-top : 2%;
-}
-
-#boutons a {
-  margin : auto 0;
-}
-
-#boutons input {
-  padding: 1%;
-  font-size: 90%;
+#boutons{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    font-size: 130%;
 }

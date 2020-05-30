@@ -1,91 +1,144 @@
-/* Auteur : Apokalypt */
+fieldset{
+    margin-top: 3%;
+    
+    font-size: 110%;
 
-fieldset {
-  font-size: 110%;
-  margin-top: 3%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
-  background-image: url("../IMAGES/fonds/fondOrange.png");
+    border: solid #df7430 1px;
+    border-radius: 2px;
+
+    background-image: url(../IMAGES/fonds/fondOrange.png);
 }
-
-legend {
-  font-size: 130%;
+legend{
+    font-size: 130%;
 }
-
-#ajout {
-  width: 80%;
-  margin : auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  background-color: white;
-  padding-bottom: 2%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
+label{
+    font-weight: bold;
 }
-
-#ajout p {
-  color: red;
-  font-size: 70%;
-}
-
-#renseignements input, #renseignements label, #renseignements select{
-  width: 49%;
-  margin-top: 5%;
-}
-
-input[type="text"] {
-  border: solid gray 1px;
-  border-radius: 2px;
-  padding: 0 0.5%;
+span{
+    color: red
 }
 
 #renseignements{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 45%;
+    width: 60%;
+    
+    margin: auto;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.groupe_informations div,input,label,select{
+    width: 49%;
+
+    margin-top: 3%;
+}
+#renseignements fieldset{
+    width: 100%;
+}
+.groupe_informations{
+    display: flex;
+    flex-wrap: nowrap;
+}
+select.choix_type_prix{
+    width:  auto;
+
+    margin-top:  0;
+
+    padding-right:  28px;
+
+    font-weight: bold;
 }
 
-#image_article {
-  height: 80%;
-  background-image: url("../IMAGES/produits/orangina.jpg");
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+#historique {
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 
-#button_image_article {
-  -ms-grid-column: 8;
-  grid-column: 8;
-  -ms-grid-row: 6;
-  grid-row: 6;
+p#historique_tete {
+    width: 100%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    margin-top: 0%;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    color: black;
 }
 
-span {
-  color: red;
+#historique_tableau {
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+
+    background-color: white;
 }
 
-#boutons {
-  margin: 2% 0 0.75% 0;
+#historique_tableau label, #historique_tableau p {
+    border: solid 2px gray;
+
+    margin: 0;
+}
+#historique_tableau p {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+#historique_tableau .descr_cellule {
+    width: calc(30% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .etat_cellule {
+    width: calc(15% - 4px);
+
+    text-align: center;
+    font-weight: bold;
+}
+#historique_tableau .date_cellule {
+    width: calc(20% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .influence_cellule {
+    width: calc(15% - 4px);
+
+    text-align: center;
+    font-weight: bold;
 }
 
-#boutons a {
-  padding: 0.5% 1%;
+.text_green {
+    color: green;
+}
+.text_red {
+    color: red;
 }
 
-input[type="submit"] {
-  font-weight: normal;
-  font-size: 90%;
+fieldset#new_promotion {
+    width: auto;
+
+    margin-bottom: 1%;
+
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
-footer {
-  bottom : 0;
+#boutons{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    font-size: 130%;
 }

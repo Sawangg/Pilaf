@@ -1,96 +1,84 @@
-/* Auteur : Apokalypt */
-
 fieldset {
-  font-size: 110%;
-  margin-top: 3%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
-  background-image: url("../IMAGES/fonds/fondOrange.png");
-}
+    margin-top: 3%;
+    
+    font-size: 110%;
 
+    border: solid #df7430 1px;
+    border-radius: 2px;
+
+    background-image: url(../IMAGES/fonds/fondOrange.png);
+}
 legend {
-  font-size: 130%;
+    font-size: 130%;
+}
+label {
+    font-weight: bold;
+}
+span {
+    color: red
+}
+.groupe_informations div, input, label, select {
+    width: 49%;
+
+    margin-top: 3%;
+}
+.groupe_informations div label {
+    margin-top: 3%;
 }
 
-#ajout {
-  width: 80%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  padding: 2% 3%;
-  border : solid rgb(223, 116, 48) 1px;
-  border-radius: 2px;
-}
-
-#ajout p {
-  color: red;
-  font-size: 70%;
+div#groupe_boutons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #renseignements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 45%;
+    width: 60%;
+    
+    margin: auto;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
-
-#renseignements input, #renseignements label, #renseignements select {
-  width: 49%;
-  margin-top: 5%;
-}
-
-input[type="text"] {
-  border: solid gray 1px;
-  border-radius: 2px;
-  padding: 0 0.5%;
-}
-
 #renseignements fieldset {
-  width: 100%;
+    width: 100%;
 }
 
-#renseignements fieldset button {
-  width: 100%;
+.groupe_informations {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
-  margin-top: 2%;
+#groupe_bouton {
+    width: 50%;
+}
+
+select.choix_type_prix {
+    width:  auto;
+
+    margin-top:  0;
+
+    padding-right:  28px;
+
+    font-weight: bold;
 }
 
 #promotion_groupe {
-  display: flex;
+    display: flex;
 }
 #promotion_groupe input {
-  margin-right: 1%;
-}
-
-#image {
-  width : 48%;
-}
-
-img {
-  height: auto;
-  width: 100%;
-}
-
-span {
-  color: red;
+    margin-right: 1%;
 }
 
 #boutons {
-  margin-top : 2%;
-}
-
-#boutons a {
-  margin : auto 0;
-}
-
-#boutons input {
-  padding: 1%;
-  font-size: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    font-size: 130%;
 }

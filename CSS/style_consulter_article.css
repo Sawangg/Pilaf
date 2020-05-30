@@ -13,7 +13,7 @@ legend {
 }
 
 #ajout {
-    width: 80%;
+    width: 90%;
     margin : 2% auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28,7 +28,7 @@ legend {
 
 #renseignements label, #renseignements p {
     width: 49%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #renseignements {
@@ -40,7 +40,129 @@ legend {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 45%;
+    width: 65%;
+}
+
+#renseignements fieldset {
+    width: 100%;
+}
+
+fieldset#box_fournisseur {
+    width: 70%;
+    
+    background: none;
+}
+#box_fournisseur a {
+	width: auto;
+	padding: 1%;
+	margin: 10px auto 0;
+	float: right;
+}
+
+.sous_renseignements, .sous_renseignements .information {
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.sous_renseignements div {
+    width: 100%;
+}
+.sous_renseignements .information {
+    width: 50%;
+}
+
+div#historique {
+    margin-top: 3%;
+}
+
+.groupe_informations  {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.groupe_informations div {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#historique {
+    margin-top: 2%;
+}
+
+p#historique_tete {
+    width: 100%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    margin-top: 0%;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    color: black;
+}
+
+#historique_tableau {
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    background-color: white;
+}
+
+#historique_tableau label, #historique_tableau p {
+    border: solid 2px gray;
+
+    margin: 0;
+}
+#historique_tableau p {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+#historique_tableau .descr_cellule {
+    width: calc(30% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .etat_cellule {
+    width: calc(15% - 4px);
+
+    text-align: center;
+    font-weight: bold;
+}
+#historique_tableau .date_cellule {
+    width: calc(20% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .influence_cellule {
+    width: calc(15% - 4px);
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.text_green {
+    color: green;
+}
+.text_red {
+    color: red;
 }
 
 #ajout label {
@@ -58,8 +180,4 @@ img {
 
 #boutons a {
     padding: 0.5% 1%;
-}
-
-footer {
-    bottom: 0;
 }

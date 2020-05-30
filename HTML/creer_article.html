@@ -13,111 +13,149 @@
     <form action="../index.html">
       <fieldset>
         <legend>Créer un article</legend>
-            <div id="ajout" class="flexAround">
-              <div id="renseignements">
-              <label>Nom<span>*</span> :</label>
-              <input type="text" name="nom_article" pattern="[A-zÀ-ú]*" required>
+            <div id="renseignements">
+                <fieldset>
+                    <legend>Informations sur le produit</legend>
 
-              <label>Fournisseur<span>*</span> :</label>
-              <SELECT name="Fournisseur">
-                <OPTION>Panzani</OPTION>
-                <OPTION>Bell</OPTION>
-                <OPTION>Coca-cola</OPTION>
-              </SELECT>
+                    <div class="groupe_informations">
+                        <label>Nom<span>*</span> :</label>
+                        <input type="text" name="nom_article" pattern="[A-zÀ-ú]*" required>
+                    </div>
 
-              <label>Code barre<span>*</span> :</label>
-              <input type="text" name="barre_article" pattern="[0-9]*" required>
-              
-              <fieldset>
-                <legend>Prix</legend>
+                    <div class="groupe_informations">
+                        <label>Marque<span>*</span> :</label>
+                        <input type="text" name="nom_article" pattern="[A-zÀ-ú]*" required>
+                    </div>
 
-                <label>Type de produit</label>
-                <SELECT name="Prix">
-                  <OPTION selected>Unitaire</OPTION>
-                  <OPTION>Pack</OPTION>
-                </SELECT>
+                    <div class="groupe_informations">
+                        <label>Image du produit :</label>
+                        <input type="file" name="button_image_article" accept="image/png, image/jpeg">
+                    </div>
 
-                <div>
-                  <label>Prix à l'unité </label>
-                  <SELECT name="Prix" class="choix_type_prix">
-                    <OPTION selected>HT</OPTION>
-                    <OPTION>TTC</OPTION>
-                  </SELECT>
-                  <label><span>*</span> :</label>
-                  <input type="text" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
-                </div>
+                    <div class="groupe_informations">
+                        <label>Fournisseur<span>*</span> :</label>
+                        <SELECT name="Fournisseur">
+                            <OPTION>Panzani</OPTION>
+                            <OPTION>Bell</OPTION>
+                            <OPTION>Coca-cola</OPTION>
+                        </SELECT>
+                    </div>
 
-                <label>Poids (en KG) : </label>
-                <input type="text" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
+                    <div class="groupe_informations">
+                        <label>Code barre<span>*</span> :</label>
+                        <input type="text" name="barre_article" pattern="[0-9]*" required>
+                    </div>
 
-                <div>
-                  <label>Prix au kg </label>
-                  <SELECT name="Prix" class="choix_type_prix">
-                    <OPTION selected>HT</OPTION>
-                    <OPTION>TTC</OPTION>
-                  </SELECT>
-                  <label><span>*</span> :</label>
-                  <input type="text" name="prix_article" pattern="[0-9]+(\.[0-9]+)?" required>
-                </div>
+                    <div class="groupe_informations">
+                        <label>Code rayon :</label>
+                        <input type="text" name="rayon_article">
+                    </div>
+                </fieldset>
 
-                <label>Taux de TVA<span>*</span> :</label>
-                <SELECT name="TVA">
-                  <OPTION>20%</OPTION>
-                  <OPTION>10%</OPTION>
-                  <OPTION selected>5,5%</OPTION>
-                  <OPTION>2,1%</OPTION>
-                </SELECT>
-              </fieldset>
+                <fieldset>
+                    <legend>Stock</legend>
+                    
+                    <div class="groupe_informations">
+                        <label>Quantité en stock<span>*</span> :</label>
+                        <input type="number" name="quantite_stock" value="0" min="0" required>
+                    </div>
 
-              <fieldset>
-                <legend>Promotions</legend>
+                    <div class="groupe_informations">
+                        <label>Quantité en rayon<span>*</span> :</label>
+                        <input type="number" name="quantite_rayon" value="0" min="0" required>
+                    </div>
+                </fieldset>
 
-                <label>Type de promotion : </label>
-                <select>
-                  <option selected>Réduction pourcentage</option>
-                  <option>Réduction par groupe</option>
-                </select>
+                <fieldset>
+                    <legend>Prix</legend>
 
-                <br>
+                    <div class="groupe_informations">
+                        <label>Type de produit<span>*</span> :</label>
+                        <SELECT name="Prix">
+                            <OPTION selected>Unitaire</OPTION>
+                            <OPTION>Pack</OPTION>
+                        </SELECT>
+                    </div>
 
-                <label> Réduction de </label>
-                <input type="number" name="réduction" value="0" min="0" max="100">
-                <label>%</label>
+                    <div class="groupe_informations">
+                        <label>Taux de TVA<span>*</span> :</label>
+                        <SELECT name="TVA">
+                            <OPTION>20%</OPTION>
+                            <OPTION>10%</OPTION>
+                            <OPTION selected>5,5%</OPTION>
+                            <OPTION>2,1%</OPTION>
+                        </SELECT>
+                    </div>
+                    
+                    <div class="groupe_informations">
+                        <div>
+                            <label>Prix à l'unité </label>
+                            <SELECT name="Prix" class="choix_type_prix">
+                                <OPTION selected>HT</OPTION>
+                                <OPTION>TTC</OPTION>
+                            </SELECT>
+                            <label><span>*</span> :</label>
+                        </div>
+                        <input type="number" name="prix_unitaire_article" step="0.01" min="0" value="0.00" required>
+                    </div>
 
-                <br>
+                    <div class="groupe_informations">
+                        <label>Poids (en KG) : </label>
+                        <input type="number" name="poids_article" step="0.01" min="0">
+                    </div>
 
-                <label>Date de début : </label>
-                <input type="date" name="date_début_promotion">
-                <br>
-                <label>Date de fin : </label>
-                <input type="date" name="date_fin_promotion">
-              </fieldset>
+                    <div class="groupe_informations">
+                        <div>
+                            <label>Prix au kg </label>
+                            <SELECT name="Prix" class="choix_type_prix">
+                              <OPTION selected>HT</OPTION>
+                              <OPTION>TTC</OPTION>
+                            </SELECT>
+                            <label><span>*</span> :</label>
+                        </div>
+                        <input type="number" name="prix_kg_article" step="0.01" min="0" value="0.00" required>
+                    </div>
+                </fieldset>
 
-              <label>Code rayon :</label>
-              <input type="text" name="rayon_article">
+                <fieldset>
+                    <legend>Nouvelle promotion</legend>
+                    
+                    <div class="groupe_informations">
+                        <label>Type de promotion : </label>
+                        <SELECT>
+                            <OPTION>Sélectionnez un type de promotion</OPTION>
+                            <OPTION selected>Réduction pourcentage</OPTION>
+                            <OPTION>Réduction par groupe</OPTION>
+                        </SELECT>
+                    </div>
 
-              <label>Quantité en stock<span>*</span> :</label>
-              <input type="number" name="stock_article" value="0" min="0" required>
+                    <div class="groupe_informations">
+                        <label>Valeur de la réduction (en %) : </label>
+                        <input type="number" name="réduction" min="0" max="100">
+                    </div>
 
-              <p>* Obligatoire</p>
-              </div>
-              <div id="image">
-                <input type="file" name="button_image_article" accept="image/png, image/jpeg">
-                <br>
-                <img src="" alt="Image du produit">
-              </div>
-        </div>
+                    <div class="groupe_informations">
+                        <label>Date de début : </label>
+                        <input type="date" name="date_début_promotion">
+                    </div>
+
+                    <div class="groupe_informations">
+                        <label>Date de fin : </label>
+                        <input type="date" name="date_fin_promotion">
+                    </div>
+                </fieldset>
+            </div>
 
         <div id="boutons" class="flexAround">
-          <a href="../index.html" class="designBoutons noSelect boutonRouge">Annuler</a>
-          <input type="submit" class="designBoutons noSelect boutonVert" value="Créer l'article">
+            <a href="../index.html" class="designBoutons noSelect boutonRouge">Annuler</a>
+            <button type="submit" class="designBoutons noSelect boutonVert">Créer l'article</button>
         </div>
       </fieldset>
     </form>
 
     <footer>
-      <a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
-      <a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+        <a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+        <a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
     </footer>
   </body>
 </html>

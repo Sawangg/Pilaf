@@ -15,23 +15,182 @@
         <legend>Consulter un article</legend>
           <div id="ajout" class="flexAround">
             <div id="renseignements">
-            <label>Nom :</label>
-            <p>Orangina</p>
+              <fieldset>
+                <legend>Informations sur le produit</legend>
 
-            <label>Fournisseur :</label>
-            <p>Panzani</p>
+                <div class="sous_renseignements">
+                  <div class="groupe_informations">
+                    <label>Nom :</label>
+                    <p>Jus de fruit sans pulpe</p>
+                  </div>
 
-            <label>Code barre :</label>
-            <p>87954526462695</p>
+                  <div class="groupe_informations">
+                    <label>Marque :</label>
+                    <p>Orangina</p>
+                  </div>
 
-            <label>Prix au kg HT :</label>
-            <p>2.54€</p>
+                  <fieldset id="box_fournisseur" class="box">
+                    <legend>Fournisseur</legend>
+          
+                    <div id="fournisseur">
+                      <div class="groupe_informations">
+                        <label>Nom : </label>
+                        <p>Panzani</p>
+                      </div>
+          
+                      <div class="groupe_informations">
+                        <label>Adresse : </label>
+                        <p>XXXXXXX</p>
+                      </div>
+          
+                      <div class="groupe_informations">
+                        <label>Code postal : </label>
+                        <p>XXXXXXX</p>
+                      </div>
+          
+                      <div class="groupe_informations">
+                        <label>Ville : </label>
+                        <p>XXXXXXX</p>
+                      </div>
+          
+                      <div class="groupe_informations">
+                        <label>Pays : </label>
+                        <p>XXXXXXX</p>
+                      </div>
+          
+                      <a href="consulter_fournisseur.html" class="designBoutons boutonRouge noSelect">Plus d'informations</a>
+                    </div>
+                  </fieldset>
 
-            <label>Taux TVA :</label>
-            <p>5,5%</p>
+                  <div class="groupe_informations">
+                    <label>Code barre :</label>
+                    <p>87954526462695</p>
+                  </div>
 
-            <label>Code rayon :</label>
-            <p>AKZEUJF6853</p>
+                  <div class="groupe_informations">
+                    <label>Code rayon :</label>
+                    <p>AKZEUJF6853</p>
+                  </div>
+                </div>
+              </fieldset>
+            
+
+            <fieldset>
+              <legend>Stock</legend>
+
+              <div class="sous_renseignements">
+                <div class="information">
+                  <label>Quantité en stock :</label>
+                  <p>54</p>
+                </div>
+  
+                <div class="information">
+                  <label>Quantité en rayon :</label>
+                  <p>11</p>
+                </div>
+              </div>
+            </fieldset>
+
+            
+
+            <fieldset>
+              <legend>Prix</legend>
+
+              <div class="sous_renseignements">
+                <div class="information">
+                  <label>Type de vente : </label>
+                  <p>Unitaire</p>
+                </div>
+
+                <div class="groupe_informations">
+                  <div>
+                    <label>Prix HT :</label>
+                    <p>2.54€</p>
+                  </div>
+                  <div>
+                    <label>Prix au kg HT :</label>
+                    <p>2.54€</p>
+                  </div>
+                </div>
+  
+                <div class="information">
+                  <label>Taux TVA :</label>
+                  <p>5,5%</p>
+                </div>
+  
+                <div class="groupe_informations">
+                  <div>
+                    <label>Prix TTC :</label>
+                    <p>2.54€</p>
+                  </div>
+                  <div>
+                    <label>Prix au kg TTC :</label>
+                    <p>2.54€</p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Promotion</legend>
+
+              <div class="sous_renseignements">
+                <div class="groupe_informations">
+                  <label>Promotion en cours :</label>
+                  <p>Aucune</p>
+                </div>
+  
+                <div class="groupe_informations">
+                  <label>Prochaine promotion :</label>
+                  <p>2 acheté(e)(s) = 1 offert(e)(s) du 01/07/2020 au 01/08/2020</p>
+                </div>
+
+                <div id="historique">
+                  <p id="historique_tete">Historique des promotions</p>
+                  <div id="historique_tableau">
+                      <label class="descr_cellule">Description promotion</label>
+                      <label class="etat_cellule">Etat de la promotion</label>
+                      <label class="date_cellule">Date début</label>
+                      <label class="date_cellule">Date fin</label>
+                      <label class="influence_cellule">Influence vente</label>
+
+                      <p class="descr_cellule">2 acheté(e)(s) = 1 offert(e)(s)</p>
+                      <p class="etat_cellule text_green">A venir</p>
+                      <p class="date_cellule">01 juillet 2020</p>
+                      <p class="date_cellule">01 août 2020</p>
+                      <p class="influence_cellule">??</p>
+
+                      <p class="descr_cellule">Réduction de 50%</p>
+                      <p class="etat_cellule text_green">En cours</p>
+                      <p class="date_cellule">01 avril 2020</p>
+                      <p class="date_cellule">01 juillet 2020</p>
+                      <p class="influence_cellule">??</p>
+    
+                      <p class="descr_cellule">Réduction de 50%</p>
+                      <p class="etat_cellule text_red">Fini</p>
+                      <p class="date_cellule">01 mars 2020</p>
+                      <p class="date_cellule">01 avril 2020</p>
+                      <p class="influence_cellule text_green">+2%</p>
+    
+                      <p class="descr_cellule">1 acheté, 3 offerts</p>
+                      <p class="etat_cellule text_red">Fini</p>
+                      <p class="date_cellule">01 février 2020</p>
+                      <p class="date_cellule">01 mars 2020</p>
+                      <p class="influence_cellule text_green">+33%</p>
+    
+                      <p class="descr_cellule">Réduction de 20%</p>
+                      <p class="etat_cellule text_red">Fini</p>
+                      <p class="date_cellule">01 janvier 2020</p>
+                      <p class="date_cellule">01 février 2020</p>
+                      <p class="influence_cellule text_red">-20%</p>
+                  </div>
+              </div>
+
+                <div id="boutons" class="flexAround">
+                  <a href="modifier_article.html#new_promotion" class="designBoutons noSelect boutonGris">Ajouter une promotion</a>
+                </div>
+              </div>
+            </fieldset>
           </div>
           <img src="../IMAGES/produits/orangina.jpg" alt="">
       </div>
