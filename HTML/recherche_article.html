@@ -14,8 +14,8 @@
     <fieldset>
       <legend>Rechercher un article</legend>
       <div class="flexAround">
-        <div>
-          <label>Fournisseur :</label>
+        <div class="ligne1">
+          <label>Le fournisseur est :</label>
           <select required>
             <option value="" disabled selected>Sélectionner un fournisseur</option>
             <option value="1">Coca cola</option>
@@ -23,26 +23,108 @@
             <option value="3">Panzani</option>
           </select>
         </div>
-        <div>
-          <label>Nom article :</label>
+
+        <div class="ligne1">
+          <label>Le nom contient :</label>
           <input type="text">
         </div>
-        <div>
+
+        <div class="ligne1">
+          <label>La marque est :</label>
+          <input type="text">
+        </div>
+
+        <div class="ligne1">
+          <label>Type de produit :</label>
+          <select required>
+            <option value="" disabled selected>Sélectionner un type</option>
+            <option value="1">Unitaire</option>
+            <option value="2">Pack</option>
+          </select>
+        </div>
+
+        <div class="ligne1">
+          <label>La référence est :</label>
+          <input type="text">
+        </div>
+
+
+        <div class="ligne2">
+          <label>Prix HT :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0.0" value="0.00" step="0.01">
+          </div>
+        </div>
+
+        <div class="ligne2">
           <label>Prix TTC :</label>
           <div id="parametre_prix">
             <select required>
-              <option value="" selected>=</option>
+              <option value="">=</option>
               <option value="1">&lt;=</option>
               <option value="2">&lt;</option>
-              <option value="3">>=</option>
+              <option value="3" selected>>=</option>
               <option value="4">></option>
             </select>
-            <input type="text">
+            <input type="number" min="0.0" value="0.00" step="0.01">
           </div>
         </div>
-        <div>
-          <label>Référence :</label>
-          <input type="text">
+
+        <div class="ligne2">
+          <label>Le taux de TVA est :</label>
+          <select required>
+            <option value="" disabled selected>Sélectionner un taux</option>
+            <option value="1">20%</option>
+            <option value="2">10%</option>
+            <option value="3">5,5%</option>
+            <option value="4">2,1%</option>
+          </select>
+        </div>
+
+        <div class="ligne2">
+          <label>Le produit est en promotion :</label>
+          <select required>
+            <option value="0">Oui ou Non</option>
+            <option value="1">Oui</option>
+            <option value="2">Non</option>
+          </select>
+        </div>
+
+
+
+        <div class="ligne3">
+          <label>Quantité en stock :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0" value="0">
+          </div>
+        </div>
+
+        <div class="ligne3">
+          <label>Quantité en rayon :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0" value="0">
+          </div>
         </div>
       </div>
       <div class="flexAround">
