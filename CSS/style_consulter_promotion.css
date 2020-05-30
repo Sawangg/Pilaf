@@ -1,0 +1,67 @@
+.promotion{
+  background-image: url("../IMAGES/fonds/fondOrange.png");
+  background-size: cover;
+  margin: auto;
+  width: 79%;
+  padding: 1.5% 3%;
+  margin-top: 3%;
+  border-radius: 5px;
+}
+
+h2  {
+  text-align: center;
+  font-size: 120%;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 3px 5px #888888;
+  margin-bottom: 2%;
+}
+
+#venir{
+  border-left: solid 5px rgb(25, 197, 226);
+}
+
+#cours{
+  border-left: solid 5px rgb(246, 213, 39);
+}
+
+#termine{
+  border-left: solid 5px rgb(227, 49, 49);
+}
+
+#listeArticle{
+  display: flex;
+  padding: 2% 1%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+
+.promotion div div{
+  width: 550px;
+  padding: 0 2%;
+  background-color: rgba(223, 116, 48, 0.3);
+  border-radius: 2%;
+}
+
+.bouton{
+  display: block;
+  margin: 10% auto;
+}
+
+.promotion div div:not(:first-child){
+    margin-left: 2%;
+}
+
+.scroll::-webkit-scrollbar
+{
+  height: 9px;
+  box-shadow: 2px 3px 5px rgba(136, 136, 136, 0.3);
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: gray;
+}
