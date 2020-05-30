@@ -2,45 +2,96 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="Author" content="sepios87">
-  <title>Modifier un client</title>
+  <meta name="Author" content="Sawang_">
+  <title>Modifier les informations client</title>
   <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_creer_modifier_client.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <form action="recherche_client.html">
     <fieldset id="fieldPrincipale">
-      <legend id="legendPrincipale">Modifier un client</legend>
+      <legend id="legendPrincipale">Modifier les informations client</legend>
       <div class="flexAround">
         <div id="ajout">
-          <label>Prénom<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" value="Geraldine" required><br>
+          <div class="groupe_informations">
+            <label>Prénom<span>*</span> :</label>
+            <input type="text" pattern="[A-zÀ-ú]*" value="Géraldine" required>
+          </div>
 
-          <label>Nom<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" value="Menier" required><br>
+          <div class="groupe_informations">
+            <label>Nom<span>*</span> :</label>
+            <input type="text" pattern="[A-zÀ-ú]*" value="Menier" required>
+          </div>
 
-          <label>Téléphone<span>*</span> :</label>
-          <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" value="0606060606" required><br>
+          <div class="groupe_informations">
+            <label>Date de naissance<span>*</span> :</label>
+            <input type="date" min="1900-01-01" max="2021-01-01" value="1987-03-15" required>
+          </div>
 
-          <label>E-mail :</label>
-          <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" value="geraldine.menier@gmail.com" required><br>
+          <div class="groupe_informations">
+            <label>Téléphone<span>*</span> :</label>
+            <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" value="0606060606" required>
+          </div>
 
-          <label>Adresse :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" value="32 rue du soif Limoges"><br>
+          <div class="groupe_informations">
+            <label>E-mail<span>*</span> :</label>
+            <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" value="geraldine.menier@gmail.com" required>
+          </div>
 
-          <label>Date de naissance :</label>
-          <input type="date" min="1900-01-01" max="2021-01-01" value="1980-04-01"><br>
+          <fieldset>
+            <legend>Adresse</legend>
+  
+            <div class="groupe_informations">
+							<label>Rue<span>*</span> :</label>
+							<input type="text" name="rue_client" placeholder="Ex : 1 Rue du succès" value="32 rue du soif" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Compléments d'adresse :</label>
+							<input type="text" name="complement_client">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Lieu-dit :</label>
+							<input type="text" name="lieu_dit_client">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Ville<span>*</span> :</label>
+							<input type="text" name="ville_client" value="Limoges" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Code postal<span>*</span> :</label>
+							<input type="text" name="CP_client" value="87000" required>
+            </div>
+            
+            <div class="groupe_informations">
+							<label>Département<span>*</span> :</label>
+							<input type="text" name="département_client" value="Haute-Vienne" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Région<span>*</span> :</label>
+							<input type="text" name="region_client" value="Nouvelle Aquitaine" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Pays<span>*</span> :</label>
+							<input type="text" name="pays_client" value="France" required>
+						</div>
+          </fieldset>
 
           <p>* Obligatoire</p>
         </div>
       </div>
 
-      <div id="boutons">
-        <a href="recherche_client.html" class="designBoutons boutonRouge" id="annuler">Annuler</a>
-        <a href="recherche_client.html" class="designBoutons" id="boutonValider">Sauvegarder les changements</a>
-      </div>
+      <div id="boutons" class="flexAround">
+				<a href="recherche_client.html" class="designBoutons noSelect boutonRouge">Annuler</a>
+				<button type="submit" class="designBoutons noSelect boutonVert" id="boutonValider">Sauvegarder les modifications</button>
+			</div>
     </fieldset>
   </form>
   <footer>

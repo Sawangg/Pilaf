@@ -7,7 +7,19 @@ fieldset {
 }
 
 .flexAround div {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.flexAround div div {
 	width: 20%;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -22,6 +34,19 @@ fieldset {
 label, fieldset {
 	margin : 1% 0 1% 0;
 	font-size: 110%;
+}
+
+input {
+	margin-top: 1%;
+
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+
+	font-family: inherit;
+
+	border: solid gray 1px;
+	border-radius: 2px;
 }
 
 #boutonRechercherClient, #retour {
