@@ -1,5 +1,10 @@
 /* Auteur : Apokalypt */
 
+#main {
+    width: 90%;
+    margin: auto;
+}
+
 fieldset {
 	margin-top: 3%;
 
