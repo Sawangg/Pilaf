@@ -14,55 +14,87 @@
     <fieldset>
       <legend>Rechercher fournisseur</legend>
       <div class="flexAround">
-        <div class="ligne1">
-          <label>Le nom contient :</label>
-          <input type="text">
-        </div>
-
-        <div class="ligne1">
-          <label>Le SIREN est :</label>
-          <input type="text" minlength="9" maxlength="9" pattern="[0-9]*">
-        </div>
-
-        <div class="ligne1">
-          <label>Le SIRET est :</label>
-          <input type="text" minlength="14" maxlength="14" pattern="[0-9]*">
-        </div>
-
-
-
-        <div class="ligne2">
-          <label>La ville est :</label>
-          <input type="text">
-        </div>
-
-        <div class="ligne2">
-          <label>La région est :</label>
-          <input type="text">
-        </div>
-
-        <div class="ligne2">
-          <label>Le pays est :</label>
-          <input type="text">
+        <div id="recherche">
+          <div>
+            <label>Le nom contient :</label>
+            <input type="text">
+          </div>
+          <div>
+            <label>Le SIREN est :</label>
+            <input type="text" minlength="9" maxlength="9" pattern="[0-9]*">
+          </div>
+          <div>
+            <label>Le SIRET est :</label>
+            <input type="text" minlength="14" maxlength="14" pattern="[0-9]*">
+          </div>
+          <div>
+            <label>La ville est :</label>
+            <input type="text">
+          </div>
+          <div>
+            <label>La région est :</label>
+            <input type="text">
+          </div>
+          <div>
+            <label>Le pays est :</label>
+            <input type="text">
+          </div>
         </div>
 
 
+        <div class="choix">
+          <label><b>Réseaux disponibles :</b></label>
+          <div class="selection_checkbox">
+            <div>
+              <input type="checkbox">
+              <label>Site web</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Facebook</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Twitter</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Instagram</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Snapchat</label>
+            </div>
+          </div>
+        </div>
 
-        <div class="ligne3">
-          <label>Réseaux disponibles :</label>
+        <div class="choix">
+          <label><b>Modes de paiement autorisés :</b></label>
+          <div class="selection_checkbox">
+            <div>
+              <input type="checkbox" checked>
+              <label>Virements</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Chèques</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Carte bancaire</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label>Liquide</label>
+            </div>
+          </div>
         </div>
 
 
 
-        <div class="ligne4">
-          <label>Modes de paiement autorisés :</label>
-        </div>
-
-
-
-        <div class="ligne5">
-          <label>Délai maximal de paiement (en jours) :</label>
-          <div id="parametre_delai">
+        <div id="paiement">
+          <label><b>Délai maximal de paiement (en jours) :</b></label>
+          <div>
             <select required>
               <option value="">=</option>
               <option value="1">&lt;=</option>
@@ -74,8 +106,8 @@
           </div>
         </div>
 
-        <div class="ligne5">
-          <label>Mode de paiement préféré :</label>
+        <div>
+          <label><b>Mode de paiement préféré :</b></label>
           <select>
             <option>Virements</option>
             <option>Chèques</option>
@@ -147,8 +179,8 @@
   </div>
   <button type="button" id="bouttonAfficherPlus" class="designBoutons boutonGris">Afficher Plus</button>
   <footer>
-		<a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
-		<a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
-	</footer>
+    <a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+    <a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+  </footer>
 </body>
 </html>

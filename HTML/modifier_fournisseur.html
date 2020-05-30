@@ -6,14 +6,14 @@
 	<meta name="Author" content="Apokalypt">
 	<link rel="icon" type="image/png" href="../IMAGES/logo.png" />
 	<link rel="stylesheet" href="../CSS/style.css">
-	<link rel="stylesheet" type="text/css" href="../CSS/style_modifier_fournisseur.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style_creer_modifier_fournisseur.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
 	<form action="../index.html">
 		<fieldset>
 			<legend>Modifier un fournisseur</legend>
-			
+
 			<div id="renseignements">
 				<fieldset>
 					<legend>Informations sur le fournisseur</legend>
@@ -22,12 +22,12 @@
 						<label>Nom<span>*</span> :</label>
 						<input type="text" name="nom_fournisseur" pattern="[A-zÀ-ú]*" required>
 					</div>
-	
+
 					<div class="groupe_informations">
 						<label>Logo du fournisseur :</label>
 						<input type="file" name="logo_fournisseur" accept="image/png, image/jpeg">
 					</div>
-	
+
 					<div class="groupe_informations">
 						<label>Nom du dirigeant :</label>
 						<input type="text" name="nom_dirigeant_entreprise" pattern="[A-zÀ-ú]*">
@@ -42,10 +42,10 @@
 						<label>SIRET<span>*</span> :</label>
 						<input type="text" name="SIRET_entreprise" minlength="14" maxlength="14" pattern="[0-9]*" required>
 					</div>
-	
+
 					<fieldset>
 						<legend>Adresse</legend>
-	
+
 						<div class="groupe_informations">
 							<label>Rue<span>*</span> :</label>
 							<input type="text" name="rue_fournisseur" placeholder="Ex : 1 Rue du succès" required>
@@ -55,43 +55,43 @@
 							<label>Compléments d'adresse :</label>
 							<input type="text" name="complement_fournisseur">
 						</div>
-	
+
 						<div class="groupe_informations">
 							<label>Lieu-dit :</label>
 							<input type="text" name="lieu_dit_fournisseur">
 						</div>
-	
+
 						<div class="groupe_informations">
 							<label>Ville<span>*</span> :</label>
 							<input type="text" name="ville_fournisseur" required>
 						</div>
-	
+
 						<div class="groupe_informations">
 							<label>Code postal<span>*</span> :</label>
 							<input type="text" name="CP_fournisseur" required>
 						</div>
-	
+
 						<div class="groupe_informations">
 							<label>Région :</label>
 							<input type="text" name="region_fournisseur">
 						</div>
-	
+
 						<div class="groupe_informations">
 							<label>Pays<span>*</span> :</label>
 							<input type="text" name="pays_fournisseur" required>
 						</div>
 					</fieldset>
-	
+
 					<div class="groupe_informations">
 						<label>Mail de l'entreprise :</label>
 						<input type="email" name="mail_fournisseur">
 					</div>
-	
+
 					<div class="groupe_informations">
 						<label>Téléphone de l'entreprise :</label>
 						<input type="tel" name="tel_fournisseur">
 					</div>
-	
+
 					<div class="groupe_informations">
 						<label>Fax de l'entreprise :</label>
 						<input type="tel" name="fax_fournisseur">
@@ -142,12 +142,24 @@
 
 					<div class="groupe_informations">
 						<label>Mode de paiement autorisé :</label>
-						<select multiple required>
-							<option>Virements</option>
-							<option>Chèques</option>
-							<option>Carte bancaire</option>
-							<option>Liquide</option>
-						</select>
+						<div id="selectionPaiement">
+							<div>
+								<input type="checkbox" checked>
+								<label>Virements</label>
+							</div>
+							<div>
+								<input type="checkbox">
+								<label>Chèques</label>
+							</div>
+							<div>
+								<input type="checkbox">
+								<label>Carte bancaire</label>
+							</div>
+							<div>
+								<input type="checkbox">
+								<label>Liquide</label>
+							</div>
+						</div>
 					</div>
 
 					<div class="groupe_informations">
@@ -178,7 +190,7 @@
 							</a>
 						</div>
 					</div>
-					
+
 					<fieldset id="new_compte_bancaire">
                         <legend>Nouveau compte bancaire</legend>
 
@@ -186,17 +198,17 @@
                             <label>Nom du titulaire : </label>
                             <input type="text" name="nom_titulaire">
 						</div>
-						
+
 						<div class="groupe_informations">
                             <label>Nom de la banque : </label>
                             <input type="text" name="nom_banque">
 						</div>
-						
+
 						<div class="groupe_informations">
                             <label>IBAN : </label>
                             <input type="text" name="IBAN" minlength="14" maxlength="34">
 						</div>
-						
+
 						<div class="groupe_informations">
                             <label>BIC / SWIFT : </label>
                             <input type="text" name="BIC" minlength="8" maxlength="11">
@@ -206,7 +218,7 @@
 							<label>Ce compte est le compte par défaut</label>
 							<input type="checkbox">
 						</div>
-						
+
 						<div id="boutons" class="flexAround">
                             <a href="#new_compte_bancaire" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
                             <a href="" class="designBoutons noSelect boutonVert">Ajouter le compte bancaire</a>
@@ -243,7 +255,7 @@
                             <label>Nom du contact : </label>
                             <input type="text" name="nom_contact">
 						</div>
-						
+
 						<div class="groupe_informations">
                             <label>Prénom du contact : </label>
                             <input type="text" name="prenom_contact">
@@ -253,12 +265,12 @@
                             <label>Statut : </label>
                             <input type="text" name="statut_contact">
 						</div>
-						
+
 						<div class="groupe_informations">
                             <label>Téléphone : </label>
                             <input type="tel" name="telephone_contact">
 						</div>
-						
+
 						<div class="groupe_informations">
                             <label>E-mail : </label>
                             <input type="email" name="email_contact">
@@ -268,7 +280,7 @@
                             <label>Commentaires : </label>
                             <textarea placeholder="Ecrivez toutes les informations possiblements utiles"></textarea>
 						</div>
-						
+
 						<div id="boutons" class="flexAround">
                             <a href="#new_contact" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
                             <a href="" class="designBoutons noSelect boutonVert">Ajouter le contact</a>

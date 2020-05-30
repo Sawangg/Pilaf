@@ -1,47 +1,64 @@
-/* Auteur : sepios87 */
-
 fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
+	padding: 0 5% 2% 5%;
 }
 
-.flexAround div {
+fieldset div{
+	width: 100%;
+	margin-top: 0.5%;
+}
+
+#recherche, .selection_checkbox{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+#recherche div{
 	width: 20%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-}
-div.ligne1 {
-	width: 30%;
-}
-div.ligne3, div.ligne4 {
-	width: 100%;
-}
-div.ligne2, div.ligne3, div.ligne4, div.ligne5 {
-	margin-top: 2%;
+	padding: 0% 5% 1% 2%;
 }
 
-div#parametre_delai {
+.choix{
+	margin: 1% 0;
+}
+
+.selection_checkbox div{
+	width: 20%;
+}
+
+#paiement{
+	margin: 2% 0;
+}
+
+#paiement div {
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
-#parametre_delai select {
-	width: 20%;
+
+#paiement select {
+	width: 15%;
 }
-#parametre_delai input {
+
+#paiement input {
 	width: 80%;
 }
 
