@@ -1,64 +1,291 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Modifier Fournisseur</title>
+	<title>Modifier un fournisseur</title>
 	<meta charset="utf-8">
-	<meta name="Author" content="Sawang_">
+	<meta name="Author" content="Apokalypt">
 	<link rel="icon" type="image/png" href="../IMAGES/logo.png" />
 	<link rel="stylesheet" href="../CSS/style.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/style_modifier_fournisseur.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<form>
+	<form action="../index.html">
 		<fieldset>
-			<legend>Modifier fournisseur</legend>
-			<div id="fournisseur">
-				<label>Fournisseur à modifier :</label>
-				<select>
-					<option>Bell</option>
-					<option>Coca-Cola</option>
-					<option>Herta</option>
-					<option>Panzani</option>
-				</select>
+			<legend>Modifier un fournisseur</legend>
+			
+			<div id="renseignements">
+				<fieldset>
+					<legend>Informations sur le fournisseur</legend>
+
+					<div class="groupe_informations">
+						<label>Nom<span>*</span> :</label>
+						<input type="text" name="nom_article" pattern="[A-zÀ-ú]*" required>
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Logo du fournisseur :</label>
+						<input type="file" name="button_image_article" accept="image/png, image/jpeg">
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Nom du dirigeant :</label>
+						<input type="text" name="nom_article" pattern="[A-zÀ-ú]*">
+					</div>
+
+					<div class="groupe_informations">
+						<label>SIRET<span>*</span> :</label>
+						<input type="text" name="nom_article" minlength="9" maxlength="9" pattern="[0-9]*" required>
+					</div>
+
+					<div class="groupe_informations">
+						<label>SIREN<span>*</span> :</label>
+						<input type="text" name="nom_article" minlength="14" maxlength="14" pattern="[0-9]*" required>
+					</div>
+	
+					<fieldset>
+						<legend>Adresse</legend>
+	
+						<div class="groupe_informations">
+							<label>Rue<span>*</span> :</label>
+							<input type="text" name="nom_article" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Compléments d'adresse :</label>
+							<input type="text" name="nom_article">
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Lieu-dit :</label>
+							<input type="text" name="nom_article">
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Ville<span>*</span> :</label>
+							<input type="text" name="nom_article" required>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Code postal<span>*</span> :</label>
+							<input type="text" name="nom_article" required>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Région :</label>
+							<input type="text" name="nom_article">
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Pays<span>*</span> :</label>
+							<input type="text" name="nom_article" required>
+						</div>
+					</fieldset>
+	
+					<div class="groupe_informations">
+						<label>Mail de l'entreprise :</label>
+						<input type="email" name="nom_article">
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Téléphone de l'entreprise :</label>
+						<input type="tel" name="nom_article">
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Fax de l'entreprise :</label>
+						<input type="text" name="nom_article">
+					</div>
+
+					<div class="groupe_informations">
+						<label>Commentaires :</label>
+						<textarea placeholder="Ecrivez toutes les informations possiblements utiles"></textarea>
+					</div>
+
+					<fieldset>
+						<legend>Réseaux</legend>
+
+						<div class="groupe_informations">
+							<label>Site web :</label>
+							<input type="url" name="nom_article">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Twitter :</label>
+							<input type="url" name="nom_article">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Facebook :</label>
+							<input type="url" name="nom_article">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Instagram :</label>
+							<input type="url" name="nom_article">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Snapchat :</label>
+							<input type="text" name="nom_article">
+						</div>
+					</fieldset>
+				</fieldset>
+
+				<fieldset>
+					<legend>Paiement</legend>
+
+					<div class="groupe_informations">
+						<label>Délai de réglement maximal (en jour) :</label>
+						<input type="number" name="nom_article" min="0" value="0">
+					</div>
+
+					<div class="groupe_informations">
+						<label>Mode de paiement autorisé :</label>
+						<select multiple required>
+							<option>Virements</option>
+							<option>Chèques</option>
+							<option>Carte bancaire</option>
+							<option>Liquide</option>
+						</select>
+					</div>
+
+					<div class="groupe_informations">
+						<label>Mode de paiement préféré :</label>
+						<select>
+							<option>Virements</option>
+							<option>Chèques</option>
+							<option>Carte bancaire</option>
+							<option>Liquide</option>
+						</select>
+					</div>
+
+					<div id="historique">
+                        <p id="historique_tete">Comptes bancaires enregistrés</p>
+                        <div id="historique_tableau">
+							<label class="titu_cellule">Nom du titulaire</label>
+							<label class="banque_cellule">Nom de la banque</label>
+							<label class="IBAN_cellule">IBAN</label>
+							<label class="BIC_cellule">BIC/SWIFT</label>
+							<label class="etat_cellule">Statut</label>
+
+							<a href="#new_compte_bancaire">
+								<p class="titu_cellule">Michel Port</p>
+								<p class="banque_cellule">Banque Populaire</p>
+								<p class="IBAN_cellule">FR76 XXXX XXXX XXXX XXXX XXXX XXXX</p>
+								<p class="BIC_cellule">XXXXXXXXXXX</p>
+								<p class="etat_cellule"><b>PRINCIPAL</b></p>
+							</a>
+						</div>
+					</div>
+					
+					<fieldset id="new_compte_bancaire">
+                        <legend>Nouveau compte bancaire</legend>
+
+                        <div class="groupe_informations">
+                            <label>Nom du titulaire : </label>
+                            <input type="text" name="nom_titulaire">
+						</div>
+						
+						<div class="groupe_informations">
+                            <label>Nom de la banque : </label>
+                            <input type="text" name="nom_banque">
+						</div>
+						
+						<div class="groupe_informations">
+                            <label>IBAN : </label>
+                            <input type="text" name="IBAN" minlength="14" maxlength="34">
+						</div>
+						
+						<div class="groupe_informations">
+                            <label>BIC / SWIFT : </label>
+                            <input type="text" name="BIC" minlength="8" maxlength="11">
+						</div>
+
+						<div class="groupe_checkbox">
+							<label>Ce compte est le compte par défaut</label>
+							<input type="checkbox">
+						</div>
+						
+						<div id="boutons" class="flexAround">
+                            <a href="#new_compte_bancaire" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
+                            <a href="" class="designBoutons noSelect boutonVert">Ajouter le compte bancaire</a>
+                        </div>
+                    </fieldset>
+				</fieldset>
+
+				<fieldset>
+					<legend>Contacts</legend>
+
+					<div id="historique">
+                        <p id="historique_tete">Contacts enregistrés</p>
+                        <div id="historique_tableau">
+							<label class="nom_cellule">Nom / Prénom</label>
+							<label class="statut_cellule">Statut</label>
+							<label class="tel_cellule">Téléphone</label>
+							<label class="mail_cellule">E-mail</label>
+							<label class="com_cellule">Commentaires</label>
+
+							<a href="#new_contact">
+								<p class="nom_cellule">Jean Gentil</p>
+								<p class="statut_cellule">Commercial</p>
+								<p class="tel_cellule">07 65 34 23 21</p>
+								<p class="mail_cellule">gentil.jean@gmail.com</p>
+								<p class="com_cellule"></p>
+							</a>
+						</div>
+					</div>
+
+					<fieldset id="new_contact">
+                        <legend>Nouveau contact</legend>
+
+                        <div class="groupe_informations">
+                            <label>Nom du contact : </label>
+                            <input type="text" name="nom_contact">
+						</div>
+						
+						<div class="groupe_informations">
+                            <label>Prénom du contact : </label>
+                            <input type="text" name="prenom_contact">
+						</div>
+
+						<div class="groupe_informations">
+                            <label>Statut : </label>
+                            <input type="text" name="statut_contact">
+						</div>
+						
+						<div class="groupe_informations">
+                            <label>Téléphone : </label>
+                            <input type="tel" name="telephone_contact">
+						</div>
+						
+						<div class="groupe_informations">
+                            <label>E-mail : </label>
+                            <input type="email" name="email_contact">
+						</div>
+
+						<div class="groupe_informations">
+                            <label>Commentaires : </label>
+                            <textarea placeholder="Ecrivez toutes les informations possiblements utiles"></textarea>
+						</div>
+						
+						<div id="boutons" class="flexAround">
+                            <a href="#new_contact" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
+                            <a href="" class="designBoutons noSelect boutonVert">Ajouter le contact</a>
+                        </div>
+                    </fieldset>
+				</fieldset>
 			</div>
-			<div class="flexAround">
-				<div>
-					<label>Nom du fournisseur :</label>
-					<input type="text">
-				</div>
-				<div>
-					<label>Ville :</label>
-					<input pattern="[0-9{0,12}]" type="text">
-				</div>
-				<div>
-					<label>Région :</label>
-					<input pattern="[0-9{0,12}]" type="text">
-				</div>
-				<div>
-					<label>Adresse :</label>
-					<input pattern="[0-9{0,12}]" type="text">
-				</div>
-			</div>
-			<div id="tproduit">
-				<label>Type de produits:</label>
-				<select>
-					<option>Ali­men­taire</option>
-					<option>Tex­tile</option>
-					<option>Cos­mé­tique</option>
-					<option>Elec­tromé­nag­er</option>
-				</select>
-			</div>
-			<div class="flexAround" id="boutons">
-				<a href="recherche_fournisseur.html" class="designBoutons noSelect boutonRouge">Annuler</a>
-				<a href="recherche_fournisseur.html" class="designBoutons noSelect boutonOrange">Supprimer</a>
-				<a href="consulter_fournisseur" class="designBoutons noSelect boutonVert">Sauvegarder les changements</a>
+
+			<div id="boutons" class="flexAround">
+				<a href="../index.html" class="designBoutons noSelect boutonRouge">Annuler</a>
+				<button type="submit" class="designBoutons noSelect boutonVert">Sauvegarder les modifications</button>
 			</div>
 		</fieldset>
 	</form>
+
 	<footer>
 		<a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
 		<a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
 	</footer>
 </body>
-</html>
