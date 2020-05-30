@@ -7,19 +7,9 @@ fieldset {
 }
 
 .flexAround div {
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-}
-
-.flexAround div div {
-	width: 20%;
-
+	width: 24%;
+	margin-top: 2%;
+	margin-bottom: 1%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -31,36 +21,42 @@ fieldset {
 	justify-content: space-around;
 }
 
-label, fieldset {
+div#parametre_prix {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+#parametre_prix select {
+	width: 20%;
+}
+
+#parametre_prix input {
+	width: 80%;
+}
+
+label, fieldset{
 	margin : 1% 0 1% 0;
 	font-size: 110%;
 }
 
-input {
-	margin-top: 1%;
-
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 2%;
-
-	font-family: inherit;
-
-	border: solid gray 1px;
-	border-radius: 2px;
-}
-
-#boutonRechercherClient, #retour {
+#boutonRechercherArticle, #retour {
 	padding: 0.5% 1%;
 	margin-top: 2%;
 	font-size: 110%;
 }
 
-.fournisseur a {
+.article a {
 	font-size: 110%;
 	margin: 8% 0;
 }
 
-#resultClient {
+#result_article {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -70,23 +66,21 @@ input {
 	justify-content: space-around;
 }
 
-.client {
+.article {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  	-ms-flex-wrap: wrap;
-  	flex-wrap: wrap;
 	width: 40%;
 	background-color: rgba(223, 116, 48, 0.3);
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	border-radius: 4px;
-	padding: 1%;
+	padding: 0.5%;
 	margin-top: 2%;
 }
 
-.client div{
-	width: 100%;
+.article div {
+	width: 40%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -100,34 +94,37 @@ input {
 	text-align: center;
 }
 
-.client div h3 {
-	padding: 3%;
+.article div h3 {
+	padding: 5%;
 	border: solid black 1px;
 }
 
-.client div p:not(:last-child) {
-	margin: 3% 0 0;
-	padding-bottom: 3%;
+.article div p:not(:last-child) {
+	margin: 5% 0 0 0;
+	padding-bottom: 5%;
 	border-bottom: solid black 2px;
 }
 
-.client div p:last-child {
-	margin: 3% 0 0;
+.article div p:last-child {
+	margin: 5% 0 0 0;
 }
 
-.client a:hover{
+.article a:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
-.client a {
-  width: auto;
-  margin: 3% auto 0;
+#validation{
+	border-radius: 4px;
+	margin: auto;
+	width: 70%;
+	background-color: rgba(223, 116, 48, 0.5);
+	padding: 1.5% 0.5%;
 }
 
 #bouttonAfficherPlus {
 	padding: 1% 2%;
 	font-size: 125%;
 	display: block;
-	margin: 3% auto 2%;
+	margin: 3% auto 2% auto;
 	width: 92%;
 }

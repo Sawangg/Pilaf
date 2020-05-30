@@ -190,6 +190,27 @@ p#historique_tete {
     text-align: center;
 }
 
+#historique_tableau .colonne_employe {
+    width: calc(15% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .colonne_date {
+    width: calc(18% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .colonne_statut {
+    width: calc(12% - 4px);
+
+    text-align: center;
+}
+#historique_tableau .colonne_motif, #historique_tableau .colonne_compte {
+    width: calc(27.5% - 4px);
+
+    text-align: center;
+}
+
 .text_green {
     color: green;
 }

@@ -10,37 +10,88 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <form action="ventes.html">
     <fieldset id="fieldPrincipale">
       <legend id="legendPrincipale">Créer un nouveau client</legend>
       <div class="flexAround">
         <div id="ajout">
-          <label>Prénom<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" required><br>
+          <div class="groupe_informations">
+            <label>Prénom<span>*</span> :</label>
+            <input type="text" pattern="[A-zÀ-ú]*" required>
+          </div>
 
-          <label>Nom<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" required><br>
+          <div class="groupe_informations">
+            <label>Nom<span>*</span> :</label>
+            <input type="text" pattern="[A-zÀ-ú]*" required>
+          </div>
 
-          <label>Téléphone<span>*</span> :</label>
-          <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required><br>
+          <div class="groupe_informations">
+            <label>Date de naissance<span>*</span> :</label>
+            <input type="date" min="1900-01-01" max="2021-01-01" required>
+          </div>
 
-          <label>E-mail :</label>
-          <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
+          <div class="groupe_informations">
+            <label>Téléphone<span>*</span> :</label>
+            <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+          </div>
 
-          <label>Adresse :</label>
-          <input type="text" pattern="[A-zÀ-ú]*"><br>
+          <div class="groupe_informations">
+            <label>E-mail<span>*</span> :</label>
+            <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+          </div>
 
-          <label>Date de naissance :</label>
-          <input type="date" min="1900-01-01" max="2021-01-01"><br>
+          <fieldset>
+            <legend>Adresse</legend>
+  
+            <div class="groupe_informations">
+							<label>Rue<span>*</span> :</label>
+							<input type="text" name="rue_client" placeholder="Ex : 1 Rue du succès" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Compléments d'adresse :</label>
+							<input type="text" name="complement_client">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Lieu-dit :</label>
+							<input type="text" name="lieu_dit_client">
+						</div>
+
+						<div class="groupe_informations">
+							<label>Ville<span>*</span> :</label>
+							<input type="text" name="ville_client" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Code postal<span>*</span> :</label>
+							<input type="text" name="CP_client" required>
+            </div>
+            
+            <div class="groupe_informations">
+							<label>Département<span>*</span> :</label>
+							<input type="text" name="département_client" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Région<span>*</span> :</label>
+							<input type="text" name="region_client" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Pays<span>*</span> :</label>
+							<input type="text" name="pays_client" required>
+						</div>
+          </fieldset>
 
           <p>* Obligatoire</p>
         </div>
       </div>
 
-      <div id="boutons">
-        <a href="ventes.html" class="designBoutons boutonRouge" id="annuler">Annuler</a>
-        <input type="submit" class="designBoutons" id="boutonValider" value="Créer le client">
-      </div>
+      <div id="boutons" class="flexAround">
+				<a href="ventes.html" class="designBoutons noSelect boutonRouge">Annuler</a>
+				<button type="submit" class="designBoutons noSelect boutonVert" id="boutonValider">Créer le client</button>
+			</div>
     </fieldset>
   </form>
   <footer>

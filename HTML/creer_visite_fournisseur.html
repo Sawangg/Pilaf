@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Gérer les visites fournisseur</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Apokalypt">
+	<link rel="icon" type="image/png" href="../IMAGES/logo.png" />
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style_creer_visite_fournisseur.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+		<fieldset id="main">
+			<legend>Gérer les visites fournisseur</legend>
+
+			<div id="renseignements">
+				<div class="groupe_informations">
+                    <label>Fournisseur à visiter :</label>
+                    <select>
+                        <option>Panzani</option>
+                        <option>Fournisseur2</option>
+                        <option>Fournisseur3</option>
+                    </select>
+                </div>
+
+                <div id="historique">
+                    <p id="historique_tete">Historique des visites</p>
+                    <div id="historique_tableau">
+                        <label class="colonne_employe">Employé visiteur</label>
+                        <label class="colonne_date">Date de la visite</label>
+                        <label class="colonne_motif">Motif de la visite</label>
+                        <label class="colonne_statut">Statut de la visite</label>
+                        <label class="colonne_compte">Compte-rendu de la visite</label>
+
+                        <a href="#new_visite">
+                            <p class="colonne_employe">Jean Gentil</p>
+                            <p class="colonne_date">01 février 2020 à 16h30</p>
+                            <p class="colonne_motif">Vérification de l'origine des produits et de leur qualité avant d'effectuer une commande.</p>
+                            <p class="colonne_statut">Terminée</p>
+                            <p class="colonne_compte">Produits qui semblent d'excellente qualité, la commande peut donc désormais être passée.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <form action="consulter_fournisseur.html">
+                    <fieldset id="new_visite">
+                        <legend>Programmer une visite</legend>
+    
+                        <div class="groupe_informations">
+                            <label>Employé effectuant la visite : </label>
+                            <select>
+                                <option>Employé 1</option>
+                                <option>Employé 2</option>
+                                <option>Employé 3</option>
+                            </select>
+                        </div>
+    
+                        <div class="groupe_informations">
+                            <label>Date et heure de la visite : </label>
+                            <input type="datetime-local" required>
+                        </div>
+    
+                        <div class="groupe_informations">
+                            <label>Motif de la visite : </label>
+                            <textarea required></textarea>
+                        </div>
+
+                        <div class="groupe_informations">
+                            <label>Statut de la visite : </label>
+                            <select>
+                                <option selected>A venir</option>
+                                <option>Annuler</option>
+                                <option>En cours</option>
+                                <option>Terminée</option>
+                            </select>
+                        </div>
+
+                        <div class="groupe_informations">
+                            <label>Compte-rendu de la visite : </label>
+                            <textarea></textarea>
+                        </div>
+    
+                        <div id="boutons" class="flexAround">
+                            <a href="" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
+                            <button type="submit" class="designBoutons noSelect boutonVert">Programmer la visite</button>
+                        </div>
+                    </fieldset>
+                </form>
+			</div>
+
+            <div id="boutons" class="flexAround">
+                <a href="../index.html" class="designBoutons noSelect boutonRouge">Retour</a>
+            </div>
+		</fieldset>
+
+	<footer>
+		<a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+		<a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+	</footer>
+</body>
