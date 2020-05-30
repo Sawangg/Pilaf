@@ -20,27 +20,27 @@
 
 					<div class="groupe_informations">
 						<label>Nom<span>*</span> :</label>
-						<input type="text" name="nom_article" pattern="[A-zÀ-ú]*" required>
+						<input type="text" name="nom_fournisseur" pattern="[A-zÀ-ú]*" required>
 					</div>
 	
 					<div class="groupe_informations">
 						<label>Logo du fournisseur :</label>
-						<input type="file" name="button_image_article" accept="image/png, image/jpeg">
+						<input type="file" name="logo_fournisseur" accept="image/png, image/jpeg">
 					</div>
 	
 					<div class="groupe_informations">
 						<label>Nom du dirigeant :</label>
-						<input type="text" name="nom_article" pattern="[A-zÀ-ú]*">
+						<input type="text" name="nom_dirigeant_entreprise" pattern="[A-zÀ-ú]*">
 					</div>
 
 					<div class="groupe_informations">
 						<label>SIRET<span>*</span> :</label>
-						<input type="text" name="nom_article" minlength="9" maxlength="9" pattern="[0-9]*" required>
+						<input type="text" name="SIRET_entreprise" minlength="9" maxlength="9" pattern="[0-9]*" required>
 					</div>
 
 					<div class="groupe_informations">
 						<label>SIREN<span>*</span> :</label>
-						<input type="text" name="nom_article" minlength="14" maxlength="14" pattern="[0-9]*" required>
+						<input type="text" name="SIREN_entreprise" minlength="14" maxlength="14" pattern="[0-9]*" required>
 					</div>
 	
 					<fieldset>
@@ -48,53 +48,53 @@
 	
 						<div class="groupe_informations">
 							<label>Rue<span>*</span> :</label>
-							<input type="text" name="nom_article" required>
+							<input type="text" name="rue_fournisseur" placeholder="Ex : 1 Rue du succès" required>
 						</div>
 
 						<div class="groupe_informations">
 							<label>Compléments d'adresse :</label>
-							<input type="text" name="nom_article">
+							<input type="text" name="complement_fournisseur">
 						</div>
 	
 						<div class="groupe_informations">
 							<label>Lieu-dit :</label>
-							<input type="text" name="nom_article">
+							<input type="text" name="lieu_dit_fournisseur">
 						</div>
 	
 						<div class="groupe_informations">
 							<label>Ville<span>*</span> :</label>
-							<input type="text" name="nom_article" required>
+							<input type="text" name="ville_fournisseur" required>
 						</div>
 	
 						<div class="groupe_informations">
 							<label>Code postal<span>*</span> :</label>
-							<input type="text" name="nom_article" required>
+							<input type="text" name="CP_fournisseur" required>
 						</div>
 	
 						<div class="groupe_informations">
 							<label>Région :</label>
-							<input type="text" name="nom_article">
+							<input type="text" name="region_fournisseur">
 						</div>
 	
 						<div class="groupe_informations">
 							<label>Pays<span>*</span> :</label>
-							<input type="text" name="nom_article" required>
+							<input type="text" name="pays_fournisseur" required>
 						</div>
 					</fieldset>
 	
 					<div class="groupe_informations">
 						<label>Mail de l'entreprise :</label>
-						<input type="email" name="nom_article">
+						<input type="email" name="mail_fournisseur">
 					</div>
 	
 					<div class="groupe_informations">
 						<label>Téléphone de l'entreprise :</label>
-						<input type="tel" name="nom_article">
+						<input type="tel" name="tel_fournisseur">
 					</div>
 	
 					<div class="groupe_informations">
 						<label>Fax de l'entreprise :</label>
-						<input type="text" name="nom_article">
+						<input type="tel" name="fax_fournisseur">
 					</div>
 
 					<div class="groupe_informations">
@@ -107,27 +107,27 @@
 
 						<div class="groupe_informations">
 							<label>Site web :</label>
-							<input type="url" name="nom_article">
+							<input type="url" name="site_fournisseur">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Twitter :</label>
-							<input type="url" name="nom_article">
+							<input type="url" name="twitter_fournisseur">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Facebook :</label>
-							<input type="url" name="nom_article">
+							<input type="url" name="facebook_fournisseur">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Instagram :</label>
-							<input type="url" name="nom_article">
+							<input type="url" name="insta_fournisseur">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Snapchat :</label>
-							<input type="text" name="nom_article">
+							<input type="text" name="snap_fournisseur">
 						</div>
 					</fieldset>
 				</fieldset>
@@ -137,7 +137,7 @@
 
 					<div class="groupe_informations">
 						<label>Délai de réglement maximal (en jour) :</label>
-						<input type="number" name="nom_article" min="0" value="0">
+						<input type="number" name="delai_max_reglement_fournisseur" min="0" value="0">
 					</div>
 
 					<div class="groupe_informations">
@@ -222,14 +222,14 @@
                         <div id="historique_tableau">
 							<label class="nom_cellule">Nom / Prénom</label>
 							<label class="statut_cellule">Statut</label>
-							<label class="tel_cellule">Téléphone</label>
+							<label class="tel_cellule">Téléphone<br>Fax</label>
 							<label class="mail_cellule">E-mail</label>
 							<label class="com_cellule">Commentaires</label>
 
 							<a href="#new_contact">
 								<p class="nom_cellule">Jean Gentil</p>
 								<p class="statut_cellule">Commercial</p>
-								<p class="tel_cellule">07 65 34 23 21</p>
+								<p class="tel_cellule">07 65 34 23 21<br>07 65 34 23 22</p>
 								<p class="mail_cellule">gentil.jean@gmail.com</p>
 								<p class="com_cellule"></p>
 							</a>
