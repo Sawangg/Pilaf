@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Apokalypt">
+  <title>Sélectionner des articles</title>
+  <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style_selection_article.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form id="formArticle">
+    <fieldset>
+      <legend>Selectionner des articles</legend>
+      <div class="flexAround">
+
+        <div class="ligne1">
+          <label>Le nom contient :</label>
+          <input type="text">
+        </div>
+
+        <div class="ligne1">
+          <label>La marque est :</label>
+          <input type="text">
+        </div>
+
+        <div class="ligne1">
+          <label>Type de produit :</label>
+          <select required>
+            <option value="" disabled selected>Sélectionner un type</option>
+            <option value="1">Unitaire</option>
+            <option value="2">Pack</option>
+          </select>
+        </div>
+
+        <div class="ligne1">
+          <label>La référence est :</label>
+          <input type="text">
+        </div>
+
+
+        <div class="ligne1">
+          <label>Prix HT :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0.0" value="0.00" step="0.01">
+          </div>
+        </div>
+
+        <div class="ligne2">
+          <label>Prix TTC :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0.0" value="0.00" step="0.01">
+          </div>
+        </div>
+
+        <div class="ligne2">
+          <label>Le taux de TVA est :</label>
+          <select required>
+            <option value="" disabled selected>Sélectionner un taux</option>
+            <option value="1">20%</option>
+            <option value="2">10%</option>
+            <option value="3">5,5%</option>
+            <option value="4">2,1%</option>
+          </select>
+        </div>
+
+        <div class="ligne2">
+          <label>Le produit est en promotion :</label>
+          <select required>
+            <option value="0">Oui ou Non</option>
+            <option value="1">Oui</option>
+            <option value="2">Non</option>
+          </select>
+        </div>
+
+
+
+        <div class="ligne3">
+          <label>Quantité en stock :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0" value="0">
+          </div>
+        </div>
+
+        <div class="ligne3">
+          <label>Quantité en rayon :</label>
+          <div id="parametre_prix">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0" value="0">
+          </div>
+        </div>
+
+        <div class="ligne3">
+          <label>Disponible dans le catalogue :</label>
+          <input type="checkbox">
+        </div>
+
+      </div>
+      <div class="flexAround">
+        <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercherArticle">
+      </div>
+    </fieldset>
+  </form>
+  <div id="validation" class="flexAround">
+    <a href="../index.html" class="designBoutons boutonRouge noSelect">Tout annuler</a>
+    <a href="ventes.html" class="designBoutons boutonVert noSelect">Confirmer la selection</a>
+  </div>
+  <div id="result_article">
+    <div class="article">
+      <input type="checkbox">
+      <div>
+        <h3>Orangina</h3>
+        <p><b>Référence : </b>XXXXXXXXXXXXX</p>
+        <p><b>Prix TTC : </b>XX.XX€</p>
+        <p><b>Quantité en stock : </b>XX</p>
+      </div>
+      <div>
+        <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_article.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="article">
+      <input type="checkbox" checked>
+      <div>
+        <h3>Orangina</h3>
+        <p><b>Référence : </b>XXXXXXXXXXXXX</p>
+        <p><b>Prix TTC : </b>XX.XX€</p>
+        <p><b>Quantité en stock : </b>XX</p>
+      </div>
+      <div>
+        <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_article.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="article">
+      <input type="checkbox">
+      <div>
+        <h3>Orangina</h3>
+        <p><b>Référence : </b>XXXXXXXXXXXXX</p>
+        <p><b>Prix TTC : </b>XX.XX€</p>
+        <p><b>Quantité en stock : </b>XX</p>
+      </div>
+      <div>
+        <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_article.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+    <div class="article">
+      <input type="checkbox">
+      <div>
+        <h3>Orangina</h3>
+        <p><b>Référence : </b>XXXXXXXXXXXXX</p>
+        <p><b>Prix TTC : </b>XX.XX€</p>
+        <p><b>Quantité en stock : </b>XX</p>
+      </div>
+      <div>
+        <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter les détails</a>
+        <a href="modifier_article.html" class="designBoutons boutonOrange noSelect">Modifier</a>
+      </div>
+    </div>
+  </div>
+  <button type="button" id="bouttonAfficherPlus" class="designBoutons boutonGris">Afficher Plus</button>
+  <footer>
+    <a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+    <a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+  </footer>
+</body>
+</html>
