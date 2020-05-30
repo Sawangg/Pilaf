@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <form action="ventes.html">
     <fieldset id="fieldPrincipale">
       <legend id="legendPrincipale">Carte de fidélité</legend>
       <div class="flexAround">
@@ -22,23 +22,74 @@
           <legend id="legendAjout">Créer un nouveau client</legend>
 
           <div class="ajoutContent">
-            <label>Prénom<span>*</span> :</label>
-            <input type="text" pattern="[A-zÀ-ú]*" required><br>
-
-            <label>Nom<span>*</span> :</label>
-            <input type="text" pattern="[A-zÀ-ú]*" required><br>
-
-            <label>Téléphone<span>*</span> :</label>
-            <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required><br>
-
-            <label>E-mail :</label>
-            <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
-
-            <label>Adresse :</label>
-            <input type="text" pattern="[A-zÀ-ú]*"><br>
-
-            <label>Date de naissance :</label>
-            <input type="date" min="1900-01-01" max="2021-01-01"><br>
+            <div class="groupe_informations">
+              <label>Prénom<span>*</span> :</label>
+              <input type="text" pattern="[A-zÀ-ú]*" required>
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Nom<span>*</span> :</label>
+              <input type="text" pattern="[A-zÀ-ú]*" required>
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Date de naissance<span>*</span> :</label>
+              <input type="date" min="1900-01-01" max="2021-01-01" required>
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Téléphone<span>*</span> :</label>
+              <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+            </div>
+  
+            <div class="groupe_informations">
+              <label>E-mail<span>*</span> :</label>
+              <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            </div>
+  
+            <fieldset>
+              <legend>Adresse</legend>
+    
+              <div class="groupe_informations">
+                <label>Rue<span>*</span> :</label>
+                <input type="text" name="rue_client" placeholder="Ex : 1 Rue du succès" required>
+              </div>
+  
+              <div class="groupe_informations">
+                <label>Compléments d'adresse :</label>
+                <input type="text" name="complement_client">
+              </div>
+  
+              <div class="groupe_informations">
+                <label>Lieu-dit :</label>
+                <input type="text" name="lieu_dit_client">
+              </div>
+  
+              <div class="groupe_informations">
+                <label>Ville<span>*</span> :</label>
+                <input type="text" name="ville_client" required>
+              </div>
+  
+              <div class="groupe_informations">
+                <label>Code postal<span>*</span> :</label>
+                <input type="text" name="CP_client" required>
+              </div>
+              
+              <div class="groupe_informations">
+                <label>Département<span>*</span> :</label>
+                <input type="text" name="département_client" required>
+              </div>
+  
+              <div class="groupe_informations">
+                <label>Région<span>*</span> :</label>
+                <input type="text" name="region_client" required>
+              </div>
+  
+              <div class="groupe_informations">
+                <label>Pays<span>*</span> :</label>
+                <input type="text" name="pays_client" required>
+              </div>
+            </fieldset>
 
             <p>* Obligatoire</p>
           </div>

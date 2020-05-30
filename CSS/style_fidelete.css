@@ -39,12 +39,17 @@ fieldset {
 	overflow: auto;
 }
 
+#ajout fieldset {
+	width: 90%;
+
+	margin: auto;
+}
+
 #legendAjout {
 	font-size: 100%;
 }
 
 .ajoutContent {
-	margin-left: 5%;
 	padding: 1% 0 1% 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -74,6 +79,18 @@ input {
 	border: solid gray 1px;
 	border-radius: 2px;
 	width: 48%;
+}
+
+.groupe_informations {
+	width: 100%;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.groupe_informations label {
+	margin-top: 2%;
+    margin-left: 2%;
 }
 
 span {
