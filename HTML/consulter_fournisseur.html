@@ -10,10 +10,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<form action="modifier_fournisseur.html">
+	<form action="../index.html">
 		<fieldset>
 			<legend>Consulter un fournisseur</legend>
-
+			
 			<div id="renseignements">
 				<fieldset>
 					<legend>Informations sur le fournisseur</legend>
@@ -22,12 +22,12 @@
 						<label>Nom<span>*</span> :</label>
 						<p>XXXXXXXX</p>
 					</div>
-
+	
 					<div class="groupe_informations">
 						<label>Logo du fournisseur :</label>
 						<img src="" alt="Logo fournisseur">
 					</div>
-
+	
 					<div class="groupe_informations">
 						<label>Nom du dirigeant :</label>
 						<p>XXXXXXXX</p>
@@ -42,10 +42,10 @@
 						<label>SIRET<span>*</span> :</label>
 						<p>XXXXXXXXXXXXXX</p>
 					</div>
-
+	
 					<fieldset>
 						<legend>Adresse</legend>
-
+	
 						<div class="groupe_informations">
 							<label>Rue<span>*</span> :</label>
 							<p>XX XXXXXXXXXX</p>
@@ -54,41 +54,41 @@
 						<div class="groupe_informations">
 							<label>Compléments d'adresse :</label>
 						</div>
-
+	
 						<div class="groupe_informations">
 							<label>Lieu-dit :</label>
 						</div>
-
+	
 						<div class="groupe_informations">
 							<label>Ville<span>*</span> :</label>
 							<p>XXXXXXXXXXXXXX</p>
 						</div>
-
+	
 						<div class="groupe_informations">
 							<label>Code postal<span>*</span> :</label>
 							<p>XXXXX</p>
 						</div>
-
+	
 						<div class="groupe_informations">
 							<label>Région :</label>
 						</div>
-
+	
 						<div class="groupe_informations">
 							<label>Pays<span>*</span> :</label>
 							<p>France</p>
 						</div>
 					</fieldset>
-
+	
 					<div class="groupe_informations">
 						<label>Mail de l'entreprise :</label>
 						<p>XXXXXXX@XXXXXX</p>
 					</div>
-
+	
 					<div class="groupe_informations">
 						<label>Téléphone de l'entreprise :</label>
 						<p>05 55 43 32 12</p>
 					</div>
-
+	
 					<div class="groupe_informations">
 						<label>Fax de l'entreprise :</label>
 						<p>05 55 43 32 13</p>
@@ -153,7 +153,7 @@
 							<p class="valide_cellule text_green">OUI</p>
 
 							<p class="mode_cellule">Liquide</p>
-							<p class="valide_cellule text_green">OUI</p>
+							<p class="valide_cellule text_green">OUI</p>	
 						</div>
 					</div>
 
@@ -197,6 +197,33 @@
 								<p class="com_cellule"></p>
 							</a>
 						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Visites</legend>
+
+					<div id="historique">
+						<p id="historique_tete">Historique des visites</p>
+						<div id="historique_tableau">
+							<label class="colonne_employe">Employé visiteur</label>
+							<label class="colonne_date">Date de la visite</label>
+							<label class="colonne_motif">Motif de la visite</label>
+							<label class="colonne_statut">Statut de la visite</label>
+							<label class="colonne_compte">Compte-rendu de la visite</label>
+	
+							<a href="#new_visite">
+								<p class="colonne_employe">Jean Gentil</p>
+								<p class="colonne_date">01 février 2020 à 16h30</p>
+								<p class="colonne_motif">Vérification de l'origine des produits et de leur qualité avant d'effectuer une commande.</p>
+								<p class="colonne_statut">Terminée</p>
+								<p class="colonne_compte">Produits qui semblent d'excellente qualité, la commande peut donc désormais être passée.</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="flexAround">
+						<a href="creer_visite_fournisseur.html" class="designBoutons noSelect boutonVert">Gérer les visites</a>
 					</div>
 				</fieldset>
 			</div>
