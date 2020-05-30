@@ -7,7 +7,7 @@ fieldset {
 }
 
 .flexAround div {
-	width: 20%;
+	width: 19%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -17,6 +17,13 @@ fieldset {
 	flex-direction: column;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
+}
+div.ligne2 {
+	width: 23%;
+}
+
+div.ligne2, div.ligne3 {
+	margin-top: 2%;
 }
 
 div#parametre_prix {
