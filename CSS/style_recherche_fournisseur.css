@@ -18,6 +18,32 @@ fieldset {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
+div.ligne1 {
+	width: 30%;
+}
+div.ligne3, div.ligne4 {
+	width: 100%;
+}
+div.ligne2, div.ligne3, div.ligne4, div.ligne5 {
+	margin-top: 2%;
+}
+
+div#parametre_delai {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+#parametre_delai select {
+	width: 20%;
+}
+#parametre_delai input {
+	width: 80%;
+}
 
 label, fieldset {
 	margin : 1% 0;

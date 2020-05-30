@@ -14,23 +14,77 @@
     <fieldset>
       <legend>Rechercher fournisseur</legend>
       <div class="flexAround">
-        <div>
-          <label>Nom :</label>
+        <div class="ligne1">
+          <label>Le nom contient :</label>
           <input type="text">
         </div>
-        <div>
-          <label>Region :</label>
+
+        <div class="ligne1">
+          <label>Le SIREN est :</label>
+          <input type="text" minlength="9" maxlength="9" pattern="[0-9]*">
+        </div>
+
+        <div class="ligne1">
+          <label>Le SIRET est :</label>
+          <input type="text" minlength="14" maxlength="14" pattern="[0-9]*">
+        </div>
+
+
+
+        <div class="ligne2">
+          <label>La ville est :</label>
           <input type="text">
         </div>
-        <div>
-          <label>Département :</label>
+
+        <div class="ligne2">
+          <label>La région est :</label>
           <input type="text">
         </div>
-        <div>
-          <label>Ville :</label>
+
+        <div class="ligne2">
+          <label>Le pays est :</label>
           <input type="text">
+        </div>
+
+
+
+        <div class="ligne3">
+          <label>Réseaux disponibles :</label>
+        </div>
+
+
+
+        <div class="ligne4">
+          <label>Modes de paiement autorisés :</label>
+        </div>
+
+
+
+        <div class="ligne5">
+          <label>Délai maximal de paiement (en jours) :</label>
+          <div id="parametre_delai">
+            <select required>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="0" value="0">
+          </div>
+        </div>
+
+        <div class="ligne5">
+          <label>Mode de paiement préféré :</label>
+          <select>
+            <option>Virements</option>
+            <option>Chèques</option>
+            <option>Carte bancaire</option>
+            <option>Liquide</option>
+          </select>
         </div>
       </div>
+
       <div class="flexAround">
         <a href="../index.html" class="designBoutons boutonRouge noSelect" id="retour">Retour</a>
         <input type="button" value="Rechercher" class="designBoutons boutonVert" id="boutonRechercherFournisseur">
