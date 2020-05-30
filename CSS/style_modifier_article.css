@@ -1,28 +1,28 @@
-fieldset{
-    margin-top: 3%;
-    
-    font-size: 110%;
+/* Auteur : Apokalypt */
 
+fieldset {
+    margin-top: 3%;
+    font-size: 100%;
     border: solid #df7430 1px;
     border-radius: 2px;
-
-    background-image: url(../IMAGES/fonds/fondOrange.png);
+    background-image: url("../IMAGES/fonds/fondOrange.png");
 }
-legend{
+
+legend {
     font-size: 130%;
 }
-label{
+
+label {
     font-weight: bold;
 }
-span{
+
+span {
     color: red
 }
 
-#renseignements{
+#renseignements {
     width: 60%;
-    
     margin: auto;
-    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,41 +32,37 @@ span{
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
 .groupe_informations div,input,label,select{
     width: 49%;
-
     margin-top: 3%;
 }
+
 #renseignements fieldset{
     width: 100%;
 }
+
 .groupe_informations{
     display: flex;
     flex-wrap: nowrap;
 }
+
 select.choix_type_prix{
     width:  auto;
-
     margin-top:  0;
-
     padding-right:  28px;
-
     font-weight: bold;
 }
 
 #historique {
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin: 2% 0 4%;
 }
 
 p#historique_tete {
     width: 100%;
-
     padding-top: 1%;
     padding-bottom: 1%;
-
     margin-top: 0%;
-
     text-align: center;
     font-weight: bold;
     font-size: 120%;
@@ -75,7 +71,6 @@ p#historique_tete {
 
 #historique_tableau {
     width: 100%;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,38 +79,37 @@ p#historique_tete {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: center;
-
     background-color: white;
 }
 
 #historique_tableau label, #historique_tableau p {
     border: solid 2px gray;
-
     margin: 0;
 }
+
 #historique_tableau p {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
+
 #historique_tableau .descr_cellule {
     width: calc(30% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .etat_cellule {
     width: calc(15% - 4px);
-
     text-align: center;
     font-weight: bold;
 }
+
 #historique_tableau .date_cellule {
     width: calc(20% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .influence_cellule {
     width: calc(15% - 4px);
-
     text-align: center;
     font-weight: bold;
 }
@@ -129,16 +123,11 @@ p#historique_tete {
 
 fieldset#new_promotion {
     width: auto;
-
     margin-bottom: 1%;
-
-    padding-top: 0%;
-    padding-bottom: 0%;
+    padding: 0 1%;
 }
 
 #boutons{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    
-    font-size: 130%;
+    margin: 2% 0;
+    font-size: 110%;
 }
