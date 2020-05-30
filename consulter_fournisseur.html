@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Consulter un fournisseur</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Apokalypt">
+	<link rel="icon" type="image/png" href="../IMAGES/logo.png" />
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style_consulter_fournisseur.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form action="../index.html">
+		<fieldset>
+			<legend>Consulter un fournisseur</legend>
+			
+			<div id="renseignements">
+				<fieldset>
+					<legend>Informations sur le fournisseur</legend>
+
+					<div class="groupe_informations">
+						<label>Nom<span>*</span> :</label>
+						<p>XXXXXXXX</p>
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Logo du fournisseur :</label>
+						<img src="" alt="Logo fournisseur">
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Nom du dirigeant :</label>
+						<p>XXXXXXXX</p>
+					</div>
+
+					<div class="groupe_informations">
+						<label>SIREN<span>*</span> :</label>
+						<p>XXXXXXXXX</p>
+					</div>
+
+					<div class="groupe_informations">
+						<label>SIRET<span>*</span> :</label>
+						<p>XXXXXXXXXXXXXX</p>
+					</div>
+	
+					<fieldset>
+						<legend>Adresse</legend>
+	
+						<div class="groupe_informations">
+							<label>Rue<span>*</span> :</label>
+							<p>XX XXXXXXXXXX</p>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Compléments d'adresse :</label>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Lieu-dit :</label>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Ville<span>*</span> :</label>
+							<p>XXXXXXXXXXXXXX</p>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Code postal<span>*</span> :</label>
+							<p>XXXXX</p>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Région :</label>
+						</div>
+	
+						<div class="groupe_informations">
+							<label>Pays<span>*</span> :</label>
+							<p>France</p>
+						</div>
+					</fieldset>
+	
+					<div class="groupe_informations">
+						<label>Mail de l'entreprise :</label>
+						<p>XXXXXXX@XXXXXX</p>
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Téléphone de l'entreprise :</label>
+						<p>05 55 43 32 12</p>
+					</div>
+	
+					<div class="groupe_informations">
+						<label>Fax de l'entreprise :</label>
+						<p>05 55 43 32 13</p>
+					</div>
+
+					<div class="groupe_informations">
+						<label>Commentaires :</label>
+						<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+					</div>
+
+					<fieldset>
+						<legend>Réseaux</legend>
+
+						<div class="groupe_informations">
+							<label>Site web :</label>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Twitter :</label>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Facebook :</label>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Instagram :</label>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Snapchat :</label>
+						</div>
+					</fieldset>
+				</fieldset>
+
+				<fieldset>
+					<legend>Paiement</legend>
+
+					<div class="groupe_informations">
+						<label>Délai de réglement maximal (en jour) :</label>
+						<p>31</p>
+					</div>
+
+					<div class="groupe_informations">
+						<label>Mode de paiement préféré :</label>
+						<p>Virements</p>
+					</div>
+
+					<div id="historique">
+                        <p id="historique_tete">Modes de paiement autorisés</p>
+                        <div id="historique_tableau">
+							<label class="mode_cellule">Mode de paiment</label>
+							<label class="valide_cellule">Autorisé</label>
+
+							<p class="mode_cellule">Virements</p>
+							<p class="valide_cellule text_green">OUI</p>
+
+							<p class="mode_cellule">Chèques</p>
+							<p class="valide_cellule text_green">OUI</p>
+
+							<p class="mode_cellule">Carte bancaire</p>
+							<p class="valide_cellule text_green">OUI</p>
+
+							<p class="mode_cellule">Liquide</p>
+							<p class="valide_cellule text_green">OUI</p>	
+						</div>
+					</div>
+
+					<div id="historique">
+                        <p id="historique_tete">Comptes bancaires enregistrés</p>
+                        <div id="historique_tableau">
+							<label class="titu_cellule">Nom du titulaire</label>
+							<label class="banque_cellule">Nom de la banque</label>
+							<label class="IBAN_cellule">IBAN</label>
+							<label class="BIC_cellule">BIC/SWIFT</label>
+							<label class="etat_cellule">Statut</label>
+
+							<a href="modifier_fournisseur.html#new_compte_bancaire">
+								<p class="titu_cellule">Michel Port</p>
+								<p class="banque_cellule">Banque Populaire</p>
+								<p class="IBAN_cellule">FR76 XXXX XXXX XXXX XXXX XXXX XXXX</p>
+								<p class="BIC_cellule">XXXXXXXXXXX</p>
+								<p class="etat_cellule"><b>PRINCIPAL</b></p>
+							</a>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Contacts</legend>
+
+					<div id="historique">
+                        <p id="historique_tete">Contacts enregistrés</p>
+                        <div id="historique_tableau">
+							<label class="nom_cellule">Nom / Prénom</label>
+							<label class="statut_cellule">Statut</label>
+							<label class="tel_cellule">Téléphone<br>Fax</label>
+							<label class="mail_cellule">E-mail</label>
+							<label class="com_cellule">Commentaires</label>
+
+							<a href="modifier_fournisseur.html#new_contact">
+								<p class="nom_cellule">Jean Gentil</p>
+								<p class="statut_cellule">Commercial</p>
+								<p class="tel_cellule">07 65 34 23 21<br>07 65 34 23 22</p>
+								<p class="mail_cellule">gentil.jean@gmail.com</p>
+								<p class="com_cellule"></p>
+							</a>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+
+			<div id="boutons" class="flexAround">
+				<a href="recherche_fournisseur.html" class="designBoutons noSelect boutonRouge">Retour</a>
+				<button type="submit" class="designBoutons noSelect boutonVert">Modifier les informations</button>
+			</div>
+		</fieldset>
+	</form>
+
+	<footer>
+		<a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+		<a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+	</footer>
+</body>
