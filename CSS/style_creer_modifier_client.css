@@ -17,7 +17,6 @@ fieldset {
 
 #ajout {
 	width: 60%;
-
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -26,31 +25,27 @@ fieldset {
 	justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-
 	margin-top: 3%;
-
-	padding: 1% 3% 1% 3%;
-
+	padding: 1% 3%;
 	border : solid rgb(36, 128, 36) 1px;
 	border-radius: 2px;	
-
 	background-color: white;
 }
 
 #ajout p {
 	width: 100%;
-
 	margin: 2% 0 0 10%;
 	margin-top: 2%;
-
 	color: red;
 	font-size: 70%;
 }
 
 #ajout fieldset {
 	width: 90%;
-
 	margin: 2% auto 0 auto;
+	border : solid rgb(36, 128, 36) 1px;
+	border-radius: 2px;
+	padding-bottom: 2%;
 }
 
 input {
@@ -64,11 +59,11 @@ input {
 
 .groupe_informations {
 	width: 100%;
-
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
+
 .groupe_informations label {
 	margin-top: 2%;
     margin-left: 2%;
@@ -81,9 +76,11 @@ span {
 #boutons {
 	margin: 1% 0 0.75%;
 }
+
 #boutonValider {
 	background-color: rgba(33, 119, 20, 0.7);
 }
+
 #boutonValider:hover {
 	background-color: rgba(33, 119, 20, 0.9);
 }

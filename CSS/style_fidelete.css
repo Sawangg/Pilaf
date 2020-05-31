@@ -41,8 +41,10 @@ fieldset {
 
 #ajout fieldset {
 	width: 90%;
-
-	margin: auto;
+	margin: 2% auto 0 auto;
+	border : solid rgb(36, 128, 36) 1px;
+	border-radius: 2px;
+	padding-bottom: 2%;
 }
 
 #legendAjout {
@@ -121,8 +123,4 @@ span {
 
 #boutonValider:hover {
 	background-color: rgba(33, 119, 20, 0.9);
-}
-
-footer {
-	bottom : 0;
 }

@@ -1,27 +1,31 @@
+/* Auteur : Apokalypt */
+
 fieldset {
     margin-top: 3%;
-    
-    font-size: 110%;
-
+    font-size: 100%;
     border: solid #df7430 1px;
     border-radius: 2px;
-
-    background-image: url(../IMAGES/fonds/fondOrange.png);
+    background-image: url("../IMAGES/fonds/fondOrange.png");
 }
+
 legend {
     font-size: 130%;
 }
+
 label {
     font-weight: bold;
 }
+
 span {
     color: red
 }
+
 .groupe_informations div, input, label, select {
     width: 49%;
 
     margin-top: 3%;
 }
+
 .groupe_informations div label {
     margin-top: 3%;
 }
@@ -34,9 +38,7 @@ div#groupe_boutons {
 
 #renseignements {
     width: 60%;
-    
     margin: auto;
-    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -46,6 +48,7 @@ div#groupe_boutons {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
 #renseignements fieldset {
     width: 100%;
 }
@@ -61,24 +64,20 @@ div#groupe_boutons {
 
 select.choix_type_prix {
     width:  auto;
-
     margin-top:  0;
-
     padding-right:  28px;
-
     font-weight: bold;
 }
 
 #promotion_groupe {
     display: flex;
 }
+
 #promotion_groupe input {
     margin-right: 1%;
 }
 
 #boutons {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    
-    font-size: 130%;
+    margin: 2% 0 1%;
+    font-size: 110%;
 }
