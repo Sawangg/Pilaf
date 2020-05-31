@@ -1,60 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="Author" content="Sawang_">
-  <title>Créer un nouvel employé</title>
-  <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/style_creer_employe.css">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+	<title>Créer un employé</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Apokalypt">
+	<link rel="icon" type="image/png" href="../IMAGES/logo.png" />
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style_creer_modifier_employe.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form action="../index.html">
-    <fieldset id="fieldPrincipale">
-      <legend id="legendPrincipale">Créer un nouvel employé</legend>
-      <div class="flexAround">
-        <div id="ajout">
-          <label>Prénom<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" required><br>
+	<form action="../index.html">
+		<fieldset>
+			<legend>Créer un employé</legend>
 
-          <label>Nom<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" required><br>
+			<div id="renseignements">
+				<fieldset>
+                    <legend>Informations sur l'employé</legend>
+                    
+                    <div class="groupe_informations">
+						<label>Prénom<span>*</span> :</label>
+						<input type="text" name="prenom_employe" pattern="[A-zÀ-ú]*" required>
+					</div>
 
-          <label>Poste<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" required><br>
+					<div class="groupe_informations">
+						<label>Nom<span>*</span> :</label>
+						<input type="text" name="nom_employe" pattern="[A-zÀ-ú]*" required>
+                    </div>
+                    
+                    <div class="groupe_informations">
+						<label>Poste<span>*</span> :</label>
+						<input type="text" name="poste_employe" required>
+					</div>
 
-          <label>Téléphone<span>*</span> :</label>
-          <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required><br>
+					<div class="groupe_informations">
+						<label>Photo de profil :</label>
+						<input type="file" name="photo_employe" accept="image/png, image/jpeg">
+					</div>
 
-          <label>E-mail<span>*</span> :</label>
-          <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required><br>
+					<fieldset>
+						<legend>Adresse</legend>
 
-          <label>Adresse<span>*</span> :</label>
-          <input type="text" pattern="[A-zÀ-ú]*" required><br>
+						<div class="groupe_informations">
+							<label>Rue<span>*</span> :</label>
+							<input type="text" name="rue_employe" placeholder="Ex : 1 Rue du succès" required>
+						</div>
 
-          <label>Date de contrat<span>*</span> :</label>
-          <input type="date" min="1900-01-01" max="2021-01-01" required><br>
+						<div class="groupe_informations">
+							<label>Compléments d'adresse :</label>
+							<input type="text" name="complement_employe">
+						</div>
 
-          <label>Date de naissance<span>*</span> :</label>
-          <input type="date" min="1900-01-01" max="2021-01-01" required><br>
+						<div class="groupe_informations">
+							<label>Lieu-dit :</label>
+							<input type="text" name="lieu_dit_employe">
+						</div>
 
-          <label>Coordonnées bancaires :</label>
-          <input type="text" pattern="[A-zÀ-ú]*"><br>
+						<div class="groupe_informations">
+							<label>Ville<span>*</span> :</label>
+							<input type="text" name="ville_employe" required>
+						</div>
 
-          <p>* Obligatoire</p>
-        </div>
-      </div>
+						<div class="groupe_informations">
+							<label>Code postal<span>*</span> :</label>
+							<input type="text" name="CP_employe" required>
+						</div>
 
-      <div id="boutons">
-        <a href="../index.html" class="designBoutons boutonRouge noSelect" id="annuler">Annuler</a>
-        <input type="submit" class="designBoutons boutonVert" id="boutonValider" value="Créer l'employé">
-      </div>
-    </fieldset>
-  </form>
-  <footer>
-    <a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
-    <a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
-  </footer>
+						<div class="groupe_informations">
+							<label>Région<span>*</span> :</label>
+							<input type="text" name="region_employe" required>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Pays<span>*</span> :</label>
+							<input type="text" name="pays_employe" required>
+						</div>
+					</fieldset>
+
+					<div class="groupe_informations">
+						<label>Adresse e-mail<span>*</span> :</label>
+						<input type="email" name="mail_employe" required>
+					</div>
+
+					<div class="groupe_informations">
+						<label>Numéro de téléphone<span>*</span> :</label>
+						<input type="tel" name="tel_employe" required>
+                    </div>
+                    
+                    <div class="groupe_informations">
+                        <label>Date de naissance :</label>
+                        <input type="date" name="date_naissance_employe" required>
+                    </div>
+
+					<fieldset>
+						<legend>Coordonnées bancaires</legend>
+
+						<div class="groupe_informations">
+							<label>Copie du RIB :</label>
+						    <input type="file" name="RIB_employe">
+						</div>
+
+						<div class="groupe_informations" id="ou_separateur">
+							<label>OU / ET</label>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Nom du titulaire du compte :</label>
+							<input type="text" name="titulaire_employe">
+						</div>
+
+						<div class="groupe_informations">
+							<label>IBAN :</label>
+							<input type="text" minlength="14" maxlength="34" name="IBAN_employe">
+						</div>
+                    </fieldset>
+                    
+                    <fieldset>
+						<legend>Contrat</legend>
+
+						<div class="groupe_informations">
+							<label>Contrat :</label>
+						    <input type="file" name="fichier_contrat_employe">
+						</div>
+
+						<div class="groupe_informations">
+                            <label>Type de contrat :</label>
+                            <select required>
+                                <option>CDI</option>
+                                <option>CDD</option>
+                            </select>
+						</div>
+
+						<div class="groupe_informations">
+							<label>Date de début du contrat :</label>
+							<input type="date" name="date_debut_contrat_employe" required>
+                        </div>
+                        
+                        <div class="groupe_informations">
+							<label>Date de fin du contrat :</label>
+							<input type="date" name="date_fin_contrat_employe">
+						</div>
+					</fieldset>
+				</fieldset>
+			</div>
+
+			<div id="boutons" class="flexAround">
+				<a href="../index.html" class="designBoutons noSelect boutonRouge">Annuler</a>
+				<button type="submit" class="designBoutons noSelect boutonVert">Créer l'employé</button>
+			</div>
+		</fieldset>
+	</form>
+
+	<footer>
+		<a href="https://github.com/Sawangg/Pilaf">© 2020 Divry Ladrat Mercier Toribio</a>
+		<a href="../index.html"><img src="../IMAGES/logo.png" alt="logo"></a>
+	</footer>
 </body>
-</html>
