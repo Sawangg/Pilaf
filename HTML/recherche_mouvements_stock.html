@@ -12,30 +12,40 @@
 <body>
   <form>
     <fieldset>
-      <legend>Rechercher les mouvements de stock</legend>
+      <legend>Consulter les stocks</legend>
       <div class="flexAround">
-        <div>
-          <label>Code barre :</label>
-          <input type="text">
-        </div>
-        <div>
-          <label>Nom de l'article :</label>
-          <input type="text">
-        </div>
         <div id="date">
-          <label>Date :</label>
-          <input type="date" min="2020-01-01" max="2021-01-01" value="2020-05-16">
+          <label>Date du dernier mouvement :</label>
+          <input type="date">
         </div>
+
         <div>
-          <label>Etat :</label>
+          <label>Type du dernier mouvement :</label>
           <select>
-            <option>Ajouté au stock</option>
-            <option>Retiré du stock</option>
+            <option>Entrée dans le stock</option>
+            <option>Sortie du stock - Entrée dans le rayon</option>
+            <option>Sortie du stock</option>
+            <option>Sortie du rayon - Entrée dans le stock</option>
+            <option>Sortie du rayon</option>
           </select>
         </div>
+
         <div>
-          <label>Code rayon :</label>
-          <input type="text">
+          <label>Quantité restante en stock :</label>
+          <div class="groupe_comparaison">
+            <select>
+              <option value="">=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&lt;</option>
+              <option value="3" selected>>=</option>
+              <option value="4">></option>
+            </select>
+            <input type="number" min="1" value="1">
+          </div>
+        </div>
+
+        <div>
+          <a href="selection_article.html" class="designBoutons boutonGris noSelect">Sélectionner un/des articles concernés</a>
         </div>
       </div>
       <div class="flexAround">
@@ -49,7 +59,8 @@
       <div>
         <h3>CAFÉ BIO MEXIQUE MOULU DÉCAFÉINÉ</h3>
         <h4>Code barre : 87954526462695</h4>
-        <p>Quantité : <b>30</b></p>
+        <p>Quantité en stock : <b>30</b><br>
+          Quantité en rayon : <b>10</b></p>
         <h4>Dernière action :</h4>
         <p>Date : 16/05/2020</p>
         <p>Retrait de <b>2</b> produits au stock</p>
@@ -63,10 +74,11 @@
       <div>
         <h3>SAVON TRADITION D'ALEP OLIVE</h3>
         <h4>Code barre : 987658498565</h4>
-        <p>Quantité : <b>90</b></p>
+        <p>Quantité en stock : <b>90</b><br>
+          Quantité en rayon : <b>20</b></p>
         <h4>Dernière action :</h4>
         <p>Date : 16/05/2020</p>
-        <p>Ajout de <b>5</b> produits au stock</p>
+        <p>Ajout de <b>5</b> produits en rayon</p>
       </div>
       <div>
         <a href="consulter_article.html" class="designBoutons boutonOrange noSelect">Consulter détails</a>

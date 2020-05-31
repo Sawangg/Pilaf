@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="Author" content="sepios87">
-  <title>Mouvement stocks</title>
+  <meta name="Author" content="Apokalypt">
+  <title>Modifier un mouvement de stock</title>
   <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/style_creer_modifier_mouvement_stock.css">
@@ -12,36 +13,48 @@
 <body>
   <form>
     <fieldset>
-      <legend>Modifier mouvement stock</legend>
+      <legend>Modifier un mouvement de stock</legend>
       <div class="flexAround">
         <div>
-          <label>Nom du produit:</label>
-          <input type="text" value="CAFÉ BIO MEXIQUE MOULU DÉCAFÉINÉ">
+          <label>Nom du produit sélectionné :</label>
+          <p>AUCUN</p>
         </div>
         <div>
-          <label>Code barre:</label>
-          <input type="text" pattern="[0-9{0,12}]" value="87954526462695">
+          <a href="selection_article.html" class="designBoutons boutonRouge noSelect">Sélectionner un article</a>
         </div>
-        <div id="date">
-          <label for="start">Date:</label>
-          <input type="date" id="start" name="trip-start" min="2020-01-01" max="2021-01-01" value="2020-05-16">
-        </div>
+
         <div>
-          <label>Quantité:</label>
-          <input type="number" min=1 value="60">
-          <select name="salarie" id="entreeSortie">
-            <option>Entrée</option>
-            <option>Sortie</option>
+          <label for="start">Date du mouvement de stock :</label>
+          <input type="date">
+        </div>
+        <div></div>
+
+        <div>
+          <label>Type de mouvements : </label>
+          <select>
+            <option>Entrée dans le stock</option>
+            <option>Sortie du stock - Entrée dans le rayon</option>
+            <option>Sortie du stock</option>
+            <option>Sortie du rayon - Entrée dans le stock</option>
+            <option>Sortie du rayon</option>
           </select>
         </div>
+        <div></div>
+        
+        <div>
+          <label>Quantité :</label>
+          <input type="number" value="1" min=1>
+        </div>
+        <div></div>
+
         <div id="divMotif">
           <label>Motif:</label>
-          <input type="text" id="motif"  value="Achat de 60 boites de café bio">
+          <input type="text" id="motif">
         </div>
       </div>
       <div class=flexAround>
         <a href="../index.html" class="designBoutons boutonRouge">Annuler</a>
-        <a href="rechercher_stock.html" class="designBoutons boutonVert">Valider</a>
+        <a href="recherche_mouvements_stock.html" class="designBoutons boutonVert">Enregistrer les modifications</a>
       </div>
     </fieldset>
   </form>

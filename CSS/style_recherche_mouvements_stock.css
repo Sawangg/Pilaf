@@ -7,7 +7,10 @@ fieldset {
 }
 
 .flexAround div {
-	width: 20%;
+	width: 26%;
+	
+	margin-top: 1%;
+	
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -19,10 +22,26 @@ fieldset {
 	justify-content: space-around;
 }
 
+.flexAround div div {
+	width: 100%;
+	
+	display: flex;
+	flex-direction: row;
+}
+.flexAround div div select {
+	width: auto;
+	padding-right: 35px;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+input, select {
+	margin: 1% 0;
+}
 input {
 	padding: 1%;
-	width: 80%;
-	margin: 1% 0;
+	width: 100%;
 }
 
 label, fieldset {
@@ -31,7 +50,7 @@ label, fieldset {
 }
 
 select {
-	width: 80%;
+	width: 100%;
 	margin-left: 1%;
 }
 
