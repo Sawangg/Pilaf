@@ -36,23 +36,3 @@ input {
 label {
   width: 25%;
 }
-
-#aide {
-  font-size: 60%;
-  padding: 0.75% 1%;
-  background-color: #b7dbed;
-}
-
-#aide:hover {
-  background-color: #7dcaf0;
-}
-
-#connexion {
-  padding: 0 2%;
-  margin: 0 auto 0 auto;
-  background-color: rgba(81, 215, 59, 0.5);
-}
-
-#connexion:hover {
-  background-color: rgba(81, 215, 59);
-}

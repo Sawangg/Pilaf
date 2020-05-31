@@ -85,17 +85,27 @@ fieldset {
 	background-color: rgba(223, 116, 48, 0.5);
 }
 
+.boutonBleu {
+	padding: 1% 2%;
+	  background-color: rgba(138, 197, 227, 0.7);
+}
+
+.boutonBleu:hover {
+	background-color: rgba(138, 197, 227, 1);
+}
+
+
 .boutonOrange:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
 .boutonVert {
 	margin-left: 3%;
-	background-color: rgba(81, 215, 59, 0.2);
+	background-color: rgba(81, 215, 59, 0.3);
 }
 
 .boutonVert:hover {
-	background-color: rgba(81, 215, 59, 0.4);
+	background-color: rgba(81, 215, 59, 0.5);
 }
 
 .boutonGris {
