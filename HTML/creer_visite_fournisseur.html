@@ -16,11 +16,12 @@
 			<div id="renseignements">
 				<div class="groupe_informations">
                     <label>Fournisseur à visiter :</label>
-                    <select>
-                        <option>Panzani</option>
-                        <option>Fournisseur2</option>
-                        <option>Fournisseur3</option>
-                    </select>
+										<SELECT name="Fournisseur">
+												<OPTION>Artisant du monde</OPTION>
+												<OPTION>Bioterroir</OPTION>
+												<OPTION>Alterbio France</OPTION>
+												<OPTION>Bio audema</OPTION>
+										</SELECT>
                 </div>
 
                 <div id="historique">
@@ -45,7 +46,7 @@
                 <form action="consulter_fournisseur.html">
                     <fieldset id="new_visite">
                         <legend>Programmer une visite</legend>
-    
+
                         <div class="groupe_informations">
                             <label>Employé effectuant la visite : </label>
                             <select>
@@ -54,12 +55,12 @@
                                 <option>Employé 3</option>
                             </select>
                         </div>
-    
+
                         <div class="groupe_informations">
                             <label>Date et heure de la visite : </label>
                             <input type="datetime-local" required>
                         </div>
-    
+
                         <div class="groupe_informations">
                             <label>Motif de la visite : </label>
                             <textarea required></textarea>
@@ -79,7 +80,7 @@
                             <label>Compte-rendu de la visite : </label>
                             <textarea></textarea>
                         </div>
-    
+
                         <div id="boutons" class="flexAround">
                             <a href="" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
                             <button type="submit" class="designBoutons noSelect boutonVert">Programmer la visite</button>
