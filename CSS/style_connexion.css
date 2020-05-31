@@ -27,6 +27,7 @@ legend {
 
 fieldset {
   background-image: url("../IMAGES/fonds/fondBleu.png");
+  border : solid rgb(48, 155, 223) 1px;
 }
 
 input {
@@ -35,4 +36,14 @@ input {
 
 label {
   width: 25%;
+}
+
+#assistance {
+  font-size: 70%;
+  padding: 0.75% 1%;
+}
+
+#connexion {
+  padding: 0 2%;
+  margin: 0 auto 0 auto;
 }
