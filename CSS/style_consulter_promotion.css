@@ -49,7 +49,7 @@ form label{
 	border-left: solid 5px red;
 }
 
-#listeArticle{
+.listeArticle{
   display: flex;
   padding: 2% 1%;
   overflow-x: auto;
