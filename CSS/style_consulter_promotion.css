@@ -16,16 +16,37 @@ h2  {
   margin-bottom: 2%;
 }
 
+form{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+  margin-left: 10%;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+form select, form input{
+  width: 70%;
+}
+
+form label{
+  width: 100%;
+}
+
 #venir{
-  border-left: solid 5px rgb(25, 197, 226);
+	border-left: solid 5px green;
 }
 
 #cours{
-  border-left: solid 5px rgb(246, 213, 39);
+	border-left: solid 5px goldenrod;
 }
 
 #termine{
-  border-left: solid 5px rgb(227, 49, 49);
+	border-left: solid 5px red;
 }
 
 #listeArticle{
