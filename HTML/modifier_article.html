@@ -6,11 +6,11 @@
     <title>Modifier un article</title>
     <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/style_modifier_article.css">
+    <link rel="stylesheet" href="../CSS/style_creer_modifier_article.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <form action="../index.html">
+    <form action="consulter_article.html">
       <fieldset>
         <legend>Modifier un article</legend>
             <div id="renseignements">
@@ -54,7 +54,7 @@
 
                 <fieldset>
                     <legend>Stock</legend>
-
+                    
                     <div class="groupe_informations">
                         <label>Quantité en stock<span>*</span> :</label>
                         <input type="number" name="quantite_stock" value="0" min="0" required>
@@ -70,14 +70,6 @@
                     <legend>Prix</legend>
 
                     <div class="groupe_informations">
-                        <label>Type de produit<span>*</span> :</label>
-                        <SELECT name="Prix">
-                            <OPTION selected>Unitaire</OPTION>
-                            <OPTION>Pack</OPTION>
-                        </SELECT>
-                    </div>
-
-                    <div class="groupe_informations">
                         <label>Taux de TVA<span>*</span> :</label>
                         <SELECT name="TVA">
                             <OPTION>20%</OPTION>
@@ -88,33 +80,95 @@
                     </div>
 
                     <div class="groupe_informations">
-                        <div>
-                            <label>Prix à l'unité </label>
-                            <SELECT name="Prix" class="choix_type_prix">
-                                <OPTION selected>HT</OPTION>
-                                <OPTION>TTC</OPTION>
-                            </SELECT>
-                            <label><span>*</span> :</label>
-                        </div>
-                        <input type="number" name="prix_unitaire_article" step="0.01" min="0" value="0.00" required>
-                    </div>
-
-                    <div class="groupe_informations">
-                        <label>Poids (en KG) : </label>
+                        <select>
+                            <option>Poids (en kg) : </option>
+                            <option>Volume (en L) :</option>
+                        </select>
                         <input type="number" name="poids_article" step="0.01" min="0">
                     </div>
 
                     <div class="groupe_informations">
                         <div>
-                            <label>Prix au kg </label>
+                            <label>Prix au </label>
                             <SELECT name="Prix" class="choix_type_prix">
-                              <OPTION selected>HT</OPTION>
-                              <OPTION>TTC</OPTION>
+                              <OPTION selected>kg HT</OPTION>
+                              <OPTION>kg TTC</OPTION>
+                              <OPTION>L HT</OPTION>
+                              <OPTION>L TTC</OPTION>
                             </SELECT>
                             <label><span>*</span> :</label>
                         </div>
                         <input type="number" name="prix_kg_article" step="0.01" min="0" value="0.00" required>
                     </div>
+
+                    <fieldset>
+                        <legend>Packs</legend>
+
+                        <div id="historique">
+                            <p id="historique_tete">Packs</p>
+                            <div id="historique_tableau">
+                              <label class="cellule colonne_nom_pack">Image + Nom</label>
+                              <label class="cellule colonne_qte_article_pack">Quantité de l'article</label>
+                              <label class="cellule colonne_prix">Prix HT</label>
+                              <label class="cellule colonne_prix">Prix TTC</label>
+                              <label class="cellule colonne_reference_pack">Référence</label>
+                              <label class="cellule colonne_qte_stock_pack">Quantité en stock</label>
+                              <label class="cellule colonne_qte_rayon_pack">Quantité en rayon</label>
+          
+                              <a href="#new_pack">
+                                <div class="cellule colonne_nom_pack">
+                                  <img src="../IMAGES/produits/orangina.jpg">
+                                  <p>Pack de 6 bouteilles d'Orangina</p>
+                                </div>
+                                <p class="cellule colonne_qte_article_pack">6</p>
+                                <p class="cellule colonne_prix">12,23€</p>
+                                <p class="cellule colonne_prix">12,23€</p>
+                                <p class="cellule colonne_reference_pack">XXXXXXXXXXXXX</p>
+                                <p class="cellule colonne_qte_stock_pack">10</p>
+                                <p class="cellule colonne_qte_rayon_pack">3</p>
+                              </a>
+                            </div>
+                          </div>
+
+                            <fieldset id="new_pack">
+                                <legend>Créer un pack</legend>
+    
+                                <div class="groupe_informations">
+                                    <label>Nom du pack<span>*</span> : </label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="groupe_informations">
+                                    <label>Image du pack :</label>
+                                    <input type="file" name="image_pack" accept="image/png, image/jpeg">
+                                </div>
+    
+                                <div class="groupe_informations">
+                                    <label>Quantité de l'article dans le pack<span>*</span> : </label>
+                                    <input type="number" value="2" min="2">
+                                </div>
+    
+                                <div class="groupe_informations">
+                                    <label>Référence<span>*</span> : </label>
+                                    <input type="text">
+                                </div>
+    
+                                <div class="groupe_informations">
+                                    <label>Quantité en stock<span>*</span> :</label>
+                                    <input type="number" name="quantite_stock" value="0" min="0">
+                                </div>
+            
+                                <div class="groupe_informations">
+                                    <label>Quantité en rayon<span>*</span> :</label>
+                                    <input type="number" name="quantite_rayon" value="0" min="0">
+                                </div>
+
+                                <div id="boutons" class="flexAround">
+                                    <a href="#new_pack" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
+                                    <a href="#new_pack" class="designBoutons noSelect boutonVert">Créer le pack</a>
+                                </div>
+                            </fieldset>
+                    </fieldset>
                 </fieldset>
 
                 <fieldset>
@@ -123,41 +177,45 @@
                     <div id="historique">
                         <p id="historique_tete">Historique des promotions</p>
                         <div id="historique_tableau">
-                            <label class="descr_cellule">Description promotion</label>
-                            <label class="etat_cellule">Etat de la promotion</label>
-                            <label class="date_cellule">Date début</label>
-                            <label class="date_cellule">Date fin</label>
-                            <label class="influence_cellule">Influence vente</label>
-
-                            <p class="descr_cellule">2 acheté(e)(s) = 1 offert(e)(s)</p>
-                            <p class="etat_cellule text_green">A venir</p>
-                            <p class="date_cellule">01 juillet 2020</p>
-                            <p class="date_cellule">01 août 2020</p>
-                            <p class="influence_cellule">??</p>
-
-                            <p class="descr_cellule">Réduction de 50%</p>
-                            <p class="etat_cellule text_green">En cours</p>
-                            <p class="date_cellule">01 avril 2020</p>
-                            <p class="date_cellule">01 juillet 2020</p>
-                            <p class="influence_cellule">??</p>
-
-                            <p class="descr_cellule">Réduction de 50%</p>
-                            <p class="etat_cellule text_red">Fini</p>
-                            <p class="date_cellule">01 mars 2020</p>
-                            <p class="date_cellule">01 avril 2020</p>
-                            <p class="influence_cellule text_green">+2%</p>
-
-                            <p class="descr_cellule">1 acheté, 3 offerts</p>
-                            <p class="etat_cellule text_red">Fini</p>
-                            <p class="date_cellule">01 février 2020</p>
-                            <p class="date_cellule">01 mars 2020</p>
-                            <p class="influence_cellule text_green">+33%</p>
-
-                            <p class="descr_cellule">Réduction de 20%</p>
-                            <p class="etat_cellule text_red">Fini</p>
-                            <p class="date_cellule">01 janvier 2020</p>
-                            <p class="date_cellule">01 février 2020</p>
-                            <p class="influence_cellule text_red">-20%</p>
+                            <label class="cellule colonne_description">Description promotion</label>
+                            <label class="cellule colonne_etat">Etat de la promotion</label>
+                            <label class="cellule colonne_date">Date début</label>
+                            <label class="cellule colonne_date">Date fin</label>
+                            <label class="cellule colonne_vente">Influence vente</label>
+      
+                            <a href="#new_promotion">
+                                <p class="cellule colonne_description">2 acheté(e)(s) = 1 offert(e)(s)</p>
+                                <p class="cellule colonne_etat text_green">A venir</p>
+                                <p class="cellule colonne_date">01 juillet 2020</p>
+                                <p class="cellule colonne_date">01 août 2020</p>
+                                <p class="cellule colonne_vente">??</p>
+                            </a>
+        
+                            <a href="#new_promotion">
+                                <p class="cellule colonne_description">Réduction de 50%</p>
+                                <p class="cellule colonne_etat text_green">En cours</p>
+                                <p class="cellule colonne_date">01 avril 2020</p>
+                                <p class="cellule colonne_date">01 juillet 2020</p>
+                                <p class="cellule colonne_vente">??</p>
+                            </a>        
+          
+                            <p class="cellule colonne_description">Réduction de 50%</p>
+                            <p class="cellule colonne_etat text_red">Fini</p>
+                            <p class="cellule colonne_date">01 mars 2020</p>
+                            <p class="cellule colonne_date">01 avril 2020</p>
+                            <p class="cellule colonne_vente text_green">+2%</p>
+          
+                            <p class="cellule colonne_description">1 acheté, 3 offerts</p>
+                            <p class="cellule colonne_etat text_red">Fini</p>
+                            <p class="cellule colonne_date">01 février 2020</p>
+                            <p class="cellule colonne_date">01 mars 2020</p>
+                            <p class="cellule colonne_vente text_green">+33%</p>
+          
+                            <p class="cellule colonne_description">Réduction de 20%</p>
+                            <p class="cellule colonne_etat text_red">Fini</p>
+                            <p class="cellule colonne_date">01 janvier 2020</p>
+                            <p class="cellule colonne_date">01 février 2020</p>
+                            <p class="cellule colonne_vente text_red">-20%</p>
                         </div>
                     </div>
 
@@ -189,15 +247,15 @@
                         </div>
 
                         <div id="boutons" class="flexAround">
-                            <a href="" class="designBoutons noSelect boutonGris">Ajouter la promotion</a>
+                            <a href="#new_promotion" class="designBoutons noSelect boutonGris">Ajouter la promotion</a>
                         </div>
                     </fieldset>
                 </fieldset>
             </div>
 
         <div id="boutons" class="flexAround">
-            <a href="../index.html" class="designBoutons noSelect boutonRouge">Annuler</a>
-            <button type="submit" class="designBoutons noSelect boutonVert">Sauvegarder les modifications</button>
+            <a href="consulter_article.html" class="designBoutons noSelect boutonRouge">Annuler</a>
+            <button type="submit" class="designBoutons noSelect boutonVert">Sauvegarder les changements</button>
         </div>
       </fieldset>
     </form>

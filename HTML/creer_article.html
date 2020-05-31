@@ -6,7 +6,7 @@
     <title>Créer un article</title>
     <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/style_creer_article.css">
+    <link rel="stylesheet" href="../CSS/style_creer_modifier_article.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -70,14 +70,6 @@
                     <legend>Prix</legend>
 
                     <div class="groupe_informations">
-                        <label>Type de produit<span>*</span> :</label>
-                        <SELECT name="Prix">
-                            <OPTION selected>Unitaire</OPTION>
-                            <OPTION>Pack</OPTION>
-                        </SELECT>
-                    </div>
-
-                    <div class="groupe_informations">
                         <label>Taux de TVA<span>*</span> :</label>
                         <SELECT name="TVA">
                             <OPTION>20%</OPTION>
@@ -86,63 +78,131 @@
                             <OPTION>2,1%</OPTION>
                         </SELECT>
                     </div>
-                    
-                    <div class="groupe_informations">
-                        <div>
-                            <label>Prix à l'unité </label>
-                            <SELECT name="Prix" class="choix_type_prix">
-                                <OPTION selected>HT</OPTION>
-                                <OPTION>TTC</OPTION>
-                            </SELECT>
-                            <label><span>*</span> :</label>
-                        </div>
-                        <input type="number" name="prix_unitaire_article" step="0.01" min="0" value="0.00" required>
-                    </div>
 
                     <div class="groupe_informations">
-                        <label>Poids (en KG) : </label>
+                        <select>
+                            <option>Poids (en kg) : </option>
+                            <option>Volume (en L) :</option>
+                        </select>
                         <input type="number" name="poids_article" step="0.01" min="0">
                     </div>
 
                     <div class="groupe_informations">
                         <div>
-                            <label>Prix au kg </label>
+                            <label>Prix au </label>
                             <SELECT name="Prix" class="choix_type_prix">
-                              <OPTION selected>HT</OPTION>
-                              <OPTION>TTC</OPTION>
+                              <OPTION selected>kg HT</OPTION>
+                              <OPTION>kg TTC</OPTION>
+                              <OPTION>L HT</OPTION>
+                              <OPTION>L TTC</OPTION>
                             </SELECT>
                             <label><span>*</span> :</label>
                         </div>
                         <input type="number" name="prix_kg_article" step="0.01" min="0" value="0.00" required>
                     </div>
+
+                    <fieldset>
+                        <legend>Packs</legend>
+
+                        <div id="historique">
+                            <p id="historique_tete">Packs</p>
+                            <div id="historique_tableau">
+                                <label class="cellule colonne_nom_pack">Image + Nom</label>
+                                <label class="cellule colonne_qte_article_pack">Quantité de l'article</label>
+                                <label class="cellule colonne_prix">Prix HT</label>
+                                <label class="cellule colonne_prix">Prix TTC</label>
+                                <label class="cellule colonne_reference_pack">Référence</label>
+                                <label class="cellule colonne_qte_stock_pack">Quantité en stock</label>
+                                <label class="cellule colonne_qte_rayon_pack">Quantité en rayon</label>
+                            </div>
+                        </div>
+
+                            <fieldset id="new_pack">
+                                <legend>Créer un pack</legend>
+    
+                                <div class="groupe_informations">
+                                    <label>Nom du pack<span>*</span> : </label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="groupe_informations">
+                                    <label>Image du pack :</label>
+                                    <input type="file" name="image_pack" accept="image/png, image/jpeg">
+                                </div>
+    
+                                <div class="groupe_informations">
+                                    <label>Quantité de l'article dans le pack<span>*</span> : </label>
+                                    <input type="number" value="2" min="2">
+                                </div>
+    
+                                <div class="groupe_informations">
+                                    <label>Référence<span>*</span> : </label>
+                                    <input type="text">
+                                </div>
+    
+                                <div class="groupe_informations">
+                                    <label>Quantité en stock<span>*</span> :</label>
+                                    <input type="number" name="quantite_stock" value="0" min="0">
+                                </div>
+            
+                                <div class="groupe_informations">
+                                    <label>Quantité en rayon<span>*</span> :</label>
+                                    <input type="number" name="quantite_rayon" value="0" min="0">
+                                </div>
+
+                                <div id="boutons" class="flexAround">
+                                    <a href="#new_pack" class="designBoutons noSelect boutonRouge">Réinitialiser les champs</a>
+                                    <a href="#new_pack" class="designBoutons noSelect boutonVert">Créer le pack</a>
+                                </div>
+                            </fieldset>
+                    </fieldset>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Nouvelle promotion</legend>
-                    
-                    <div class="groupe_informations">
-                        <label>Type de promotion : </label>
-                        <SELECT>
-                            <OPTION>Sélectionnez un type de promotion</OPTION>
-                            <OPTION selected>Réduction pourcentage</OPTION>
-                            <OPTION>Réduction par groupe</OPTION>
-                        </SELECT>
+                    <legend>Promotion</legend>
+
+                    <div id="historique">
+                        <p id="historique_tete">Historique des promotions</p>
+                        <div id="historique_tableau">
+                            <label class="cellule colonne_description">Description promotion</label>
+                            <label class="cellule colonne_etat">Etat de la promotion</label>
+                            <label class="cellule colonne_date">Date début</label>
+                            <label class="cellule colonne_date">Date fin</label>
+                            <label class="cellule colonne_vente">Influence vente</label>
+                        </div>
                     </div>
 
-                    <div class="groupe_informations">
-                        <label>Valeur de la réduction (en %) : </label>
-                        <input type="number" name="réduction" min="0" max="100">
-                    </div>
+                    <fieldset id="new_promotion">
+                        <legend>Nouvelle promotion</legend>
 
-                    <div class="groupe_informations">
-                        <label>Date de début : </label>
-                        <input type="date" name="date_début_promotion">
-                    </div>
+                        <div class="groupe_informations">
+                            <label>Type de promotion : </label>
+                            <SELECT>
+                                <OPTION>Sélectionnez un type de promotion</OPTION>
+                                <OPTION selected>Réduction pourcentage</OPTION>
+                                <OPTION>Réduction par groupe</OPTION>
+                            </SELECT>
+                        </div>
 
-                    <div class="groupe_informations">
-                        <label>Date de fin : </label>
-                        <input type="date" name="date_fin_promotion">
-                    </div>
+                        <div class="groupe_informations">
+                            <label>Valeur de la réduction (en %) : </label>
+                            <input type="number" name="réduction" min="0" max="100">
+                        </div>
+
+                        <div class="groupe_informations">
+                            <label>Date de début : </label>
+                            <input type="date" name="date_début_promotion">
+                        </div>
+
+                        <div class="groupe_informations">
+                            <label>Date de fin : </label>
+                            <input type="date" name="date_fin_promotion">
+                        </div>
+
+                        <div id="boutons" class="flexAround">
+                            <a href="#new_promotion" class="designBoutons noSelect boutonGris">Ajouter la promotion</a>
+                        </div>
+                    </fieldset>
                 </fieldset>
             </div>
 
