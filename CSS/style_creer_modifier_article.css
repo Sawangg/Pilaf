@@ -5,15 +5,15 @@ fieldset {
     font-size: 100%;
     border: solid #df7430 1px;
     border-radius: 2px;
-    padding: 1% 2% 2% 2%;
+    padding: 1% 2% 2%;
     background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
-legend{
+legend {
     font-size: 130%;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
@@ -75,7 +75,6 @@ p#historique_tete {
 
 #historique_tableau, #historique_tableau a {
     width: 100%;
-    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,23 +83,19 @@ p#historique_tete {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
-    
 	color: black;
 	text-decoration: none;
-
     background-color: white;
 }
 
 #historique_tableau .cellule {
     margin: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: solid 2px gray;
 }
+
 #historique_tableau p {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -110,24 +105,29 @@ p#historique_tete {
     width: calc(30% - 4px);
     text-align: center;
 }
+
 #historique_tableau .colonne_nom_pack img {
     width: 40%;
     height: auto;
 }
+
 #historique_tableau .colonne_qte_article_pack {
     width: calc(10% - 4px);
     text-align: center;
     font-weight: bold;
 }
+
 #historique_tableau .colonne_prix {
     width: calc(10% - 4px);
     text-align: center;
     font-weight: bold;
 }
+
 #historique_tableau .colonne_reference_pack {
     width: calc(20% - 4px);
     text-align: center;
 }
+
 #historique_tableau .colonne_qte_stock_pack, #historique_tableau .colonne_qte_rayon_pack {
     width: calc(10% - 4px);
     text-align: center;
@@ -138,15 +138,18 @@ p#historique_tete {
     width: calc(30% - 4px);
     text-align: center;
 }
+
 #historique_tableau .colonne_etat {
     width: calc(15% - 4px);
     text-align: center;
     font-weight: bold;
 }
+
 #historique_tableau .colonne_date {
     width: calc(20% - 4px);
     text-align: center;
 }
+
 #historique_tableau .colonne_vente {
     width: calc(15% - 4px);
     text-align: center;
@@ -161,5 +164,6 @@ p#historique_tete {
 }
 
 #boutons {
+    font-size: 110%;
     margin: 2% 0 0;
 }

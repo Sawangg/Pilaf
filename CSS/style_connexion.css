@@ -45,5 +45,6 @@ label {
 
 #connexion {
   padding: 0 2%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
+  font-size: 95%;
 }

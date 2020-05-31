@@ -2,34 +2,33 @@
 
 fieldset {
 	margin-top: 3%;
-    
-    font-size: 110%;
-
+    font-size: 100%;
     border: solid #df7430 1px;
     border-radius: 2px;
-
-    background-image: url(../IMAGES/fonds/fondOrange.png);
+    padding: 2%;
+    background-image: url("../IMAGES/fonds/fondOrange.png");
 }
+
 legend {
     font-size: 130%;
 }
+
 label {
 	font-weight: bold;
-	
 	padding-left: 3%;
 }
+
 textarea {
 	font-size: 90%;
 }
+
 span {
     color: red
 }
 
 #renseignements {
     width: 75%;
-    
     margin: auto;
-    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,15 +41,15 @@ span {
 
 .groupe_informations div, input, p, label, select, textarea {
     width: 49%;
-
     margin-top: 3%;
 }
+
 .groupe_informations img {
     width: 20%;
     height: auto;
-
     margin-top: 3%;
 }
+
 textarea {
 	height: 150px;;
 }
@@ -58,6 +57,7 @@ textarea {
 #renseignements fieldset {
     width: 100%;
 }
+
 #renseignements fieldset fieldset {
     width: auto;
 }
@@ -68,18 +68,13 @@ textarea {
 }
 
 #historique {
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin: 2% 0 4%;
 }
 
 p#historique_tete {
     width: 100%;
-
-    padding-top: 1%;
-    padding-bottom: 1%;
-
+    padding: 1% 0;
     margin-top: 0%;
-
     text-align: center;
     font-weight: bold;
     font-size: 120%;
@@ -88,9 +83,7 @@ p#historique_tete {
 
 #historique_tableau {
     width: 70%;
-
     margin: auto;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,7 +92,6 @@ p#historique_tete {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: center;
-
     background-color: white;
 }
 
@@ -107,12 +99,11 @@ p#historique_tete {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     margin: 0;
 	padding-left: 0%;
-
     border: solid 2px gray;
 }
+
 #historique_tableau p {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -120,19 +111,20 @@ p#historique_tete {
 
 #historique_tableau .colonne_date, #historique_tableau .colonne_plage {
     width: calc(33% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .colonne_total {
     width: calc(34% - 4px);
-
     text-align: center;
     font-weight: bold;
 }
 
-#boutons{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    
+#pointer {
     font-size: 110%;
+}
+
+#boutons {
+    font-size: 110%;
+    margin-top: 2%;
 }

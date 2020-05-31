@@ -90,3 +90,7 @@ label, fieldset {
 	margin-top: 20px;
 	margin-bottom: auto;
 }
+
+#boutons {
+	font-size: 110%;
+}

@@ -38,6 +38,10 @@ fieldset {
 }
 
 .designBoutons {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	color: black;
 	text-decoration: none;
 	-webkit-transition: 250ms;
@@ -73,6 +77,7 @@ fieldset {
 }
 
 .boutonRouge {
+	padding: 0.5% 1%;
 	background-color: rgba(203, 75, 62, 0.5);
 }
 
@@ -81,26 +86,25 @@ fieldset {
 }
 
 .boutonOrange {
-	padding: 1% 2%;
+	padding: 0.5% 1%;
 	background-color: rgba(223, 116, 48, 0.5);
 }
 
+.boutonOrange:hover {
+	background-color: rgba(223, 116, 48, 0.7);
+}
+
 .boutonBleu {
-	padding: 1% 2%;
-	  background-color: rgba(138, 197, 227, 0.7);
+	padding: 0.5% 1%;
+	background-color: rgba(138, 197, 227, 0.7);
 }
 
 .boutonBleu:hover {
 	background-color: rgba(138, 197, 227, 1);
 }
 
-
-.boutonOrange:hover {
-	background-color: rgba(223, 116, 48, 0.7);
-}
-
 .boutonVert {
-	margin-left: 3%;
+	padding: 0.5% 1%;
 	background-color: rgba(81, 215, 59, 0.3);
 }
 
@@ -109,6 +113,7 @@ fieldset {
 }
 
 .boutonGris {
+	padding: 0.5% 1%;
 	background-color: #f0f0f0;
 }
 

@@ -2,11 +2,8 @@
 
 fieldset {
 	margin-top: 3%;
-	background-image: url(../IMAGES/fonds/fondOrange.png);
-	
-    padding-left: 3%;
-	padding-right: 3%;
-	
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	padding: 0 3%;
 	border: solid 1px rgb(223, 116, 48);
     border-radius: 2px;
 }
@@ -27,10 +24,12 @@ legend {
 .flexAround div p {
     width: inherit;
 }
+
 .flexAround div a {
     display: flex;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	padding: 0.75% 2%;
 }
 
 #divMotif {
@@ -46,7 +45,6 @@ input, select {
 
 label {
 	width: 40%;
-
 	font-weight: bold;
 }
 
@@ -70,4 +68,8 @@ label, fieldset {
 
 footer {
 	bottom : 0;
+}
+
+#boutons {
+	margin-bottom: 2%;
 }

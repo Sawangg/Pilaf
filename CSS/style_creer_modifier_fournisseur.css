@@ -66,14 +66,12 @@ textarea {
 }
 
 #historique {
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin: 2% 0 4%;
 }
 
 p#historique_tete {
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1% 0;
     margin-top: 0%;
     text-align: center;
     font-weight: bold;

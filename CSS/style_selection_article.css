@@ -8,8 +8,7 @@ fieldset {
 
 .flexAround div {
 	width: 24%;
-	margin-top: 2%;
-	margin-bottom: 1%;
+	margin: 2% 0 1%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -41,7 +40,7 @@ div#parametre_prix {
 }
 
 label, fieldset{
-	margin : 1% 0 1% 0;
+	margin : 1% 0;
 	font-size: 110%;
 }
 
@@ -100,24 +99,26 @@ label, fieldset{
 }
 
 .article div p:not(:last-child) {
-	margin: 5% 0 0 0;
+	margin: 5% 0 0;
 	padding-bottom: 5%;
 	border-bottom: solid black 2px;
 }
 
 .article div p:last-child {
-	margin: 5% 0 0 0;
+	margin: 5% 0 0;
 }
 
 .article a:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
-#validation{
-	border-radius: 4px;
+#validation {
+	border-radius: 2px;
+	border : solid rgb(223, 116, 48) 1px;
 	margin: auto;
 	width: 70%;
-	background-color: rgba(223, 116, 48, 0.5);
+	background-image: url("../IMAGES/fonds/fondOrange.png");
+	background-repeat: no-repeat;
 	padding: 1.5% 0.5%;
 }
 
@@ -125,6 +126,6 @@ label, fieldset{
 	padding: 1% 2%;
 	font-size: 125%;
 	display: block;
-	margin: 3% auto 2% auto;
+	margin: 3% auto 2%;
 	width: 92%;
 }

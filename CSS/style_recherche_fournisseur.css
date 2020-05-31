@@ -1,16 +1,18 @@
+/* Auteur : sepios87, Apokalypt */
+
 fieldset {
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
-	padding: 0 5% 2% 5%;
+	padding: 0 1.5% 2%;
 }
 
-fieldset div{
+fieldset div {
 	width: 100%;
 	margin-top: 0.5%;
 }
 
-#recherche, .selection_checkbox{
+#recherche, .selection_checkbox {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -21,22 +23,22 @@ fieldset div{
 	justify-content: space-between;
 }
 
-#recherche div{
+#recherche div {
 	width: 20%;
 	display: flex;
 	flex-direction: column;
 	padding: 0% 5% 1% 2%;
 }
 
-.choix{
+.choix {
 	margin: 1% 0;
 }
 
-.selection_checkbox div{
+.selection_checkbox div {
 	width: 20%;
 }
 
-#paiement{
+#paiement {
 	margin: 2% 0;
 }
 
@@ -78,7 +80,7 @@ label, fieldset {
 	margin: 8% 0;
 }
 
-#modePaiementPref{
+#modePaiementPref {
 	margin: 1.5% 0;
 }
 
@@ -106,7 +108,7 @@ label, fieldset {
 }
 
 .fournisseur div {
-	width: auto;
+	width: 40%;
 	padding: 0 5%;
 	display: -webkit-box;
 	display: -ms-flexbox;

@@ -2,10 +2,11 @@
 
 fieldset {
 	margin-top: 3%;
-    font-size: 110%;
+    font-size: 100%;
     border: solid #df7430 1px;
     border-radius: 2px;
-    background-image: url(../IMAGES/fonds/fondOrange.png);
+    padding: 2%;
+    background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
 legend {
@@ -14,7 +15,6 @@ legend {
 
 label {
 	font-weight: bold;
-
 	padding-left: 3%;
 }
 
@@ -28,9 +28,7 @@ span {
 
 #renseignements {
     width: 75%;
-
     margin: auto;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41,12 +39,12 @@ span {
     justify-content: space-between;
 }
 
-.groupe_informations div, input, p, a, label, select, textarea {
+.groupe_informations div, input, p, label, select, textarea {
     width: 49%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
-img{
+img {
 	height: 100px;
 	width: 100px;
 }
@@ -72,18 +70,13 @@ textarea {
 }
 
 #historique {
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin: 2% 0;
 }
 
 p#historique_tete {
     width: 100%;
-
-    padding-top: 1%;
-    padding-bottom: 1%;
-
+    padding: 1% 0;
     margin-top: 0%;
-
     text-align: center;
     font-weight: bold;
     font-size: 120%;
@@ -92,7 +85,6 @@ p#historique_tete {
 
 #historique_tableau {
     width: 100%;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,13 +93,11 @@ p#historique_tete {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: center;
-
     background-color: white;
 }
 
 #historique_tableau a {
 	width: 100%;
-
 	display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,104 +106,99 @@ p#historique_tete {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
 	justify-content: center;
-
 	color: black;
 	text-decoration: none;
 }
+
 #historique_tableau a:hover {
 	cursor: pointer;
 }
 
 #historique_tableau label, #historique_tableau p {
     border: solid 2px gray;
-
 	margin: 0;
 	padding-left: 0%;
 }
+
 #historique_tableau p {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding: 0.5% 0;
 }
 
 #historique_tableau .mode_cellule, #historique_tableau .valide_cellule {
     width: calc(50% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .valide_cellule {
     font-weight: bold;
 }
 
-
 #historique_tableau .titu_cellule {
     width: calc(20% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .banque_cellule {
     width: calc(20% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .IBAN_cellule {
     width: calc(30% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .etat_cellule, #historique_tableau .BIC_cellule {
 	width: calc(15% - 4px);
-
 	text-align: center;
 }
+
 #historique_tableau .etat_cellule {
 	font-weight: bold;
 }
 
-
 #historique_tableau .nom_cellule {
     width: calc(20% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .tel_cellule {
 	width: calc(13% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .statut_cellule {
     width: calc(13% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .mail_cellule {
     width: calc(21% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .com_cellule {
     width: calc(33% - 4px);
-
     text-align: center;
 }
 
 #historique_tableau .colonne_employe {
     width: calc(15% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .colonne_date {
     width: calc(18% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .colonne_statut {
     width: calc(12% - 4px);
-
     text-align: center;
 }
+
 #historique_tableau .colonne_motif, #historique_tableau .colonne_compte {
     width: calc(27.5% - 4px);
-
     text-align: center;
 }
 
@@ -221,13 +206,14 @@ p#historique_tete {
     color: green;
 }
 
-.text_red{
+.text_red {
 	color: red;
 }
 
-#boutons{
-    margin-top: 2%;
-    margin-bottom: 2%;
-
+fieldset a {
     font-size: 110%;
+}
+
+#boutons {
+    margin-top: 2%;
 }
