@@ -143,6 +143,25 @@ p#historique_tete {
     padding: 0.5% 0;
 }
 
+#historique_tableau .colonne_nom_article {
+    width: calc(25% - 4px);
+    text-align: center;
+}
+#historique_tableau .colonne_type_mvt {
+    width: calc(25% - 4px);
+    text-align: center;
+    font-weight: bold;
+}
+#historique_tableau .colonne_quantite {
+    width: calc(10% - 4px);
+    text-align: center;
+    font-weight: bold;
+}
+#historique_tableau .colonne_motif {
+    width: calc(25% - 4px);
+    text-align: center;
+}
+
 #historique_tableau .colonne_nom_pack {
     width: calc(30% - 4px);
     text-align: center;
@@ -172,16 +191,16 @@ p#historique_tete {
 }
 
 #historique_tableau .colonne_description {
-    width: calc(30% - 4px);
+    width: calc(35% - 4px);
     text-align: center;
 }
 #historique_tableau .colonne_etat {
-    width: calc(15% - 4px);
+    width: calc(20% - 4px);
     text-align: center;
     font-weight: bold;
 }
 #historique_tableau .colonne_date {
-    width: calc(20% - 4px);
+    width: calc(15% - 4px);
     text-align: center;
 }
 #historique_tableau .colonne_vente {
