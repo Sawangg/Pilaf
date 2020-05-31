@@ -80,6 +80,7 @@ fieldset {
 
 #boutons {
 	margin: 1% 0;
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -88,7 +89,5 @@ fieldset {
 }
 
 #boutons input, #boutons a {
-	width: auto;
-	margin: 20px 40px 0;
 	padding: 0.5% 1%;
 }
