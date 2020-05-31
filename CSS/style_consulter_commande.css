@@ -85,7 +85,27 @@ label {
 	grid-row: 1 / 4;
 	-ms-grid-column: 1;
 	grid-column: 1;
-	background-image: url("../IMAGES/produits/orangina.jpg");
+}
+
+#produi1{
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 3;
+	grid-row: 1 / 4;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	background-image: url("../IMAGES/produits/cafe.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#produit2{
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 3;
+	grid-row: 1 / 4;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	background-image: url("../IMAGES/produits/savon.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
