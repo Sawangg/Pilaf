@@ -29,6 +29,11 @@ form div{
   width: 50%;
 }
 
+form a{
+  margin: auto 10% auto 0;
+  padding: 0.5% 1%;
+}
+
 form select, form input{
   width: 70%;
 }
