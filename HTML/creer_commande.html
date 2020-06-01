@@ -13,15 +13,25 @@
   <form id="formulaire_commande">
     <fieldset>
       <legend>Créer une commande</legend>
-      <div>
-        <label>Fournisseur : </label>
-          <select required>
-            <OPTION>artisans du monde</OPTION>
-            <OPTION>Bioterroir</OPTION>
-            <OPTION>Alterbio France</OPTION>
-            <OPTION>Bio audema</OPTION>
-        </select>
-      </div>
+      <fieldset id="donneesCommande">
+        <div>
+          <label>Fournisseur : </label>
+            <select required>
+              <OPTION>artisans du monde</OPTION>
+              <OPTION>Bioterroir</OPTION>
+              <OPTION>Alterbio France</OPTION>
+              <OPTION>Bio audema</OPTION>
+          </select>
+        </div>
+        <div>
+            <label>Adresse de livraison : </label>
+            <input type="text" placeholder="ex : 20 avenue Matignon, Paris">
+        </div>
+        <div>
+            <label>Adresse de facturation : </label>
+            <input type="text" placeholder="ex : 12 rue de la Paix, Paris">
+        </div>
+      </fieldset>
 
       <div class="flexAround">
         <div class="produits" id="1">

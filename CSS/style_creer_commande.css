@@ -12,13 +12,27 @@ label {
 }
 
 select {
-	width: 25%;
+	width: 35%;
 }
 
 fieldset {
 	border: solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
 	background-image: url("../IMAGES/fonds/fondOrange.png");
+}
+
+#donneesCommande div{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+#donneesCommande label{
+		width: 50%;
+}
+
+#donneesCommande select, #donneesCommande input{
+	width: 60%;
 }
 
 #formulaire_commande div {

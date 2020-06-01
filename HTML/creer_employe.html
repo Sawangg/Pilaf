@@ -16,9 +16,9 @@
 
 			<div id="renseignements">
 				<fieldset>
-                    <legend>Informations sur l'employé</legend>
+					<legend>Informations sur l'employé</legend>
 
-                    <div class="groupe_informations">
+					<div class="groupe_informations">
 						<label>Prénom<span>*</span> :</label>
 						<input type="text" name="prenom_employe" pattern="[A-zÀ-ú]*" required>
 					</div>
@@ -26,11 +26,16 @@
 					<div class="groupe_informations">
 						<label>Nom<span>*</span> :</label>
 						<input type="text" name="nom_employe" pattern="[A-zÀ-ú]*" required>
-                    </div>
+					</div>
 
-                    <div class="groupe_informations">
+					<div class="groupe_informations">
 						<label>Poste<span>*</span> :</label>
 						<input type="text" name="poste_employe" required>
+					</div>
+
+					<div class="groupe_informations">
+						<label>Code de sécurité sociale<span>*</span> :</label>
+						<input type="text" name="secu_sociale" required>
 					</div>
 
 					<div class="groupe_informations">
@@ -85,19 +90,19 @@
 					<div class="groupe_informations">
 						<label>Numéro de téléphone<span>*</span> :</label>
 						<input type="tel" name="tel_employe" required>
-                    </div>
+					</div>
 
-                    <div class="groupe_informations">
-                        <label>Date de naissance :</label>
-                        <input type="date" name="date_naissance_employe" required>
-                    </div>
+					<div class="groupe_informations">
+						<label>Date de naissance :</label>
+						<input type="date" name="date_naissance_employe" required>
+					</div>
 
 					<fieldset>
 						<legend>Coordonnées bancaires</legend>
 
 						<div class="groupe_informations">
 							<label>Copie du RIB :</label>
-						    <input type="file" name="RIB_employe">
+							<input type="file" name="RIB_employe">
 						</div>
 
 						<div class="groupe_informations" id="ou_separateur">
@@ -113,30 +118,30 @@
 							<label>IBAN :</label>
 							<input type="text" minlength="14" maxlength="34" name="IBAN_employe">
 						</div>
-                    </fieldset>
+					</fieldset>
 
-                    <fieldset>
+					<fieldset>
 						<legend>Contrat</legend>
 
 						<div class="groupe_informations">
 							<label>Contrat :</label>
-						    <input type="file" name="fichier_contrat_employe">
+							<input type="file" name="fichier_contrat_employe">
 						</div>
 
 						<div class="groupe_informations">
-                            <label>Type de contrat :</label>
-                            <select required>
-                                <option>CDI</option>
-                                <option>CDD</option>
-                            </select>
+							<label>Type de contrat :</label>
+							<select required>
+								<option>CDI</option>
+								<option>CDD</option>
+							</select>
 						</div>
 
 						<div class="groupe_informations">
 							<label>Date de début du contrat :</label>
 							<input type="date" name="date_debut_contrat_employe" required>
-                        </div>
+						</div>
 
-                        <div class="groupe_informations">
+						<div class="groupe_informations">
 							<label>Date de fin du contrat :</label>
 							<input type="date" name="date_fin_contrat_employe">
 						</div>
@@ -145,110 +150,110 @@
 					<fieldset id="droits">
 						<legend>Gestion des droits</legend>
 						<fieldset>
-								<legend>Client</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer client</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter client</label>
-								</div>
+							<legend>Client</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer client</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter client</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Employé</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer employé</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter employé</label>
-								</div>
+							<legend>Employé</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer employé</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter employé</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Commande</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer commande</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter commande</label>
-								</div>
+							<legend>Commande</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer commande</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter commande</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Horaires</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer horaires</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter horaires</label>
-								</div>
+							<legend>Horaires</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer horaires</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter horaires</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Article</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer article</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter article</label>
-								</div>
+							<legend>Article</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer article</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter article</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Caisse</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer caisse</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter caisse</label>
-								</div>
+							<legend>Caisse</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer caisse</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter caisse</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Factures</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer factures</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter factures</label>
-								</div>
+							<legend>Factures</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer factures</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter factures</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Fournisseur</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer fournisseur</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter fournisseur</label>
-								</div>
+							<legend>Fournisseur</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer fournisseur</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter fournisseur</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Stocks</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Créer / Modifier / Supprimer stocks</label>
-								</div>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter stocks</label>
-								</div>
+							<legend>Stocks</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Créer / Modifier / Supprimer stocks</label>
+							</div>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter stocks</label>
+							</div>
 						</fieldset>
 						<fieldset>
-								<legend>Statistiques</legend>
-								<div>
-									<input type="checkbox" name="" value="">
-									<label>Consulter statistiques</label>
-								</div>
+							<legend>Statistiques</legend>
+							<div>
+								<input type="checkbox" name="" value="">
+								<label>Consulter statistiques</label>
+							</div>
 						</fieldset>
 					</fieldset>
 
