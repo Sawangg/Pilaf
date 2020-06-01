@@ -97,7 +97,7 @@ fieldset#box_fournisseur {
     width: 50%;
 }
 
-div#historique {
+div.historique {
     margin-top: 3%;
 }
 
@@ -112,7 +112,7 @@ div#historique {
     flex-wrap: nowrap;
 }
 
-#historique {
+.historique {
     margin-top: 2%;
 }
 
@@ -242,11 +242,11 @@ p#historique_tete {
     font-weight: bold;
 }
 
-#boutons {
+.boutons {
     font-size: 110%;
     margin: 2% 0 0.75%;
 }
 
-#boutons a {
+.boutons a {
     padding: 0.5% 1%;
 }
