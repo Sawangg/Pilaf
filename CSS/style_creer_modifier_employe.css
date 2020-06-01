@@ -72,6 +72,26 @@ div#ou_separateur label {
 	width: auto;
 }
 
+#droits fieldset{
+	padding: 0;
+}
+
+#droits fieldset div{
+	display: flex;
+}
+
+#droits input{
+	width: 10%;
+	margin: 2.3% 2% 0 0;
+	padding: 0;
+}
+
+#droits label{
+	width: 88%;
+	margin: 1.5% 0;
+	padding: 0;
+}
+
 #historique {
     margin: 2% 0 4%;
 }
