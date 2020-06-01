@@ -40,11 +40,28 @@ legend {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 65%;
+    width: 85%;
 }
 
 #renseignements fieldset {
     width: 100%;
+}
+
+#info_produit{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#info_produit fieldset{
+  width: 60%;
+}
+
+#info_produit img{
+  padding: 0;
+  width: 170px;
+  height: 250px;
+  margin: auto 0;
 }
 
 fieldset#box_fournisseur {
@@ -165,7 +182,7 @@ p#historique_tete {
 }
 
 #historique_tableau .colonne_nom_pack img {
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
@@ -223,11 +240,6 @@ p#historique_tete {
 
 #ajout label {
     font-weight: bold;
-}
-
-img {
-    height: 100%;
-    width: 30%;
 }
 
 #boutons {
