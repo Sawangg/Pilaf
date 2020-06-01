@@ -17,20 +17,20 @@
 			<div id="renseignements">
 				<fieldset>
                     <legend>Informations sur l'employé</legend>
-                    
+
                     <div class="groupe_informations">
 						<label>Prénom<span>*</span> :</label>
-						<input type="text" name="prenom_employe" pattern="[A-zÀ-ú]*" required>
+						<input type="text" name="prenom_employe" pattern="[A-zÀ-ú]*" required value="Brigite">
 					</div>
 
 					<div class="groupe_informations">
 						<label>Nom<span>*</span> :</label>
-						<input type="text" name="nom_employe" pattern="[A-zÀ-ú]*" required>
+						<input type="text" name="nom_employe" pattern="[A-zÀ-ú]*" required value="Flotte">
                     </div>
-                    
+
                     <div class="groupe_informations">
 						<label>Poste<span>*</span> :</label>
-						<input type="text" name="poste_employe" required>
+						<input type="text" name="poste_employe" required value="Secrétaire">
 					</div>
 
 					<div class="groupe_informations">
@@ -43,7 +43,7 @@
 
 						<div class="groupe_informations">
 							<label>Rue<span>*</span> :</label>
-							<input type="text" name="rue_employe" placeholder="Ex : 1 Rue du succès" required>
+							<input type="text" name="rue_employe" required value="10 Allée André Maurois">
 						</div>
 
 						<div class="groupe_informations">
@@ -58,38 +58,38 @@
 
 						<div class="groupe_informations">
 							<label>Ville<span>*</span> :</label>
-							<input type="text" name="ville_employe" required>
+							<input type="text" name="ville_employe" required value="Limoges">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Code postal<span>*</span> :</label>
-							<input type="text" name="CP_employe" required>
+							<input type="text" name="CP_employe" required value="87100">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Région<span>*</span> :</label>
-							<input type="text" name="region_employe" required>
+							<input type="text" name="region_employe" required value="Nouvelle-Aquitaine">
 						</div>
 
 						<div class="groupe_informations">
 							<label>Pays<span>*</span> :</label>
-							<input type="text" name="pays_employe" required>
+							<input type="text" name="pays_employe" required value="France">
 						</div>
 					</fieldset>
 
 					<div class="groupe_informations">
 						<label>Adresse e-mail<span>*</span> :</label>
-						<input type="email" name="mail_employe" required>
+						<input type="email" name="mail_employe" required value="brigite.flotte@gmail.com">
 					</div>
 
 					<div class="groupe_informations">
 						<label>Numéro de téléphone<span>*</span> :</label>
-						<input type="tel" name="tel_employe" required>
+						<input type="tel" name="tel_employe" required value="+33648986537">
                     </div>
-                    
+
                     <div class="groupe_informations">
                         <label>Date de naissance :</label>
-                        <input type="date" name="date_naissance_employe" required>
+                        <input type="date" name="date_naissance_employe" required value="1986-11-24">
                     </div>
 
 					<fieldset>
@@ -106,15 +106,15 @@
 
 						<div class="groupe_informations">
 							<label>Nom du titulaire du compte :</label>
-							<input type="text" name="titulaire_employe">
+							<input type="text" name="titulaire_employe" value="Flotte">
 						</div>
 
 						<div class="groupe_informations">
 							<label>IBAN :</label>
-							<input type="text" minlength="14" maxlength="34" name="IBAN_employe">
+							<input type="text" minlength="14" maxlength="34" name="IBAN_employe" value="FR0012345123451234567891A12">
 						</div>
                     </fieldset>
-                    
+
                     <fieldset>
 						<legend>Contrat</legend>
 
@@ -133,9 +133,9 @@
 
 						<div class="groupe_informations">
 							<label>Date de début du contrat :</label>
-							<input type="date" name="date_debut_contrat_employe" required>
+							<input type="date" name="date_debut_contrat_employe" required value="2004-09-05">
                         </div>
-                        
+
                         <div class="groupe_informations">
 							<label>Date de fin du contrat :</label>
 							<input type="date" name="date_fin_contrat_employe">

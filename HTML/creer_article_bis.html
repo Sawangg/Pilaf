@@ -13,7 +13,7 @@
     <form action="../index.html">
       <fieldset>
         <legend>Créer un article</legend>
-        
+
             <div id="renseignements">
                 <fieldset>
                     <legend>Informations sur le produit</legend>
@@ -35,11 +35,12 @@
 
                     <div class="groupe_informations">
                         <label>Fournisseur<span>*</span> :</label>
-                        <SELECT name="Fournisseur">
-                            <OPTION>Panzani</OPTION>
-                            <OPTION>Bell</OPTION>
-                            <OPTION>Coca-cola</OPTION>
-                        </SELECT>
+                        <select required>
+                          <OPTION>Artisant du monde</OPTION>
+                          <OPTION>Bioterroir</OPTION>
+                          <OPTION>Alterbio France</OPTION>
+                          <OPTION>Bio audema</OPTION>
+                      </select>
                     </div>
 
                     <div class="groupe_informations">
@@ -55,7 +56,7 @@
 
                 <fieldset>
                     <legend>Stock</legend>
-                    
+
                     <div class="groupe_informations">
                         <label>Quantité en stock<span>*</span> :</label>
                         <input type="number" name="quantite_stock" value="0" min="0" required>
@@ -100,7 +101,7 @@
                             <OPTION>2,1%</OPTION>
                         </SELECT>
                     </div>
-                    
+
                     <div class="groupe_informations">
                         <div>
                             <label>Prix à l'unité </label>
@@ -133,7 +134,7 @@
 
                 <fieldset>
                     <legend>Nouvelle promotion</legend>
-                    
+
                     <div class="groupe_informations">
                         <label>Type de promotion : </label>
                         <SELECT>
@@ -148,7 +149,7 @@
                             <input type="number" name="réduction" value="1" min="1">
                             <label> acheté(e)(s) = </label>
                         </div>
-                        
+
                         <div>
                             <input type="number" name="réduction" value="1" min="1">
                             <label> offert(e)(s)</label>
