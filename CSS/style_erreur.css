@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+}
+
+#box_main {
+    width: 50%;
+    height: auto;
+
+    margin: auto;
+
+    padding: 1%;
+
+    border: solid red 1px;
+    border-radius: 10px;
+
+    
+	-webkit-box-shadow: 3px 4px 11px #3d3d3d4f;
+	box-shadow: 3px 4px 11px #3d3d3d4f;
+}
+
+h1 {
+    font-weight: bold;
+
+    margin-left: 2%;
+}
+p, h1 {
+    text-align: center;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title img {
+    height: 30px;
+}
+
+p {
+    margin-top: 1%;
+}
+
+#boutons {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 2%;
+
+    font-size: 110%;
+}

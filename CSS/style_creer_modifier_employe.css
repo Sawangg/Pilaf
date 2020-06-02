@@ -50,7 +50,6 @@ span {
 	padding: 0.75% 2%;
 }
 
-
 #renseignements {
 	width: 75%;
 	margin: auto;
@@ -103,17 +102,20 @@ div#ou_separateur label {
 
 #droits fieldset div{
 	display: flex;
+    align-items: center;
+
+    margin: 1.5% 0;
 }
 
 #droits input{
 	width: 10%;
-	margin: 2.2% 2% 0 0;
+	margin: 0 2% 0 0;
 	padding: 0;
 }
 
 #droits label{
-	width: 88%;
-	margin: 1.5% 0;
+    width: 88%;
+    margin: 0;
 	padding: 0;
 }
 
@@ -220,6 +222,7 @@ p#historique_tete {
 	width: calc(33% - 4px);
 	text-align: center;
 }
+
 
 #selectionPaiement {
 	display: flex;
