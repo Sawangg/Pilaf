@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Sawang_">
+  <title>Contacter l'assistance</title>
+  <link rel="icon" type="image/png" href="../IMAGES/logo.png" />
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style_contacter_assistance.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form action="connexion.html">
+    <fieldset>
+      <legend>Contacter assistance</legend>
+      <div>
+        <label>Prénom : <span>*</span></label>
+        <input type="text" pattern="[A-zÀ-ú]*" required>
+      </div>
+      <div>
+        <label>Nom : <span>*</span></label>
+        <input type="text" pattern="[A-zÀ-ú]*" required>
+      </div>
+      <div>
+        <label>E-mail : <span>*</span></label>
+        <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+      </div>
+      <div>
+        <label>Telephone : </label>
+        <input type="text" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
+      </div>
+      <div>
+        <label>Votre demande concerne : <span>*</span></label>
+        <select required>
+          <option value="" disabled selected>Selectionnez une des options :</option>
+          <option value="1">Demande de démonstration / d'information</option>
+          <option value="2">Demande de rendez-vous</option>
+          <option value="3">Problème technique</option>
+        </select>
+      </div>
+      <div>
+        <label>Commentaire : <span>*</span></label>
+        <textarea required></textarea>
+      </div>
+      <p>* Obligatoire</p>
+      <div id="boutons" class="flexAround">
+        <a href="connexion.html" class="designBoutons boutonRouge noSelect">Retour</a>
+        <input type="submit" class="designBoutons boutonVert noSelect" value="Envoyer le message">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

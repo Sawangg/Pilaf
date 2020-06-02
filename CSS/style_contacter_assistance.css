@@ -1,11 +1,4 @@
-/* Auteur : sepios87, Sawang_ */
-
-img {
-  display: block;
-  margin: auto;
-  margin-top: 3%;
-  width: 200px;
-}
+/* Auteur : Sawang_ */
 
 form {
   width: 80%;
@@ -30,24 +23,33 @@ fieldset {
   border : solid rgb(48, 155, 223) 1px;
 }
 
-input {
+input, textarea {
+  padding-left: 1%;
   width: 60%;
   border-radius: 10px;
   border: none;
   box-shadow: 3px 4px 11px #3d3d3d4f;
-  padding-left: 1%;
+}
+
+textarea {
+  font-family: inherit;
+  padding: 1%;
+  width: 58%;
+  height: 130px;
 }
 
 label {
+  padding-left: 4%;
   width: 25%;
 }
 
-#assistance {
-  font-size: 90%;
+span {
+  color: red;
 }
 
-#connexion {
-  padding: 0 2%;
-  margin: 0 auto;
-  font-size: 95%;
+p {
+	width: 100%;
+  margin-left: 6%;
+	color: red;
+	font-size: 90%;
 }
