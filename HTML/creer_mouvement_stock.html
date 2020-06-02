@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <form action="../index.html">
     <fieldset>
       <legend>Modifier un mouvement de stock</legend>
       <div class="flexAround">
@@ -40,7 +40,7 @@
           </select>
         </div>
         <div></div>
-        
+
         <div>
           <label>Quantité :</label>
           <input type="number" value="1" min=1>
@@ -54,7 +54,7 @@
       </div>
       <div id="boutons" class=flexAround>
         <a href="../index.html" class="designBoutons boutonRouge">Annuler</a>
-        <a href="#" class="designBoutons boutonVert">Enregistrer le mouvement de stock</a>
+        <input type="submit" class="designBoutons boutonVert" value="Enregistrer le mouvement de stock">
       </div>
     </fieldset>
   </form>
