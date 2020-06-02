@@ -71,12 +71,11 @@ select {
 	justify-content: space-around;
 	border-left: solid black 1px;
 	padding-left : 1%;
-	font-size: 120%;
 }
 
 .nomStatus {
 	width: 38%;
-	font-size: 140%;
+	font-size: 120%;
 }
 
 .nomStatus h3, .nomStatus h4 {
@@ -109,7 +108,7 @@ select {
 }
 
 .boutonsStatus a {
-	padding: 2%;
+	padding: 0.75% 2%;
 	margin-top: 1%;
 	font-size: 80%;
 }

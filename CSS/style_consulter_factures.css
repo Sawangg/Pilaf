@@ -23,7 +23,6 @@ fieldset {
 	margin-top: 3%;
 	border : solid rgb(223, 116, 48) 1px;
 	border-radius: 2px;
-	overflow: auto;
 }
 
 #recherche {
@@ -100,6 +99,31 @@ fieldset {
 	height: 1%;
 	margin-left: 3%;
 	padding: 0.2% 1.5%;
+}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	font-size: 68%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	border: solid 1px gray;
+	border-radius: 2px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -70px;
+}
+  
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
 
 .facturesContent img {
