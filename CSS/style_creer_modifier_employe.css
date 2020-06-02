@@ -1,16 +1,16 @@
 /* Auteur : Apokalypt */
 
 fieldset {
-	margin-top: 3%;
-    font-size: 100%;
-    border: solid #df7430 1px;
-    border-radius: 2px;
-    padding: 2%;
-    background-image: url("../IMAGES/fonds/fondOrange.png");
+	margin-top: 2%;
+	font-size: 100%;
+	border: solid #df7430 1px;
+	border-radius: 2px;
+	padding-bottom: 2%;
+	background-image: url("../IMAGES/fonds/fondOrange.png");
 }
 
 legend {
-    font-size: 130%;
+	font-size: 130%;
 }
 
 label {
@@ -23,25 +23,50 @@ textarea {
 }
 
 span {
-    color: red
+	color: red
 }
 
+.doc img{
+	width: 50px;
+	height: 50px;
+}
+
+.doc{
+	padding: 2%;
+}
+
+.doc div{
+	display: flex;
+}
+
+.doc div div{
+	display: flex;
+	flex-direction: column;
+	margin-left: 4%;
+}
+
+.doc div div a{
+	margin-top: 3%;
+	padding: 0.75% 2%;
+}
+
+
 #renseignements {
-    width: 75%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+	width: 75%;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .groupe_informations div, input, label, select, textarea {
-    width: 49%;
-    margin-top: 3%;
+	width: 49%;
+	margin-top: 3%;
 }
 
 textarea {
@@ -49,23 +74,23 @@ textarea {
 }
 
 #renseignements fieldset {
-    width: 100%;
+	width: 100%;
 }
 
 #renseignements fieldset fieldset {
-    width: auto;
+	width: auto;
 }
 
 .groupe_informations {
-    display: flex;
-    flex-wrap: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 div#ou_separateur label {
-    width: 100%;
-    padding-left: 0%;
-    text-align: center;
-    font-size: 120%;
+	width: 100%;
+	padding-left: 0%;
+	text-align: center;
+	font-size: 120%;
 }
 
 .groupe_checkbox label, .groupe_checkbox input {
@@ -82,7 +107,7 @@ div#ou_separateur label {
 
 #droits input{
 	width: 10%;
-	margin: 2.3% 2% 0 0;
+	margin: 2.2% 2% 0 0;
 	padding: 0;
 }
 
@@ -93,41 +118,41 @@ div#ou_separateur label {
 }
 
 #historique {
-    margin: 2% 0 4%;
+	margin: 2% 0 4%;
 }
 
 p#historique_tete {
-    width: 100%;
-    padding: 1% 0;
-    margin-top: 0%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 120%;
-    color: black;
+	width: 100%;
+	padding: 1% 0;
+	margin-top: 0%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	color: black;
 }
 
 #historique_tableau {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: center;
-    background-color: white;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: center;
+	background-color: white;
 }
 
 #historique_tableau a {
 	width: 100%;
 	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: center;
 	color: black;
 	text-decoration: none;
@@ -138,28 +163,28 @@ p#historique_tete {
 }
 
 #historique_tableau label, #historique_tableau p {
-    border: solid 2px gray;
+	border: solid 2px gray;
 	margin: 0;
 	padding-left: 0%;
 }
 
 #historique_tableau p {
-    padding: 0.5% 0;
+	padding: 0.5% 0;
 }
 
 #historique_tableau .titu_cellule {
-    width: calc(20% - 4px);
-    text-align: center;
+	width: calc(20% - 4px);
+	text-align: center;
 }
 
 #historique_tableau .banque_cellule {
-    width: calc(20% - 4px);
-    text-align: center;
+	width: calc(20% - 4px);
+	text-align: center;
 }
 
 #historique_tableau .IBAN_cellule {
-    width: calc(30% - 4px);
-    text-align: center;
+	width: calc(30% - 4px);
+	text-align: center;
 }
 
 #historique_tableau .etat_cellule, #historique_tableau .BIC_cellule {
@@ -172,46 +197,46 @@ p#historique_tete {
 }
 
 #historique_tableau .nom_cellule {
-    width: calc(20% - 4px);
-    text-align: center;
+	width: calc(20% - 4px);
+	text-align: center;
 }
 
 #historique_tableau .tel_cellule {
 	width: calc(13% - 4px);
-    text-align: center;
+	text-align: center;
 }
 
 #historique_tableau .statut_cellule {
-    width: calc(13% - 4px);
-    text-align: center;
+	width: calc(13% - 4px);
+	text-align: center;
 }
 
 #historique_tableau .mail_cellule {
-    width: calc(21% - 4px);
-    text-align: center;
+	width: calc(21% - 4px);
+	text-align: center;
 }
 
 #historique_tableau .com_cellule {
-    width: calc(33% - 4px);
-    text-align: center;
+	width: calc(33% - 4px);
+	text-align: center;
 }
 
 #selectionPaiement {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 #selectionPaiement div {
-    width: 50%;
-    display: flex;
+	width: 50%;
+	display: flex;
 }
 
 #selectionPaiement input, #selectionPaiement label {
-    margin: auto;
+	margin: auto;
 }
 
 #boutons {
-    margin-top: 2%;
-    font-size: 110%;
+	margin-top: 2%;
+	font-size: 110%;
 }
