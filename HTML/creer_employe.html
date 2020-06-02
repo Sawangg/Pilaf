@@ -35,7 +35,7 @@
 
 					<div class="groupe_informations">
 						<label>Code de sécurité sociale<span>*</span> :</label>
-						<input type="text" name="secu_sociale" required placeholder="ex : 177023523800522">
+						<input type="text" name="secu_sociale" pattern="[0-9]{15}" maxlength="15" minlength="15" required placeholder="ex : 177023523800522">
 					</div>
 
 					<div class="groupe_informations">
