@@ -32,7 +32,7 @@ fieldset {
 
 #recherche select {
 	border-bottom: solid 1px #888888;
-	margin: 1% 0 0 2%;
+	margin: 1% 1% 0 2%;
 	width: 15%;
 	padding: 0.5% 1%;
 }
@@ -167,11 +167,6 @@ fieldset {
 	height: 1%;
 	margin-left: 3%;
 	padding: 0.2% 1.5%;
-	background-color: rgba(223, 116, 48, 0.5);
-}
-
-#facture4 #editer a:hover {
-	background-color: rgba(223, 116, 48, 0.7);
 }
 
 #facture4 .status {
