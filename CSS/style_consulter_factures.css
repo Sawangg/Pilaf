@@ -86,12 +86,24 @@ fieldset {
 	box-shadow: 2px 3px 5px #888888;
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(5, 20%);
+	grid-template-columns: repeat(5, 19%) 3%;
 	grid-auto-columns: auto;
 }
 
 .facturesContent span {
 	text-align: center;
+}
+
+.facturesContent a {
+	display: flex;
+	flex-wrap: wrap;
+	height: 1%;
+	margin-left: 3%;
+	padding: 0.2% 1.5%;
+}
+
+.facturesContent img {
+	width: 70%;
 }
 
 .facturesContent:hover {
@@ -151,14 +163,14 @@ fieldset {
 	margin: 0 0 0 2%;
 }
 
-#facture4 a {
+#facture4 #editer a {
 	height: 1%;
 	margin-left: 3%;
 	padding: 0.2% 1.5%;
 	background-color: rgba(223, 116, 48, 0.5);
 }
 
-#facture4 a:hover {
+#facture4 #editer a:hover {
 	background-color: rgba(223, 116, 48, 0.7);
 }
 
