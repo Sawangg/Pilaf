@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form>
+  <form action="../index.html">
     <fieldset>
       <legend>Modifier un mouvement de stock</legend>
       <div class="flexAround">
@@ -40,7 +40,7 @@
           </select>
         </div>
         <div></div>
-        
+
         <div>
           <label>Quantité :</label>
           <input type="number" value="1" min=1>
@@ -48,8 +48,8 @@
         <div></div>
 
         <div id="divMotif">
-          <label>Motif:</label>
-          <input type="text" id="motif">
+          <label>Motif :</label>
+          <textarea placeholder="Entrer la raison du mouvement" id="motif"></textarea>
         </div>
       </div>
       <div id="boutons" class=flexAround>

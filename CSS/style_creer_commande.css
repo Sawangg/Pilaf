@@ -28,7 +28,9 @@ fieldset {
 }
 
 #donneesCommande label{
-		width: 50%;
+	width: 50%;
+
+	font-weight: bold;
 }
 
 #donneesCommande select, #donneesCommande input{
@@ -37,6 +39,28 @@ fieldset {
 
 #formulaire_commande div {
 	margin: 10px;
+}
+
+div#adresse {
+	width: 100%;
+
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+div#adresse fieldset {
+	width: 47%;
+
+	background-color: white;
+	background-image: none;
+}
+div#adresse fieldset div {
+	width: 100%;
+}
+div#adresse fieldset div input {
+	margin-right: 2%;
 }
 
 .produits {
@@ -68,7 +92,6 @@ fieldset {
 	margin: auto;
 	margin-left: 10px;
 	line-height: inherit;
-	font-weight: bold;
 }
 
 .produits div input {
@@ -83,13 +106,21 @@ fieldset {
 }
 
 #total {
-	text-align: right;
+	text-align: left;
 	margin-top: 40px;
 	padding-right: 50px;
+}
+.sous_total {
+	padding-left: 15px;
 }
 
 #total .informations {
 	font-weight: bold;
+}
+
+hr {
+	border-color: black;
+	background-color: black;
 }
 
 #boutons {
@@ -104,4 +135,9 @@ fieldset {
 
 #boutons input, #boutons a {
 	padding: 0.5% 1%;
+}
+
+span {
+	color: red;
+	font-weight: bold;
 }

@@ -12,17 +12,22 @@ legend {
 	font-size: 130%;
 }
 
+label, p {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 .flexAround div:not(#divMotif) {
 	display: flex;
     width: 46%;
     flex-wrap: wrap;
     justify-content: start;
     margin-top: 2%;
-    font-size: 110%;
+    font-size: 100%;
 }
 
 .flexAround div p {
-    width: inherit;
+	width: inherit;
 }
 
 .flexAround div a {
@@ -40,11 +45,11 @@ legend {
 input, select {
 	border: solid gray 1px;
 	border-radius: 4px;
-	width: 50%;
+	width: 48%;
 }
 
 label {
-	width: 40%;
+	width: 50%;
 	font-weight: bold;
 }
 

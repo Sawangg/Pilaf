@@ -24,24 +24,97 @@
         <label>0001</label>
       </div>
 
-      <div>
-        <label class="informations">Etat du paiement de la commande : </label>
-        <select required>
-          <option value="" disabled>Etat de la commande</option>
-          <option value="1">Payé</option>
-          <option value="2" selected>Non payé</option>
-        </select>
-      </div>
+      <fieldset id="donneesCommande">
+        <div>
+          <label>Fournisseur : </label>
+            <select required>
+              <OPTION>artisans du monde</OPTION>
+              <OPTION>Bioterroir</OPTION>
+              <OPTION>Alterbio France</OPTION>
+              <OPTION>Bio audema</OPTION>
+          </select>
+        </div>
 
-      <div>
-        <label class="informations">Fournisseur : </label>
-        <select required>
-            <OPTION>Artisans du monde</OPTION>
-            <OPTION>Bioterroir</OPTION>
-            <OPTION>Alterbio France</OPTION>
-            <OPTION>Bio audema</OPTION>
-        </select>
-      </div>
+        <div>
+          <label>Mode de paiement : </label>
+            <select required>
+              <OPTION>Virements</OPTION>
+              <OPTION>Chèques</OPTION>
+              <OPTION>Carte bancaire</OPTION>
+              <OPTION>Liquide</OPTION>
+          </select>
+        </div>
+
+        <div id="adresse">
+          <fieldset>
+            <legend>Adresse de livraison</legend>
+  
+            <div class="groupe_informations">
+              <label>Rue<span>*</span> :</label>
+              <input type="text" name="rue_client" placeholder="ex : 1 Rue du succès" required>
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Compléments d'adresse :</label>
+              <input type="text" name="complement_client">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Lieu-dit :</label>
+              <input type="text" name="lieu_dit_client">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Ville<span>*</span> :</label>
+              <input type="text" name="ville_client" required placeholder="ex : Limoges">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Code postal<span>*</span> :</label>
+              <input type="text" name="CP_client" required placeholder="ex : 87000">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Pays<span>*</span> :</label>
+              <input type="text" name="pays_client" required placeholder="ex : France">
+            </div>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Adresse de facturation</legend>
+  
+            <div class="groupe_informations">
+              <label>Rue<span>*</span> :</label>
+              <input type="text" name="rue_client" placeholder="ex : 1 Rue du succès" required>
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Compléments d'adresse :</label>
+              <input type="text" name="complement_client">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Lieu-dit :</label>
+              <input type="text" name="lieu_dit_client">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Ville<span>*</span> :</label>
+              <input type="text" name="ville_client" required placeholder="ex : Limoges">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Code postal<span>*</span> :</label>
+              <input type="text" name="CP_client" required placeholder="ex : 87000">
+            </div>
+  
+            <div class="groupe_informations">
+              <label>Pays<span>*</span> :</label>
+              <input type="text" name="pays_client" required placeholder="ex : France">
+            </div>
+          </fieldset>
+        </div>
+      </fieldset>
 
       <div id="catalogue_fournisseur">
         <div class="produits">
@@ -116,27 +189,60 @@
           <a href="consulter_article.html" class ="designBoutons boutonOrange noSelect">Plus de détails</a>
         </div>
 
-      <div id="total">
-        <div>
-          <label class="informations">Total HT : </label>
-          <label>373.20€</label>
+        <div id="total">
+          <div>
+            <label class="informations">Total HT : </label>
+            <label>0.00€</label>
+          </div>
+  
+          <hr>
+  
+          <div>
+            <label class="informations">Frais de port : </label>
+            <label>0.00€</label>
+          </div>
+  
+          <hr>
+          
+          <div>
+            <label class="informations">Pourcentage remise : </label>
+            <label>0%</label>
+          </div>
+          <div>
+            <label class="informations">Montant remise : </label>
+            <label>0.00€</label>
+          </div>
+  
+          <hr>
+  
+          <div class="sous_total">
+            <label class="informations">Total TVA 20% : </label>
+            <label>0.00€</label>
+          </div>
+          <div class="sous_total">
+            <label class="informations">Total TVA 10% : </label>
+            <label>0.00€</label>
+          </div>
+          <div class="sous_total">
+            <label class="informations">Total TVA 5,5% : </label>
+            <label>0.00€</label>
+          </div>
+          <div class="sous_total">
+            <label class="informations">Total TVA 2,1% : </label>
+            <label>0.00€</label>
+          </div>
+          <div>
+            <label class="informations">Total TVA : </label>
+            <label>0.00€</label>
+          </div>
+  
+          <hr>
+  
+          <div>
+            <label class="informations">Total TTC : </label>
+            <label>0.00€</label>
+          </div>
         </div>
-
-        <div>
-          <label class="informations">Frais de port : </label>
-          <label>10.00€</label>
-        </div>
-
-        <div>
-          <label class="informations">Total TVA : </label>
-          <label>20.56€</label>
-        </div>
-
-        <div>
-          <label class="informations">Total TTC : </label>
-          <label>393.76€</label>
-        </div>
-      </div>
 
       <div id="boutons">
         <a href="recherche_commande.html" class="designBoutons boutonRouge noSelect">Annuler</a>
