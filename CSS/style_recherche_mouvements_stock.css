@@ -8,9 +8,9 @@ fieldset {
 
 .flexAround div {
 	width: 26%;
-	
+
 	margin-top: 1%;
-	
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -24,14 +24,14 @@ fieldset {
 
 .flexAround div div {
 	width: 100%;
-	
+
 	display: flex;
 	flex-direction: row;
 }
 .flexAround div div select {
 	width: auto;
 	padding-right: 35px;
-	
+
 	display: flex;
 	flex-direction: row;
 }
@@ -133,8 +133,4 @@ select {
 	display: block;
 	margin: 3% auto 2%;
 	width: 92%;
-}
-
-footer {
-	bottom : 0;
 }
