@@ -26,6 +26,10 @@ label, p {
     font-size: 100%;
 }
 
+span {
+	color: red
+}
+
 .flexAround div p {
 	width: inherit;
 }
