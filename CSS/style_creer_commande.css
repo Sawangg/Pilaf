@@ -100,7 +100,7 @@ div#adresse fieldset div input {
 
 .produits a {
 	display: block;
-	width: 20%;
+	width: fit-content;
 	margin: 2% auto;
 	padding: 0.75% 2%;
 }
