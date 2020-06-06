@@ -21,6 +21,10 @@ label {
 	background-size: cover;
 }
 
+select {
+	padding-right: 35px;
+}
+
 #box_main {
 	width: 90%;
 	margin: 2% auto;
