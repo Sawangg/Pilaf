@@ -68,8 +68,15 @@ nav ul {
   cursor : pointer;
 }
 
+li a:hover{
+  color: white;
+}
+
 li a {
   width: 100%;
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
+  transition: 250ms;
   text-align: center;
 }
 
